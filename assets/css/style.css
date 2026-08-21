@@ -1675,6 +1675,18 @@ line-height: 20px;
   padding-bottom: 20px;
 }
 
+.doc-pointers ul {
+    list-style-type: disc;
+    
+    margin: 0;
+}
+
+.doc-pointers li {
+    margin-bottom: 10px;
+    padding-left: 5px;
+    color: var(--color-gray-700);
+}
+
 
 
 @import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap');
@@ -1725,3 +1737,4 @@ line-height: 20px;
         min-width: 38px;
     }
 }
+
