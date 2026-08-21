@@ -160,7 +160,7 @@
     height: 58px;
     flex: 0 0 58px;
     border-radius: 50%;
-    background: #075D83;
+    background: #004d77;
     color: #ffffff;
     display: flex;
     align-items: center;
@@ -247,7 +247,7 @@
 
     transform: scale(1.08);
 background-color: #EFFAFF;
-color: #075D83;
+color: #004d77;
     box-shadow:
         0 8px 24px rgba(7, 93, 131, 0.25);
 }
@@ -299,7 +299,7 @@ color: #075D83;
 
 .stat-item:hover .stat-number {
 
-    color: #075D83 !important;
+    color: #004d77 !important;
 
     transform: translateY(-3px);
 }
@@ -319,7 +319,7 @@ color: #075D83;
 
 .stat-item:hover .stat-label {
 
-    color: #075D83 !important;
+    color: #004d77 !important;
 
     transform: translateY(-1px);
 }
@@ -339,7 +339,7 @@ color: #075D83;
 
 .stat-feature:hover .stat-feature-title {
 
-    color: #075D83 !important;
+    color: #004d77 !important;
 
     transform: translateY(-3px);
 }
@@ -347,7 +347,7 @@ color: #075D83;
 
 .stat-feature:hover .stat-label {
 
-    color: #075D83 !important;
+    color: #004d77 !important;
 
     transform: translateY(-1px);
 }
@@ -844,7 +844,7 @@ color: #075D83;
 
     background: linear-gradient(
         145deg,
-        #075D83 0%,
+        #004d77 0%,
         #014C79 100%
     );
 
@@ -1021,7 +1021,7 @@ color: #075D83;
 
     background: #FFFFFF;
 
-    color: #075D83;
+    color: #004d77;
 
     font-family: "Plus Jakarta Sans", sans-serif;
 
@@ -1091,7 +1091,7 @@ color: #075D83;
 
     background: #FFFFFF;
 
-    color: #075D83;
+    color: #004d77;
 
     display: flex;
     align-items: center;
@@ -1118,7 +1118,7 @@ color: #075D83;
 .testimonial-arrow:hover {
     transform: scale(1.1);
 
-    background: #075D83;
+    background: #004d77;
 
     color: #FFFFFF;
 
@@ -1158,7 +1158,7 @@ color: #075D83;
 
     border-radius: 50%;
 
-    border: 1px solid #075D83;
+    border: 1px solid #004d77;
 
     background: transparent;
 
@@ -1175,9 +1175,9 @@ color: #075D83;
 
     border-radius: 20px;
 
-    background: #075D83;
+    background: #004d77;
 
-    border-color: #075D83;
+    border-color: #004d77;
 }
 
 .testimonial-dot:hover {
@@ -1339,7 +1339,6 @@ color: #075D83;
 .visit-centre-section {
     width: 100%;
     background: #ffffff;
-    padding: 138px 24px 45px;
 }
 
 .visit-centre-container {
@@ -1443,7 +1442,7 @@ color: #075D83;
     color: #40516a;
 
     font-family: Arial, sans-serif;
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 400;
     line-height: 1.45;
 }
@@ -1562,5 +1561,17 @@ line-height: 20px;
 }
 
 .text-brand-blue{
-  color: #00599c;
+  color: #075d83;
 }
+.bg-brand-blue{
+  background-color:#075d83;;
+}
+.text-reveal{
+  display: inline-block;
+    background-color: #075d83;
+    color: white;
+    padding: 3px 6px;
+    margin-top: 8px;
+    line-height: 1.2;
+}
+
