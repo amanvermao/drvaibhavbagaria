@@ -21,6 +21,10 @@
     margin-inline: auto;
     position: relative;
     padding: 20px;
+    background-size: contain;
+    background-position: right;
+    background-repeat: no-repeat;
+    
   }
 
   #hero .doctor-container {
@@ -39,7 +43,7 @@
       background:
         linear-gradient(
           to bottom,
-          #EFFAFF 0,
+          #ffffff 0,
           #EFFAFF 67%,
           #ffffff 67%,
           #ffffff 100%
@@ -763,7 +767,7 @@ color: #004d77;
     font-size: 44px;
     line-height: 1.2;
 
-    font-weight: 500;
+    font-weight: 400;
 
     letter-spacing: -1px;
 }
@@ -1665,6 +1669,7 @@ line-height: 20px;
 
 .newfont{
   font-family: "Roboto", sans-serif;
+  
 
 }
 
