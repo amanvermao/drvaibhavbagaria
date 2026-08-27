@@ -198,3 +198,133 @@
       letter-spacing: 0.6px;
     }
   }
+
+  /* =========================================
+     CONDITIONS DROPDOWN
+  ========================================= */
+
+  .condition-menu-item {
+    position: relative;
+    display: flex;
+    align-items: flex-start;
+    gap: 8px;
+
+    width: 100%;
+    padding: 9px 10px;
+
+    border-radius: 7px;
+
+    font-size: 12px;
+    line-height: 1.45;
+    font-weight: 500;
+
+    color: #475569;
+
+    transition:
+      color 0.2s ease,
+      background-color 0.2s ease,
+      transform 0.2s ease;
+  }
+
+
+  .condition-menu-item::before {
+    content: "";
+    flex-shrink: 0;
+
+    width: 4px;
+    height: 4px;
+
+    margin-top: 6px;
+
+    border-radius: 50%;
+
+    background: #7db9d4;
+
+    transition:
+      background-color 0.2s ease,
+      transform 0.2s ease;
+  }
+
+
+  .condition-menu-item:hover {
+    color: #005783;
+    background-color: #f0f9ff;
+    transform: translateX(3px);
+  }
+
+
+  .condition-menu-item:hover::before {
+    background: #005783;
+    transform: scale(1.4);
+  }
+
+
+  .condition-menu-item span {
+    color: #64748b;
+  }
+
+
+  /* =========================================
+     DROPDOWN OPEN STATE
+  ========================================= */
+
+  .conditions-submenu.is-open {
+    opacity: 1;
+    visibility: visible;
+    transform: translate(-50%, 0);
+  }
+
+
+  #conditions-chevron.is-rotated {
+    transform: rotate(180deg);
+  }
+
+
+  /* =========================================
+     MOBILE
+  ========================================= */
+
+  @media (max-width: 767px) {
+
+    .conditions-dropdown {
+      width: 100%;
+    }
+
+
+    .conditions-dropdown
+    > button {
+      width: 100%;
+      justify-content: space-between;
+    }
+
+
+    .conditions-submenu {
+      position: relative;
+
+      left: 0;
+      top: 0;
+
+      width: 100%;
+
+      margin-top: 8px;
+
+      transform: none !important;
+
+      border-radius: 10px;
+
+      box-shadow:
+        0 10px 30px rgba(0, 55, 85, 0.08);
+    }
+
+
+    .conditions-submenu.is-open {
+      transform: none !important;
+    }
+
+
+    .condition-menu-item {
+      padding: 10px 8px;
+      font-size: 13px;
+    }
+
+  }

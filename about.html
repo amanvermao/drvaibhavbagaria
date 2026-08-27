@@ -69,7 +69,7 @@
 
 <body>
 
-    <!-- header -->
+   <!-- header -->
 
   <header
   id="header"
@@ -80,7 +80,7 @@
     <!-- ================= LOGO ================= -->
 
     <a
-      href="#"
+      href="./"
       class="header-logo shrink-0 flex items-center"
     >
 
@@ -109,14 +109,14 @@
     <nav class="header-nav">
 
       <a
-        href="#"
+        href="./"
         class="header-nav-link active"
       >
         Home
       </a>
 
       <a
-        href="about.html"
+        href="./about.html"
         class="header-nav-link"
       >
         About Us
@@ -129,6 +129,253 @@
       Procedures
         <i class="fa-solid fa-chevron-down"></i>
       </a>
+
+
+
+<!-- ================= CONDITIONS NAV ITEM ================= -->
+
+<div class="relative conditions-dropdown">
+
+  <!-- Conditions Button -->
+  <button
+    type="button"
+    class="header-nav-link services-link inline-flex items-center gap-2"
+    id="conditions-menu-button"
+    aria-expanded="false"
+    aria-haspopup="true"
+  >
+    Conditions
+    <i
+      class="fa-solid fa-chevron-down text-[10px] transition-transform duration-300"
+      id="conditions-chevron"
+    ></i>
+  </button>
+
+
+  <!-- ================= SUBMENU ================= -->
+
+  <div
+    id="conditions-submenu"
+    class="conditions-submenu absolute left-1/2 top-full z-50
+           mt-4 w-[min(92vw,900px)]
+           -translate-x-1/2
+           rounded-2xl border border-slate-200
+           bg-white p-5
+           opacity-0 invisible
+           translate-y-2
+           shadow-[0_20px_60px_rgba(0,55,85,0.15)]
+           transition-all duration-300"
+  >
+
+    <!-- Small top accent -->
+    <div
+      class="absolute left-1/2 top-0 h-[3px] w-20
+             -translate-x-1/2 rounded-b-full
+             bg-[#005783]"
+    ></div>
+
+
+    <!-- Header -->
+    <div class="mb-4 border-b border-slate-100 pb-4">
+
+      <h3
+        class="text-[16px] font-semibold text-[#005783]"
+      >
+        Conditions We Treat
+      </h3>
+
+      <p
+        class="mt-1 text-[12px] leading-relaxed text-slate-500"
+      >
+        Explore common orthopaedic conditions and joint problems.
+      </p>
+
+    </div>
+
+
+    <!-- ================= CONDITIONS GRID ================= -->
+
+    <div
+      class="grid grid-cols-1 gap-x-8
+             sm:grid-cols-2
+             lg:grid-cols-3"
+    >
+
+      <!-- COLUMN 1 -->
+      <div class="space-y-1">
+
+        <a
+          href="./conditions/acl-tear.html"
+          class="condition-menu-item"
+        >
+          ACL tear
+        </a>
+
+        <a
+          href="#ankle-sprain-instability"
+          class="condition-menu-item"
+        >
+          Ankle sprain and instability
+        </a>
+
+        <a
+          href="#avascular-necrosis-hip"
+          class="condition-menu-item"
+        >
+          Avascular necrosis of the hip
+        </a>
+
+        <a
+          href="#bow-legs-knock-knees"
+          class="condition-menu-item"
+        >
+          Bow legs and knock knees
+          <span>(malalignment)</span>
+        </a>
+
+        <a
+          href="#failed-hip-replacement"
+          class="condition-menu-item"
+        >
+          Failed hip replacement
+        </a>
+
+        <a
+          href="#failed-knee-replacement"
+          class="condition-menu-item"
+        >
+          Failed knee replacement
+        </a>
+
+      </div>
+
+
+      <!-- COLUMN 2 -->
+      <div class="space-y-1">
+
+        <a
+          href="#frozen-shoulder"
+          class="condition-menu-item"
+        >
+          Frozen shoulder
+        </a>
+
+        <a
+          href="#hip-impingement"
+          class="condition-menu-item"
+        >
+          Hip impingement (FAI)
+        </a>
+
+        <a
+          href="#hip-osteoarthritis"
+          class="condition-menu-item"
+        >
+          Hip osteoarthritis
+        </a>
+
+        <a
+          href="#knee-cartilage-damage"
+          class="condition-menu-item"
+        >
+          Knee cartilage damage
+        </a>
+
+        <a
+          href="#knee-osteoarthritis"
+          class="condition-menu-item"
+        >
+          Knee osteoarthritis
+        </a>
+
+        <a
+          href="#meniscus-tear"
+          class="condition-menu-item"
+        >
+          Meniscus tear
+        </a>
+
+      </div>
+
+
+      <!-- COLUMN 3 -->
+      <div class="space-y-1">
+
+        <a
+          href="#osteoporosis-fragility-fractures"
+          class="condition-menu-item"
+        >
+          Osteoporosis and fragility fractures
+        </a>
+
+        <a
+          href="#pelvic-acetabular-fracture"
+          class="condition-menu-item"
+        >
+          Pelvic and acetabular fracture
+        </a>
+
+        <a
+          href="#post-traumatic-arthritis"
+          class="condition-menu-item"
+        >
+          Post-traumatic arthritis
+        </a>
+
+        <a
+          href="#rheumatoid-arthritis"
+          class="condition-menu-item"
+        >
+          Rheumatoid arthritis of the joints
+        </a>
+
+        <a
+          href="#rotator-cuff-tear"
+          class="condition-menu-item"
+        >
+          Rotator cuff tear
+        </a>
+
+        <a
+          href="#shoulder-dislocation-instability"
+          class="condition-menu-item"
+        >
+          Shoulder dislocation and instability
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <!-- Bottom CTA -->
+    <div
+      class="mt-5 flex flex-col gap-3
+             border-t border-slate-100 pt-4
+             sm:flex-row sm:items-center sm:justify-between"
+    >
+
+      <p class="text-[11px] text-slate-500">
+        Can't find your condition?
+      </p>
+
+      <a
+        href="#contact"
+        class="inline-flex items-center gap-2
+               text-[12px] font-semibold
+               text-[#005783]
+               transition-colors duration-200
+               hover:text-[#003d5c]"
+      >
+        Talk to our specialist
+        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+      </a>
+
+    </div>
+
+  </div>
+
+</div>
 
       <a
         href="#blogs"
@@ -201,11 +448,11 @@
 
       <div class="doctor-content">
 
-        <h2
+        <h1
           class="text-[30px] md:text-[30px] font-bold leading-tight text-gray-900 mb-2"
         >
           Dr. Vaibhav Bagaria 
-        </h2>
+        </h1>
 
 
         <!-- Qualifications -->
@@ -214,28 +461,29 @@
           class="text-[16px] md:text-[16px] leading-[1.55] text-[#00539b] font-medium"
         >
 
-          <p>MS (Ortho) FASSI, FNUS, FNAMS.</p>
+          <p>MS (Ortho) FASSI, FNUS, FNAMS..</p>
 
           <p>
-            Minimal Invasive Spine surgery specialist.
+           Director & Head, Department of Orthopaedics
           </p>
 
           <p>
-            Specialist in Cervical Spine and scoliosis surgery.
+          Sir H. N. Reliance Foundation Hospital, Mumbai 
           </p>
 
           <p>
-            Specialised in Microscopic Spine Surgery.
+            Robotic Knee & Hip Replacement Specialist
+
           </p>
 
           <p>
-            Director &amp; Head of Spine Surgery-Center of Excellence
-            in Spine Surgery, Lilavati Hospital, Mumbai.
+            President, SICOT India 
           </p>
 
           <p>
-            Head - Mumbai Institute of Spine Surgery,
-            <span class="underline">Bombay Hospital</span>, Mumbai.
+            Specialist in Sports Injury,
+Arthroscopy and Complex Pelvic Reconstruction
+
           </p>
 
         </div>
@@ -253,60 +501,19 @@
         >
 
           <p class="mb-3">
-            Dr. Vishal Kundnani-gold medalist throughout his scholar years -
-            is fellowship trained in spine surgery from international
-            Center's of repute including UK, Singapore, Japan, Australia,
-            Malaysia and Korea. Dr. Vishal Kundnani has treated 20000 +
-            spine patients in last 15 years non surgically with (latest
-            non surgical treatment protocols for slip disc) and performed
-            5000+ successful Microsurgery for Slip Disc, minimal invasive
-            spine surgery for Sciatica and laser surgery for Lumbar problem
-            &amp; cervical spondylosis. He is Pioneer in complex spine
-            surgery and is best spine specialist for Scoliosis surgery.
-            He is trained in advanced robotic spine surgery &amp; Navigation
-            spine surgery. Dr. Vishal Kundnani is known for innovation in
-            Awake day care spine surgery and minimal invasive spine surgery.
-            He is internationally renowned for scoliosis &amp; Cervical
-            surgery and has more than 100 international scientific research
-            publications.
+            Dr. Vaibhav Bagaria is Director and Head of the Department of Orthopaedics at Sir H. N. Reliance Foundation Hospital, Mumbai, and one of the earliest surgeons in India to adopt robotic joint replacement. Over twenty-two years of practice he has treated patients across the full range of bone and joint conditions, with a particular focus on robotic knee and hip replacement, partial knee replacement, sports injury and arthroscopy, and complex pelvic and acetabular reconstruction.
           </p>
 
           <p class="mb-3">
-            He is national in-charge of fellowship training of young
-            surgeons in india and has trained more than 50 fellows who are
-            now working under his mentorship in various cities across
-            country. Dr Vishal kundnani is the best minimal invasive spine
-            surgeon in Mumbai and has trained many on this technique
-            across country.
+           He graduated MBBS from Government Medical College, Nagpur with three gold medals, and completed MS (Orthopaedics) at KEM Hospital, Mumbai. He went on to train at the Medical College of Wisconsin in Milwaukee, at the Endoklinik and König-Ludwig-Haus in Germany, and across Australia at Sir Charles Gairdner and Hollywood Private Hospital in Perth, Avenue Hospital in Melbourne, and Sportsmed SA in Adelaide. He is the first Indian surgeon to top the international S.I.C.O.T. Diploma examination, and today serves as President and National Delegate of SICOT India.
           </p>
 
           <p class="mb-3">
-            Dr Kundnani is avid sportsperson, fitness enthusiast and
-            philanthropist. He is the founder member of social work NGO -
-            Swasthya and Shiksha foundation - providing Subsidised spine
-            healthcare to tribal population in India and promotes education
-            of female child in rural India.
+          Alongside his clinical practice, Dr. Bagaria is an active researcher with more than 150 peer-reviewed publications and over 5,200 citations. His patented technique for converting medical scan data into 3D-printable models is now used widely in orthopaedic surgical planning, and his interest in regenerative medicine led him to establish India's first private tissue bank in Mumbai. His current research examines how far robotic assistance genuinely improves on surgical judgement in knee replacement  including in stiff knees, where conventional technique is most difficult.
           </p>
 
           <p class="mb-3">
-            Under the aegis of the Swasthya foundation dr kundnani has
-            conducted more than 20 mega super specialty camps in interior
-            tribal areas in central India - MP, Chattisgarh, UP and Bihar -
-            benefitting more than 50000+ underprivileged and needy patients
-            with non surgical care and has performed more than 1500 free
-            spine surgeries bringing smiles and making healthy spines.
-            He has been termed best spine doctor for slip disc in India.
-          </p>
-
-          <p class="mb-3">
-            He also heads the venture SPINE CLINIC functioning out of four
-            centers in Mumbai and 3 centers out of Mumbai- Bandra,
-            Churchgate, Goregaon, Borivali, Bhopal, Jaipur and Raipur
-            with stringent spine care protocols along with his team
-            providing premium spine care in these cities. Meticulous Safe
-            spine surgeries with most recent advanced scientific protocols
-            is the forte of Dr Vishal kundnani who is no doubt the best
-            spine surgeon in mumbai and has been awarded so multiple times.
+            He teaches for the National Board of Examinations, trains visiting international fellows in robotic technique, and is writing two books commissioned by Thieme and CBS on cartilage regeneration and comprehensive knee surgery. In 2008 he was chosen to represent the Indian medical community in the Beijing Olympic Torch Relay held in India
           </p>
 
         </div>
@@ -336,7 +543,7 @@
           <h3
             class="text-center text-[20px] md:text-[21px] font-bold text-[#00629b] py-3"
           >
-            Dr. Vishal Kundnani
+            Dr. Vaibhav Bagaria
           </h3>
 
 
@@ -345,7 +552,7 @@
             <p
               class="py-2.5 text-[12px] md:text-[13px] leading-[1.4] text-[#344054]"
             >
-              M.S (Ortho.), F.A.S.S.I, F.N.U.S, F.N.A.M.S.
+             MBBS, MS (Orthopaedics), FCPS, Dip. S.I.C.O.T..
             </p>
 
             <div class="border-t border-gray-200"></div>
@@ -353,8 +560,8 @@
             <p
               class="py-2.5 text-[12px] md:text-[13px] leading-[1.4] text-[#344054]"
             >
-              Spine Surgeon,
-              <span class="underline">Bombay Hospital</span>, Mumbai.
+              Director & Head, Department of Orthopaedics —
+              <span class="underline">Sir H. N. Reliance Foundation Hospital</span>, Mumbai
             </p>
 
             <div class="border-t border-gray-200"></div>
@@ -362,7 +569,7 @@
             <p
               class="py-2.5 text-[12px] md:text-[13px] leading-[1.4] text-[#344054]"
             >
-              Hon. Asso Prof - Dept Of Orthopedics &amp; Spine Surgery.
+              President & National Delegate  SICOT India
             </p>
 
             <div class="border-t border-gray-200"></div>
@@ -370,8 +577,7 @@
             <p
               class="py-2.5 text-[12px] md:text-[13px] leading-[1.4] text-[#344054]"
             >
-              Grant Medical College &amp; Sir JJ Hosp,
-              University of Mumbai.
+              Specialist in Robotic Knee & Hip Replacement.
             </p>
 
             <div class="border-t border-gray-200"></div>
@@ -379,8 +585,12 @@
             <p
               class="pt-2.5 text-[12px] md:text-[13px] leading-[1.4] text-[#344054]"
             >
-              Specialist in Minimal Invasive &amp;
-              Microscopic Spine Surgery.
+              Specialist in Sports Injury, Arthroscopy & Complex Trauma
+            </p>
+             <p
+              class="pt-2.5 text-[12px] md:text-[13px] leading-[1.4] text-[#344054]"
+            >
+              Teacher  National Board of Examinations
             </p>
 
           </div>
@@ -425,22 +635,23 @@
     </div>
 
 
-    <!-- Cards -->
+    <!-- Qualification Cards -->
     <div
-      class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3
-             gap-6 lg:gap-[34px]"
+      class="grid grid-cols-1 md:grid-cols-2
+             lg:grid-cols-4 gap-6 lg:gap-[24px]"
     >
 
-      <!-- Card 1 -->
+      <!-- ================= CARD 1 ================= -->
       <div
-        class="flex min-h-[268px] flex-col items-center
+        class="flex min-h-[300px] flex-col items-center
                rounded-[18px] border border-[#c8dceb]
-               bg-white px-6 py-7 text-center
+               bg-white px-5 py-7 text-center
                transition-all duration-300
                hover:-translate-y-1
                hover:shadow-[0_12px_28px_rgba(15,86,130,0.08)]"
       >
 
+        <!-- Icon -->
         <div
           class="flex h-[68px] w-[68px] shrink-0 items-center
                  justify-center rounded-full bg-[#075f91]
@@ -449,40 +660,44 @@
           <i class="fa-solid fa-graduation-cap"></i>
         </div>
 
+        <!-- Degree -->
         <h3
-          class="mt-6 mb-2 text-[24px] font-bold
+          class="mt-6 mb-3 text-[22px] font-bold
                  leading-tight text-[#303030]"
         >
           M.B.B.S.
         </h3>
 
+        <!-- Institution -->
         <p
-          class="text-[18px] leading-[1.45] text-[#303030]"
+          class="text-[17px] leading-[1.45] text-[#303030]"
         >
-          Barkatullah University, Bhopal.
+          Government Medical College, Nagpur
         </p>
 
+        <!-- Distinction -->
         <span
           class="mt-5 rounded-full bg-[#fff3cf]
                  px-4 py-[7px] text-[14px]
-                 font-bold leading-none text-[#986d00]"
+                 font-bold leading-[1.3] text-[#986d00]"
         >
-          Gold Medalist
+          Three Gold Medals
         </span>
 
       </div>
 
 
-      <!-- Card 2 -->
+      <!-- ================= CARD 2 ================= -->
       <div
-        class="flex min-h-[268px] flex-col items-center
+        class="flex min-h-[300px] flex-col items-center
                rounded-[18px] border border-[#c8dceb]
-               bg-white px-6 py-7 text-center
+               bg-white px-5 py-7 text-center
                transition-all duration-300
                hover:-translate-y-1
                hover:shadow-[0_12px_28px_rgba(15,86,130,0.08)]"
       >
 
+        <!-- Icon -->
         <div
           class="flex h-[68px] w-[68px] shrink-0 items-center
                  justify-center rounded-full bg-[#075f91]
@@ -491,164 +706,122 @@
           <i class="fa-solid fa-graduation-cap"></i>
         </div>
 
+        <!-- Degree -->
         <h3
-          class="mt-6 mb-2 text-[24px] font-bold
+          class="mt-6 mb-3 text-[22px] font-bold
                  leading-tight text-[#303030]"
         >
-          M.S.(Orthopedics)
+          M.S. (Orthopaedics)
         </h3>
 
+        <!-- Institution -->
         <p
-          class="text-[18px] leading-[1.45] text-[#303030]"
+          class="text-[17px] leading-[1.45] text-[#303030]"
         >
-          Rajasthan University of Health Science, Jaipur.
+          KEM Hospital, Mumbai
         </p>
 
+        <!-- Distinction -->
         <span
-          class="mt-5 rounded-full bg-[#fff3cf]
+          class="mt-5 rounded-full bg-[#f3f4f6]
                  px-4 py-[7px] text-[14px]
-                 font-bold leading-none text-[#986d00]"
+                 font-bold leading-none text-[#555]"
         >
-          Gold Medalist
+          —
         </span>
 
       </div>
 
 
-      <!-- Card 3 -->
+      <!-- ================= CARD 3 ================= -->
       <div
-        class="flex min-h-[268px] flex-col items-center
+        class="flex min-h-[300px] flex-col items-center
                rounded-[18px] border border-[#c8dceb]
-               bg-white px-6 py-7 text-center
+               bg-white px-5 py-7 text-center
                transition-all duration-300
                hover:-translate-y-1
                hover:shadow-[0_12px_28px_rgba(15,86,130,0.08)]"
       >
 
+        <!-- Icon -->
         <div
           class="flex h-[68px] w-[68px] shrink-0 items-center
                  justify-center rounded-full bg-[#075f91]
                  text-[28px] text-white"
         >
-          <i class="fa-solid fa-graduation-cap"></i>
+          <i class="fa-solid fa-award"></i>
         </div>
 
+        <!-- Degree -->
         <h3
-          class="mt-6 mb-2 text-[24px] font-bold
+          class="mt-6 mb-3 text-[22px] font-bold
                  leading-tight text-[#303030]"
         >
-          F.A.S.S.I
+          F.C.P.S.
         </h3>
 
+        <!-- Institution -->
         <p
-          class="text-[18px] leading-[1.45] text-[#303030]"
+          class="text-[17px] leading-[1.45] text-[#303030]"
         >
-          Fellow Assc.Of Spine Surgeons Of India.
+          College of Physicians &amp; Surgeons of Mumbai
         </p>
+
+        <!-- Distinction -->
+        <span
+          class="mt-5 rounded-full bg-[#f3f4f6]
+                 px-4 py-[7px] text-[14px]
+                 font-bold leading-[1.3] text-[#555]"
+        >
+          —
+        </span>
 
       </div>
 
 
-      <!-- Card 4 -->
+      <!-- ================= CARD 4 ================= -->
       <div
-        class="flex min-h-[268px] flex-col items-center
+        class="flex min-h-[300px] flex-col items-center
                rounded-[18px] border border-[#c8dceb]
-               bg-white px-6 py-7 text-center
+               bg-white px-5 py-7 text-center
                transition-all duration-300
                hover:-translate-y-1
                hover:shadow-[0_12px_28px_rgba(15,86,130,0.08)]"
       >
 
+        <!-- Icon -->
         <div
           class="flex h-[68px] w-[68px] shrink-0 items-center
                  justify-center rounded-full bg-[#075f91]
                  text-[28px] text-white"
         >
-          <i class="fa-solid fa-graduation-cap"></i>
+          <i class="fa-solid fa-trophy"></i>
         </div>
 
+        <!-- Degree -->
         <h3
-          class="mt-6 mb-2 text-[24px] font-bold
+          class="mt-6 mb-3 text-[22px] font-bold
                  leading-tight text-[#303030]"
         >
-          F.N.U.S
+          Dip. S.I.C.O.T.
         </h3>
 
+        <!-- Institution -->
         <p
-          class="text-[18px] leading-[1.45] text-[#303030]"
+          class="text-[17px] leading-[1.45] text-[#303030]"
         >
-          Fellow of National University of Singapore.
+          Société Internationale de Chirurgie
+          Orthopédique et de Traumatologie
         </p>
 
-      </div>
-
-
-      <!-- Card 5 -->
-      <div
-        class="flex min-h-[268px] flex-col items-center
-               rounded-[18px] border border-[#c8dceb]
-               bg-white px-6 py-7 text-center
-               transition-all duration-300
-               hover:-translate-y-1
-               hover:shadow-[0_12px_28px_rgba(15,86,130,0.08)]"
-      >
-
-        <div
-          class="flex h-[68px] w-[68px] shrink-0 items-center
-                 justify-center rounded-full bg-[#075f91]
-                 text-[28px] text-white"
+        <!-- Distinction -->
+        <span
+          class="mt-5 rounded-full bg-[#fff3cf]
+                 px-4 py-[7px] text-[14px]
+                 font-bold leading-[1.35] text-[#986d00]"
         >
-          <i class="fa-solid fa-graduation-cap"></i>
-        </div>
-
-        <h3
-          class="mt-6 mb-2 text-[24px] font-bold
-                 leading-tight text-[#303030]"
-        >
-          F.M.S.S
-        </h3>
-
-        <p
-          class="text-[18px] leading-[1.45] text-[#303030]"
-        >
-          Fellow Minimal Invasive Spine Surgery,
-          Seoul, Korea.
-        </p>
-
-      </div>
-
-
-      <!-- Card 6 -->
-      <div
-        class="flex min-h-[268px] flex-col items-center
-               rounded-[18px] border border-[#c8dceb]
-               bg-white px-6 py-7 text-center
-               transition-all duration-300
-               hover:-translate-y-1
-               hover:shadow-[0_12px_28px_rgba(15,86,130,0.08)]"
-      >
-
-        <div
-          class="flex h-[68px] w-[68px] shrink-0 items-center
-                 justify-center rounded-full bg-[#075f91]
-                 text-[28px] text-white"
-        >
-          <i class="fa-solid fa-graduation-cap"></i>
-        </div>
-
-        <h3
-          class="mt-6 mb-2 text-[24px] font-bold
-                 leading-tight text-[#303030]"
-        >
-          F.N.A.M.S.
-        </h3>
-
-        <p
-          class="text-[18px] leading-[1.45] text-[#303030]"
-        >
-          Fellow national academy of medical sciences,
-          University of Utah, USA.
-        </p>
+          First Indian to top the international examination
+        </span>
 
       </div>
 
@@ -702,13 +875,12 @@
       <!-- ================= AWARD 1 ================= -->
 
       <div
-        class="flex min-h-[82px]
-               items-center
+        class="flex items-start
                border-l-[4px]
                border-[#005783]
                bg-[#eef9ff]
                px-5
-               py-4
+               py-5
                md:px-6
                md:py-5
                transition-all duration-300
@@ -718,7 +890,7 @@
         <!-- Icon -->
 
         <div
-          class="mr-5
+          class="mr-5 mt-1
                  flex h-[46px] w-[46px]
                  shrink-0
                  items-center
@@ -731,19 +903,34 @@
         </div>
 
 
-        <!-- Text -->
+        <!-- Content -->
 
-        <p
-          class="m-0
-                 text-[15px]
-                 md:text-[16px]
-                 lg:text-[17px]
-                 font-semibold
-                 leading-[1.4]
-                 text-[#252a2e]"
-        >
-          Triple Gold Medalist
-        </p>
+        <div>
+
+          <h3
+            class="m-0
+                   text-[16px]
+                   md:text-[17px]
+                   lg:text-[18px]
+                   font-bold
+                   leading-[1.4]
+                   text-[#252a2e]"
+          >
+            Triple Gold Medalist
+          </h3>
+
+          <p
+            class="mt-1.5 mb-0
+                   text-[14px]
+                   md:text-[15px]
+                   lg:text-[16px]
+                   leading-[1.5]
+                   text-[#53616a]"
+          >
+            M.B.B.S., Government Medical College, Nagpur
+          </p>
+
+        </div>
 
       </div>
 
@@ -751,13 +938,12 @@
       <!-- ================= AWARD 2 ================= -->
 
       <div
-        class="flex min-h-[82px]
-               items-center
+        class="flex items-start
                border-l-[4px]
                border-[#005783]
                bg-[#eef9ff]
                px-5
-               py-4
+               py-5
                md:px-6
                md:py-5
                transition-all duration-300
@@ -767,7 +953,7 @@
         <!-- Icon -->
 
         <div
-          class="mr-5
+          class="mr-5 mt-1
                  flex h-[46px] w-[46px]
                  shrink-0
                  items-center
@@ -776,23 +962,38 @@
                  bg-[#005783]
                  text-white"
         >
-          <i class="fa-solid fa-trophy text-[17px]"></i>
+          <i class="fa-solid fa-award text-[17px]"></i>
         </div>
 
 
-        <!-- Text -->
+        <!-- Content -->
 
-        <p
-          class="m-0
-                 text-[15px]
-                 md:text-[16px]
-                 lg:text-[17px]
-                 font-semibold
-                 leading-[1.4]
-                 text-[#252a2e]"
-        >
-          First Indian to Top S.I.C.O.T. Diploma
-        </p>
+        <div>
+
+          <h3
+            class="m-0
+                   text-[16px]
+                   md:text-[17px]
+                   lg:text-[18px]
+                   font-bold
+                   leading-[1.4]
+                   text-[#252a2e]"
+          >
+            First Indian to Top the S.I.C.O.T. Diploma
+          </h3>
+
+          <p
+            class="mt-1.5 mb-0
+                   text-[14px]
+                   md:text-[15px]
+                   lg:text-[16px]
+                   leading-[1.5]
+                   text-[#53616a]"
+          >
+            International examination
+          </p>
+
+        </div>
 
       </div>
 
@@ -800,13 +1001,12 @@
       <!-- ================= AWARD 3 ================= -->
 
       <div
-        class="flex min-h-[82px]
-               items-center
+        class="flex items-start
                border-l-[4px]
                border-[#005783]
                bg-[#eef9ff]
                px-5
-               py-4
+               py-5
                md:px-6
                md:py-5
                transition-all duration-300
@@ -816,7 +1016,7 @@
         <!-- Icon -->
 
         <div
-          class="mr-5
+          class="mr-5 mt-1
                  flex h-[46px] w-[46px]
                  shrink-0
                  items-center
@@ -825,23 +1025,165 @@
                  bg-[#005783]
                  text-white"
         >
-          <i class="fa-solid fa-trophy text-[17px]"></i>
+          <i class="fa-solid fa-fire-flame-curved text-[17px]"></i>
         </div>
 
 
-        <!-- Text -->
+        <!-- Content -->
 
-        <p
-          class="m-0
-                 text-[15px]
-                 md:text-[16px]
-                 lg:text-[17px]
-                 font-semibold
-                 leading-[1.4]
-                 text-[#252a2e]"
+        <div>
+
+          <h3
+            class="m-0
+                   text-[16px]
+                   md:text-[17px]
+                   lg:text-[18px]
+                   font-bold
+                   leading-[1.4]
+                   text-[#252a2e]"
+          >
+            Beijing Olympic Torch Relay, 2008
+          </h3>
+
+          <p
+            class="mt-1.5 mb-0
+                   text-[14px]
+                   md:text-[15px]
+                   lg:text-[16px]
+                   leading-[1.5]
+                   text-[#53616a]"
+          >
+            Selected to represent the Indian medical community in the relay
+            held in India
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- ================= AWARD 4 ================= -->
+
+      <div
+        class="flex items-start
+               border-l-[4px]
+               border-[#005783]
+               bg-[#eef9ff]
+               px-5
+               py-5
+               md:px-6
+               md:py-5
+               transition-all duration-300
+               hover:translate-x-1"
+      >
+
+        <!-- Icon -->
+
+        <div
+          class="mr-5 mt-1
+                 flex h-[46px] w-[46px]
+                 shrink-0
+                 items-center
+                 justify-center
+                 rounded-full
+                 bg-[#005783]
+                 text-white"
         >
-          Beijing Olympic Torch Relay, 2008
-        </p>
+          <i class="fa-solid fa-medal text-[17px]"></i>
+        </div>
+
+
+        <!-- Content -->
+
+        <div>
+
+          <h3
+            class="m-0
+                   text-[16px]
+                   md:text-[17px]
+                   lg:text-[18px]
+                   font-bold
+                   leading-[1.4]
+                   text-[#252a2e]"
+          >
+            International Awards, Medical College of Wisconsin
+          </h3>
+
+          <p
+            class="mt-1.5 mb-0
+                   text-[14px]
+                   md:text-[15px]
+                   lg:text-[16px]
+                   leading-[1.5]
+                   text-[#53616a]"
+          >
+            Two international awards during his year in Milwaukee
+          </p>
+
+        </div>
+
+      </div>
+
+
+      <!-- ================= AWARD 5 ================= -->
+
+      <div
+        class="flex items-start
+               border-l-[4px]
+               border-[#005783]
+               bg-[#eef9ff]
+               px-5
+               py-5
+               md:px-6
+               md:py-5
+               transition-all duration-300
+               hover:translate-x-1"
+      >
+
+        <!-- Icon -->
+
+        <div
+          class="mr-5 mt-1
+                 flex h-[46px] w-[46px]
+                 shrink-0
+                 items-center
+                 justify-center
+                 rounded-full
+                 bg-[#005783]
+                 text-white"
+        >
+          <i class="fa-solid fa-microphone text-[17px]"></i>
+        </div>
+
+
+        <!-- Content -->
+
+        <div>
+
+          <h3
+            class="m-0
+                   text-[16px]
+                   md:text-[17px]
+                   lg:text-[18px]
+                   font-bold
+                   leading-[1.4]
+                   text-[#252a2e]"
+          >
+            Invited Plenary Speaker
+          </h3>
+
+          <p
+            class="mt-1.5 mb-0
+                   text-[14px]
+                   md:text-[15px]
+                   lg:text-[16px]
+                   leading-[1.5]
+                   text-[#53616a]"
+          >
+            SICOT Congress
+          </p>
+
+        </div>
 
       </div>
 
@@ -2105,7 +2447,7 @@
         </div>
         <div class="space-y-8 text-center lg:text-left px-4 md:px-0">
           <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-neutral-200 bg-white shadow-sm">
-            <i class="fa-solid fa-hospital text-neutral-700"></i>
+            <i class="fa-solid fa-hospital text-[#004d77]"></i>
             <span class="text-xs tracking-wider uppercase text-neutral-700">World-Class Infrastructure</span>
           </div>
           <h2 class="text-[42px] text-neutral-900 leading-tight">
@@ -2116,28 +2458,28 @@
           </p>
           <div class="grid grid-cols-2 gap-6 mb-8">
             <div class="bg-white border border-neutral-200 rounded-2xl p-6">
-              <div class="w-12 h-12 bg-neutral-900 rounded-xl flex items-center justify-center mb-4">
+              <div class="w-12 h-12 bg-[#004d77] rounded-xl flex items-center justify-center mb-4">
                 <i class="fa-solid fa-shield-halved text-white"></i>
               </div>
               <h4 class="text-neutral-900 font-bold mb-1">NABH & JCI</h4>
               <p class="text-xs text-neutral-500">Certified Standards</p>
             </div>
             <div class="bg-white border border-neutral-200 rounded-2xl p-6">
-              <div class="w-12 h-12 bg-neutral-900 rounded-xl flex items-center justify-center mb-4">
+              <div class="w-12 h-12 bg-[#004d77] rounded-xl flex items-center justify-center mb-4">
                 <i class="fa-solid fa-robot text-white"></i>
               </div>
               <h4 class="text-neutral-900 font-bold mb-1">Cori Robotics</h4>
               <p class="text-xs text-neutral-500">Advanced Precision</p>
             </div>
             <div class="bg-white border border-neutral-200 rounded-2xl p-6">
-              <div class="w-12 h-12 bg-neutral-900 rounded-xl flex items-center justify-center mb-4">
+              <div class="w-12 h-12 bg-[#004d77] rounded-xl flex items-center justify-center mb-4">
                 <i class="fa-solid fa-wind text-white"></i>
               </div>
               <h4 class="text-neutral-900 font-bold mb-1">Class 100 OT</h4>
               <p class="text-xs text-neutral-500">Zero infection laminar flow</p>
             </div>
             <div class="bg-white border border-neutral-200 rounded-2xl p-6">
-              <div class="w-12 h-12 bg-neutral-900 rounded-xl flex items-center justify-center mb-4">
+              <div class="w-12 h-12 bg-[#004d77] rounded-xl flex items-center justify-center mb-4">
                 <i class="fa-solid fa-bed-pulse text-white"></i>
               </div>
               <h4 class="text-neutral-900 font-bold mb-1">24/7 ICU Care</h4>

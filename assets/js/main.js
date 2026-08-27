@@ -596,3 +596,141 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+
+// header conditions
+
+  document.addEventListener("DOMContentLoaded", function () {
+
+    const button = document.getElementById(
+      "conditions-menu-button"
+    );
+
+    const submenu = document.getElementById(
+      "conditions-submenu"
+    );
+
+    const chevron = document.getElementById(
+      "conditions-chevron"
+    );
+
+
+    if (!button || !submenu || !chevron) return;
+
+
+    /* =========================================
+       TOGGLE MENU
+    ========================================= */
+
+    button.addEventListener("click", function (event) {
+
+      event.stopPropagation();
+
+      const isOpen =
+        submenu.classList.contains("is-open");
+
+
+      if (isOpen) {
+
+        closeConditionsMenu();
+
+      } else {
+
+        openConditionsMenu();
+
+      }
+
+    });
+
+
+    /* =========================================
+       OPEN
+    ========================================= */
+
+    function openConditionsMenu() {
+
+      submenu.classList.add("is-open");
+
+      chevron.classList.add("is-rotated");
+
+      button.setAttribute(
+        "aria-expanded",
+        "true"
+      );
+
+    }
+
+
+    /* =========================================
+       CLOSE
+    ========================================= */
+
+    function closeConditionsMenu() {
+
+      submenu.classList.remove("is-open");
+
+      chevron.classList.remove("is-rotated");
+
+      button.setAttribute(
+        "aria-expanded",
+        "false"
+      );
+
+    }
+
+
+    /* =========================================
+       CLICK OUTSIDE
+    ========================================= */
+
+    document.addEventListener("click", function (event) {
+
+      if (
+        !event.target.closest(".conditions-dropdown")
+      ) {
+
+        closeConditionsMenu();
+
+      }
+
+    });
+
+
+    /* =========================================
+       ESCAPE KEY
+    ========================================= */
+
+    document.addEventListener("keydown", function (event) {
+
+      if (event.key === "Escape") {
+
+        closeConditionsMenu();
+
+        button.focus();
+
+      }
+
+    });
+
+
+    /* =========================================
+       CLOSE AFTER CLICKING CONDITION
+    ========================================= */
+
+    const conditionLinks =
+      document.querySelectorAll(
+        ".condition-menu-item"
+      );
+
+
+    conditionLinks.forEach(function (link) {
+
+      link.addEventListener("click", function () {
+
+        closeConditionsMenu();
+
+      });
+
+    });
+
+  });
