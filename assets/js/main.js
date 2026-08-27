@@ -734,3 +734,40 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
   });
+
+
+  const logoSwiper = new Swiper(".logoSwiper", {
+  slidesPerView: 2,
+  spaceBetween: 20,
+
+  loop: true,
+
+  autoplay: {
+    delay: 2200,
+    disableOnInteraction: false,
+  },
+
+  speed: 700,
+
+  breakpoints: {
+    640: {
+      slidesPerView: 3,
+      spaceBetween: 24,
+    },
+
+    768: {
+      slidesPerView: 4,
+      spaceBetween: 28,
+    },
+
+    1024: {
+      slidesPerView: 5,
+      spaceBetween: 32,
+    },
+
+    1280: {
+      slidesPerView: 6,
+      spaceBetween: 36,
+    },
+  },
+});
