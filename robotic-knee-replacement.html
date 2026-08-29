@@ -1,0 +1,3089 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr Vaibhav Bagaria</title>
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" type="image/png" href="assets/images/newlogov1.png">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+/>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+<!-- ScrollTrigger -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+
+<!-- Swiper CSS -->
+<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      
+      
+      <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        raleway: ['"Raleway"', 'sans-serif'],
+                        inter: ['"Inter"', 'sans-serif']
+                    },
+                    colors: {
+                        brand: {
+                            blue: '#0060ae',
+                            dark: '#000000',
+                            bg: '#f8f8f8',
+                            red: '#ee4442',
+                            gray: '#7a7a7a'
+                        }
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+<body>
+    <!-- header -->
+
+  <header
+  id="header"
+  class="absolute top-0 left-0 w-full z-50"
+>
+  <div class="doctor-container header-inner">
+
+    <!-- ================= LOGO ================= -->
+
+    <a
+      href="./"
+      class="header-logo shrink-0 flex items-center"
+    >
+
+      <img
+        src="assets/images/newlogov1.png"
+        alt="Dr Vaibhav Bagaria"
+        class="header-logo-icon object-contain shrink-0"
+      />
+
+      <div class="header-logo-text flex flex-col">
+
+        <h1 class="header-logo-name text-[17px]">
+          Dr Vaibhav Bagaria
+        </h1>
+
+        <span class="header-logo-qualification">
+          MBBS, MS (Orthopaedics), FCPS, DNB, SICOT
+        </span>
+
+      </div>
+
+    </a>
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <nav class="header-nav">
+
+      <a
+        href="./"
+        class="header-nav-link active"
+      >
+        Home
+      </a>
+
+      <a
+        href="./about.html"
+        class="header-nav-link"
+      >
+        About Us
+      </a>
+<!-- ================= PROCEDURES DROPDOWN ================= -->
+
+<div class="relative group">
+
+  <a
+    href="./robotic-knee-replacement.html"
+    class="header-nav-link services-link inline-flex items-center gap-2"
+  >
+    Procedures
+    <i class="fa-solid fa-chevron-down text-[11px]"></i>
+  </a>
+
+  <!-- Dropdown Menu -->
+  <div
+    class="absolute
+           left-0
+           top-full
+           z-50
+           mt-3
+           w-[300px]
+           overflow-hidden
+           rounded-[12px]
+           border
+           border-[#dce9ef]
+           bg-white
+           opacity-0
+           invisible
+           translate-y-2
+           shadow-lg
+           transition-all
+           duration-300
+           group-hover:visible
+           group-hover:opacity-100
+           group-hover:translate-y-0"
+  >
+
+    <a
+      href="./robotic-knee-replacement.html"
+      class="block
+             px-5
+             py-3
+             text-[15px]
+             font-medium
+             text-[#252a2e]
+             transition-colors
+             duration-200
+             hover:bg-[#effaff]
+             hover:text-[#0084d1]"
+    >
+      Robotic Knee Replacement
+    </a>
+
+    <a
+      href="./robotic-hip-replacement.html"
+      class="block
+             px-5
+             py-3
+             text-[15px]
+             font-medium
+             text-[#252a2e]
+             transition-colors
+             duration-200
+             hover:bg-[#effaff]
+             hover:text-[#0084d1]"
+    >
+      Robotic Hip Replacement
+    </a>
+
+    <a
+      href="./robotic-partial-knee-replacement.html"
+      class="block
+             px-5
+             py-3
+             text-[15px]
+             font-medium
+             text-[#252a2e]
+             transition-colors
+             duration-200
+             hover:bg-[#effaff]
+             hover:text-[#0084d1]"
+    >
+      Partial Knee Replacement
+    </a>
+
+    <a
+      href="./sports-injury-and-arthroscopy.html"
+      class="block
+             px-5
+             py-3
+             text-[15px]
+             font-medium
+             text-[#252a2e]
+             transition-colors
+             duration-200
+             hover:bg-[#effaff]
+             hover:text-[#0084d1]"
+    >
+      Sports Injury Treatment
+    </a>
+
+    <a
+      href="./hip-fracture.html"
+      class="block
+             px-5
+             py-3
+             text-[15px]
+             font-medium
+             text-[#252a2e]
+             transition-colors
+             duration-200
+             hover:bg-[#effaff]
+             hover:text-[#0084d1]"
+    >
+      Hip Fracture Treatment in Mumbai
+    </a>
+
+    <a
+      href="./revision-joint-replacement.html"
+      class="block
+             px-5
+             py-3
+             text-[15px]
+             font-medium
+             text-[#252a2e]
+             transition-colors
+             duration-200
+             hover:bg-[#effaff]
+             hover:text-[#0084d1]"
+    >
+      Revision Joint Replacement in Mumbai
+    </a>
+
+  </div>
+
+</div>
+
+<!-- ================= CONDITIONS NAV ITEM ================= -->
+
+<div class="relative conditions-dropdown">
+
+  <!-- Conditions Button -->
+  <button
+    type="button"
+    class="header-nav-link services-link inline-flex items-center gap-2"
+    id="conditions-menu-button"
+    aria-expanded="false"
+    aria-haspopup="true"
+  >
+    Conditions
+    <i
+      class="fa-solid fa-chevron-down text-[10px] transition-transform duration-300"
+      id="conditions-chevron"
+    ></i>
+  </button>
+
+
+  <!-- ================= SUBMENU ================= -->
+
+  <div
+    id="conditions-submenu"
+    class="conditions-submenu absolute left-1/2 top-full z-50
+           mt-4 w-[min(92vw,900px)]
+           -translate-x-1/2
+           rounded-2xl border border-slate-200
+           bg-white p-5
+           opacity-0 invisible
+           translate-y-2
+           shadow-[0_20px_60px_rgba(0,55,85,0.15)]
+           transition-all duration-300"
+  >
+
+    <!-- Small top accent -->
+    <div
+      class="absolute left-1/2 top-0 h-[3px] w-20
+             -translate-x-1/2 rounded-b-full
+             bg-[#005783]"
+    ></div>
+
+
+    <!-- Header -->
+    <div class="mb-4 border-b border-slate-100 pb-4">
+
+      <h3
+        class="text-[16px] font-semibold text-[#005783]"
+      >
+        Conditions We Treat
+      </h3>
+
+      <p
+        class="mt-1 text-[12px] leading-relaxed text-slate-500"
+      >
+        Explore common orthopaedic conditions and joint problems.
+      </p>
+
+    </div>
+
+
+    <!-- ================= CONDITIONS GRID ================= -->
+
+    <div
+      class="grid grid-cols-1 gap-x-8
+             sm:grid-cols-2
+             lg:grid-cols-3"
+    >
+
+      <!-- COLUMN 1 -->
+      <div class="space-y-1">
+
+        <a
+          href="./conditions/acl-tear-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          ACL tear
+        </a>
+
+        <a
+          href="./conditions/ankle-ligament-injury-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Ankle sprain and instability
+        </a>
+
+        <a
+          href="./conditions/avascular-necrosis-hip-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Avascular necrosis of the hip
+        </a>
+
+        <a
+          href="./conditions/bow-legs-knock-knees-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Bow legs and knock knees
+          <span>(malalignment)</span>
+        </a>
+
+        <a
+          href="./conditions/failed-hip-replacement-mumbai.html"
+          class="condition-menu-item"
+        >
+          Failed hip replacement
+        </a>
+
+        <a
+          href="./conditions/failed-knee-replacement-mumbai.html"
+          class="condition-menu-item"
+        >
+          Failed knee replacement
+        </a>
+
+      </div>
+
+
+      <!-- COLUMN 2 -->
+      <div class="space-y-1">
+
+        <a
+          href="./conditions/frozen-shoulder-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Frozen shoulder
+        </a>
+
+        <a
+          href="./conditions/hip-impingement-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Hip impingement (FAI)
+        </a>
+
+        <a
+          href="./conditions/hip-arthritis-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Hip osteoarthritis
+        </a>
+
+        <a
+          href="./conditions/knee-cartilage-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Knee cartilage damage
+        </a>
+
+        <a
+          href="./conditions/knee-arthritis-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Knee osteoarthritis
+        </a>
+
+        <a
+          href="./conditions/meniscus-tear-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Meniscus tear
+        </a>
+
+      </div>
+
+
+      <!-- COLUMN 3 -->
+      <div class="space-y-1">
+
+        <a
+          href="./conditions/osteoporosis-fracture-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Osteoporosis and fragility fractures
+        </a>
+
+        <a
+          href="./conditions/pelvic-fracture-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Pelvic and acetabular fracture
+        </a>
+
+        <a
+          href="./conditions/post-traumatic-arthritis-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Post-traumatic arthritis
+        </a>
+
+        <a
+          href="./conditions/rheumatoid-arthritis-joint-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Rheumatoid arthritis of the joints
+        </a>
+
+        <a
+          href="./conditions/rotator-cuff-tear-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Rotator cuff tear
+        </a>
+
+        <a
+          href="./conditions/shoulder-dislocation-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Shoulder dislocation and instability
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <!-- Bottom CTA -->
+    <div
+      class="mt-5 flex flex-col gap-3
+             border-t border-slate-100 pt-4
+             sm:flex-row sm:items-center sm:justify-between"
+    >
+
+      <p class="text-[11px] text-slate-500">
+        Can't find your condition?
+      </p>
+
+      <a
+        href="#contact"
+        class="inline-flex items-center gap-2
+               text-[12px] font-semibold
+               text-[#005783]
+               transition-colors duration-200
+               hover:text-[#003d5c]"
+      >
+        Talk to our specialist
+        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+      </a>
+
+    </div>
+
+  </div>
+
+</div>
+
+      <a
+        href="#blogs"
+        class="header-nav-link"
+      >
+        Insights
+      </a>
+
+      <a
+        href="#contact"
+        class="header-nav-link"
+      >
+        Contact Us
+      </a>
+
+    </nav>
+
+  </div>
+</header>
+
+
+<section
+  id="hero-service"
+  class="relative
+         w-full
+         min-h-[900px]
+         md:min-h-[900px]
+         flex
+         flex-col
+         items-center
+         justify-center
+         bg-white
+         overflow-visible
+         pt-24
+         pb-32
+         md:pt-32
+         md:pb-40
+         mb-48
+         md:mb-24"
+>
+
+  <!-- =====================================================
+       HERO CONTENT
+  ====================================================== -->
+
+  <div
+    class="container
+           relative
+           z-10
+           mx-auto
+           px-4
+           md:px-6
+           flex
+           flex-col
+           items-center
+           text-center
+           space-y-6
+           md:space-y-8
+           max-w-5xl"
+  >
+
+    <!-- Badge -->
+
+    <div
+      class="inline-flex
+             items-center
+             gap-2
+             px-4
+             py-1
+             rounded-full
+             bg-white
+             border
+             border-neutral-200
+             shadow-sm"
+    >
+
+      <div
+        class="w-2
+               h-2
+               rounded-full
+               bg-neutral-900
+               animate-pulse"
+      ></div>
+
+      <span
+        class="text-[10px]
+               uppercase
+               tracking-[3px]
+               text-neutral-600
+               font-medium"
+      >
+        Advanced Orthopedic Care
+      </span>
+
+    </div>
+
+
+    <!-- Heading -->
+
+    <h1
+      class="text-[40px]
+             md:text-[80px]
+             leading-[1.1]
+             tracking-tight
+             text-[#0060AE]
+             font-medium"
+    >
+
+      Robotic Knee Replacement 
+      <br>
+
+      <span class="text-reveal">
+
+        <span class="text-reveal__word">
+          in Mumbai 
+        </span>
+
+        <span class="text-reveal__bg"></span>
+
+      </span>
+
+    </h1>
+
+
+    <!-- Description -->
+
+    <p
+      class="max-w-[800px]
+             text-neutral-600
+             text-lg
+             leading-relaxed"
+    >
+      As obnoxious as knee problems are, they can happen to anyone at any
+      time. Dr. Bagaria is a robotic knee replacement expert in Mumbai who is
+      passionate about what we do. As orthopedic experts, we endeavor to
+      provide the most advanced treatment options and ensure our patient feels
+      comfortable throughout the procedure.
+    </p>
+
+
+    <!-- Buttons -->
+
+    <div
+      class="flex
+             flex-wrap
+             items-center
+             justify-center
+             gap-4
+             pt-4"
+    >
+
+      <a
+        href="contact"
+        class="inline-flex
+               h-14
+               items-center
+               justify-center
+               rounded-full
+               px-10
+               text-white
+               bg-[#0060AE]
+               font-semibold
+               hover:shadow-xl
+               transition-all"
+      >
+        Book Consultation
+
+        <i
+          class="fa-solid
+                 fa-arrow-right
+                 ml-2
+                 text-sm"
+        ></i>
+
+      </a>
+
+
+      <a
+        href="#why-robotic"
+        class="inline-flex
+               h-14
+               items-center
+               justify-center
+               rounded-full
+               border
+               border-neutral-900
+               px-10
+               text-neutral-900
+               font-semibold
+               hover:bg-neutral-50
+               transition-all"
+      >
+        Learn More
+      </a>
+
+    </div>
+
+  </div>
+
+
+  <!-- =====================================================
+       FLOATING CTA
+  ====================================================== -->
+
+  <div
+    class="absolute
+           -bottom-48
+           md:-bottom-24
+           z-20
+           w-full
+           px-4
+           md:px-[60px]
+           flex
+           justify-center"
+  >
+
+    <div
+      class="bg-[#0060AE]
+             rounded-[30px]
+             p-8
+             md:p-14
+             w-full
+             max-w-7xl
+             flex
+             flex-col
+             md:flex-row
+             items-center
+             justify-between
+             gap-6
+             md:gap-8
+             shadow-2xl
+             relative
+             overflow-hidden"
+    >
+
+      <!-- CTA Content -->
+
+      <div class="relative z-10">
+
+        <div
+          class="text-[10px]
+                 uppercase
+                 tracking-[3px]
+                 text-white/60
+                 mb-4
+                 font-medium"
+        >
+          Take The First Step
+        </div>
+
+
+        <h2
+          class="text-3xl
+                 md:text-5xl
+                 tracking-tight
+                 text-white
+                 font-medium
+                 leading-tight"
+        >
+          Don't Wait,<br />
+          Book an Appointment
+        </h2>
+
+      </div>
+
+
+      <!-- CTA Button -->
+
+      <a
+        href="tel:+919876543210"
+        class="relative
+               z-10
+               bg-white
+               text-neutral-900
+               hover:bg-neutral-50
+               transition-all
+               rounded-full
+               px-10
+               py-5
+               flex
+               items-center
+               gap-6
+               text-lg
+               font-semibold
+               group
+               shadow-xl"
+      >
+
+        <span>
+          Call Now
+        </span>
+
+
+        <div
+          class="w-10
+                 h-10
+                 rounded-full
+                 bg-neutral-900
+                 text-white
+                 flex
+                 items-center
+                 justify-center
+                 group-hover:rotate-45
+                 transition-transform
+                 duration-300"
+        >
+
+          <i
+            class="fa-solid
+                   fa-arrow-right
+                   text-sm"
+          ></i>
+
+        </div>
+
+      </a>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+  <!-- =========================================================
+     CONTENT + SIDEBAR SECTION
+========================================================= -->
+
+<section class="w-full bg-white py-16 md:py-20 lg:py-24">
+
+  <div
+    class="mx-auto"
+    style="width: min(1600px, calc(100% - 80px));"
+  >
+
+    <div
+      class="grid grid-cols-1
+             gap-10
+             lg:grid-cols-[1fr_330px]
+             lg:gap-14
+             xl:grid-cols-[1fr_350px]
+             xl:gap-16"
+    >
+
+      <!-- =====================================================
+           LEFT CONTENT
+      ====================================================== -->
+
+      <main class="min-w-0">
+
+        <!-- ================= ARTICLE 1 ================= -->
+
+        <article class="mb-12">
+
+          <h2
+            class="mb-5
+                   text-[40px]
+                   font-medium
+                   leading-[1.2]
+                   tracking-[-1px]
+                   text-[#252a2e]"
+          >
+            Introduction
+          </h2>
+
+          <p
+            class="text-[16px]
+                   md:text-[17px]
+                   leading-[1.75]
+                   text-[#53616a]"
+          >
+            Knee pain that limits your daily life
+            deserves more than a temporary fix. Dr. Vaibhav Bagaria, Director of
+            Orthopaedics at Sir H. N. Reliance Foundation Hospital, performs <strong>robotic
+            knee replacement in Mumbai</strong> using robotic-arm assistance that helps position
+            the new joint to your individual knee rather than an average one.
+          </p>
+
+          <p
+            class="mt-5
+                   text-[16px]
+                   md:text-[17px]
+                   leading-[1.75]
+                   text-[#53616a]"
+          >
+            He is among the earliest surgeons in India
+            to adopt this technique, and treats patients travelling from across Mumbai and
+            Maharashtra — including knees that have become stiff over the years, both knees
+            together, and knees where an earlier replacement needs to be redone.
+          </p>
+
+        </article>
+
+
+        <!-- ================= ARTICLE 2 ================= -->
+
+        <article class="mb-12">
+
+          <h3
+            class="mb-5
+                   text-[22px]
+                   md:text-[24px]
+                   font-semibold
+                   leading-[1.3]
+                   text-[#252a2e]"
+          >
+            What is robotic knee replacement?
+          </h3>
+
+          <p
+            class="text-[16px]
+                   md:text-[17px]
+                   leading-[1.75]
+                   text-[#53616a]"
+          >
+            Knee replacement removes the worn surfaces
+            of the knee and replaces them with new joint components. The bone underneath is
+            preserved — only the damaged surface layer is taken away.
+          </p>
+
+          <p
+            class="mt-5
+                   text-[16px]
+                   md:text-[17px]
+                   leading-[1.75]
+                   text-[#53616a]"
+          >
+            What robotic assistance adds is planning
+            and accuracy. Before the operation, a plan is made for your specific knee: the
+            size and position of each component, and how the ligaments will be balanced.
+            During surgery, the robotic arm helps the surgeon work to that plan within a
+            defined boundary.
+          </p>
+
+          <div
+            class="grid grid-cols-1
+                   gap-7
+                   md:grid-cols-[1fr_420px]
+                   md:items-start"
+          >
+
+            <div>
+
+              <p
+                class="text-[16px]
+                       md:text-[17px]
+                       leading-[1.75]
+                       text-[#53616a]"
+              >
+                Knee replacement removes the worn surfaces
+                of the knee and replaces them with new joint components. The bone underneath is
+                preserved — only the damaged surface layer is taken away.
+              </p>
+
+              <p
+                class="mt-5
+                       text-[16px]
+                       md:text-[17px]
+                       leading-[1.75]
+                       text-[#53616a]"
+              >
+                What robotic assistance adds is planning
+                and accuracy. Before the operation, a plan is made for your specific knee: the
+                size and position of each component, and how the ligaments will be balanced.
+                During surgery, the robotic arm helps the surgeon work to that plan within a
+                defined boundary.
+              </p>
+
+              <p
+                class="mt-5
+                       text-[16px]
+                       md:text-[17px]
+                       leading-[1.75]
+                       text-[#53616a]"
+              >
+                The surgeon performs the operation. The
+                robotic arm is an instrument, not an operator — it does not make decisions and
+                it does not work independently.
+              </p>
+
+            </div>
+
+            <div
+              class="overflow-hidden
+                     rounded-[10px]"
+            >
+
+              <img
+                src="./assets/images/Treatments/Images/Robotic Knee Replacement  (1).webp"
+                alt="Knee surgery"
+                class="block
+                       h-[340px]
+                       w-full
+                       object-cover
+                       object-center"
+              />
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- ================= ARTICLE 3 ================= -->
+
+        <article class="mb-12">
+
+          <h3
+            class="mb-5
+                   text-[22px]
+                   md:text-[24px]
+                   font-semibold
+                   leading-[1.3]
+                   text-[#252a2e]"
+          >
+            Who this procedure is for
+          </h3>
+
+          <p
+            class="text-[16px]
+                   md:text-[17px]
+                   leading-[1.75]
+                   text-[#53616a]"
+          >
+            Robotic knee replacement suits patients
+            whose arthritis has reached the point where daily life is meaningfully limited,
+            and where physiotherapy, medication and activity changes have taken you as far
+            as they can.
+          </p>
+
+          <p
+            class="mt-5
+                   text-[16px]
+                   md:text-[17px]
+                   leading-[1.75]
+                   text-[#53616a]"
+          >
+            <strong>It is generally the right option when:</strong>
+          </p>
+
+          <ul
+            class="mt-5
+                   space-y-2
+                   pl-5
+                   text-[16px]
+                   md:text-[17px]
+                   leading-[1.65]
+                   text-[#53616a]"
+          >
+            <li class="list-disc">Arthritis affects the whole knee</li>
+            <li class="list-disc">Pain limits walking, stairs and everyday activities</li>
+            <li class="list-disc">Sleep is disturbed by knee pain</li>
+            <li class="list-disc">Non-surgical treatment is no longer giving enough relief</li>
+            <li class="list-disc">X-rays show advanced wear of the joint</li>
+            <li class="list-disc">You want to return to walking comfortable distances again</li>
+          </ul>
+
+          <p
+            class="mt-5
+                   text-[16px]
+                   md:text-[17px]
+                   leading-[1.75]
+                   text-[#53616a]"
+          >
+            <strong>Where arthritis is confined to one part
+            of the knee</strong>, partial knee replacement may suit you
+            better — it preserves more of your own knee and recovers faster. Dr. Bagaria
+            will advise which is right after examining you and reviewing your X-rays.
+          </p>
+
+          <p
+            class="mt-5
+                   text-[16px]
+                   md:text-[17px]
+                   leading-[1.75]
+                   text-[#53616a]"
+          >
+            The X-ray is only part of the picture. What
+            matters most is how much the knee is limiting the life you want to live.
+          </p>
+
+        </article>
+
+
+        <!-- ================= ARTICLE 4 ================= -->
+
+        <article class="mb-12">
+
+          <h3
+            class="mb-5
+                   text-[22px]
+                   md:text-[24px]
+                   font-semibold
+                   leading-[1.3]
+                   text-[#252a2e]"
+          >
+            How robotic assistance changes the procedure
+          </h3>
+
+          <div
+            class="grid grid-cols-1
+                   gap-7
+                   md:grid-cols-[1fr_420px]
+                   md:items-start"
+          >
+
+            <div>
+
+              <p
+                class="text-[16px]
+                       md:text-[17px]
+                       leading-[1.75]
+                       text-[#53616a]"
+              >
+                The difference is in the planning, and in
+                how consistently that plan is carried out.
+              </p>
+
+              <p class="mt-5 text-[16px] md:text-[17px] leading-[1.75] text-[#53616a]">
+                <strong>Alignment.</strong> How the components are positioned affects how the knee feels and how evenly
+                load passes through it. Planning this in advance rather than judging it during
+                surgery improves consistency.
+              </p>
+
+              <p class="mt-5 text-[16px] md:text-[17px] leading-[1.75] text-[#53616a]">
+                <strong>Soft tissue balance.</strong> The ligaments on either side of the knee need to be evenly
+                tensioned. Assessing this through the range of movement helps get the balance
+                right.
+              </p>
+
+              <p class="mt-5 text-[16px] md:text-[17px] leading-[1.75] text-[#53616a]">
+                <strong>Sizing.</strong> Component size is planned to your knee before the operation begins.
+              </p>
+
+              <p
+                class="mt-5
+                       text-[16px]
+                       md:text-[17px]
+                       leading-[1.75]
+                       text-[#53616a]"
+              >
+                <strong>Where it helps most</strong> is in the harder cases — stiff knees with limited movement,
+                significant deformity, and revision surgery. Dr. Bagaria has published research
+                specifically on robotic knee replacement in stiff knees.
+              </p>
+
+            </div>
+
+            <div
+              class="overflow-hidden
+                     rounded-[10px]"
+            >
+
+              <img
+                src="./assets/images/Treatments/Images/Robotic Knee Replacement  (2).webp"
+                alt="Orthopaedic surgery"
+                class="block
+                       h-[340px]
+                       w-full
+                       object-cover
+                       object-center"
+              />
+
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- ================= ARTICLE 5 ================= -->
+
+        <article class="mb-12">
+
+          <h3
+            class="mb-5
+                   text-[22px]
+                   md:text-[24px]
+                   font-semibold
+                   leading-[1.3]
+                   text-[#252a2e]"
+          >
+            Things to discuss with your surgeon
+          </h3>
+
+          <p
+            class="text-[16px]
+                   md:text-[17px]
+                   leading-[1.75]
+                   text-[#53616a]"
+          >
+            Every operation is a decision, and it
+            should be an informed one. Dr. Bagaria discusses all of the following with you
+            before you consent, and there is no such thing as too many questions.
+          </p>
+
+          <ul
+            class="mt-5
+                   space-y-2
+                   pl-5
+                   text-[16px]
+                   md:text-[17px]
+                   leading-[1.65]
+                   text-[#53616a]"
+          >
+            <li class="list-disc">What results you can realistically expect, given your knee, your age and your activity</li>
+            <li class="list-disc">How long the implant is expected to last in your circumstances</li>
+            <li class="list-disc">What the recovery will ask of you, and what support you will need at home</li>
+            <li class="list-disc">How pain will be managed during your stay and afterwards</li>
+            <li class="list-disc">What precautions apply in the early weeks</li>
+            <li class="list-disc">How your other medical conditions are managed around surgery</li>
+            <li class="list-disc">What follow-up looks like, and why long-term review is advised</li>
+            <li class="list-disc">What the alternatives are, including waiting</li>
+          </ul>
+
+          <p
+            class="mt-5
+                   text-[16px]
+                   md:text-[17px]
+                   leading-[1.75]
+                   text-[#53616a]"
+          >
+            Bring a family member to the consultation
+            if you can. It helps to have someone else hearing the answers, and questions
+            often come afterwards rather than in the room.
+          </p>
+
+        </article>
+
+
+        <!-- ================= ARTICLE 6 ================= -->
+
+        <article class="mb-12">
+
+          <h3
+            class="mb-5
+                   text-[22px]
+                   md:text-[24px]
+                   font-semibold
+                   leading-[1.3]
+                   text-[#252a2e]"
+          >
+            Results — what to expect
+          </h3>
+
+          <p
+            class="text-[16px]
+                   md:text-[17px]
+                   leading-[1.75]
+                   text-[#53616a]"
+          >
+            Most patients gain substantial pain relief
+            and considerably better function.
+          </p>
+
+          <ul
+            class="mt-5
+                   space-y-2
+                   pl-5
+                   text-[16px]
+                   md:text-[17px]
+                   leading-[1.65]
+                   text-[#53616a]"
+          >
+            <li class="list-disc">Walking comfortable distances again is the most common improvement patients describe</li>
+            <li class="list-disc">Stairs, getting in and out of a car, and sleeping without pain typically return</li>
+            <li class="list-disc">Modern implants function well for many years, with longevity depending on age, weight, activity and implant type</li>
+            <li class="list-disc">Low-impact activity such as walking, cycling and swimming is encouraged long term</li>
+            <li class="list-disc">Long-term follow-up is advised so the joint can be reviewed periodically</li>
+          </ul>
+
+          <p
+            class="mt-5
+                   text-[16px]
+                   md:text-[17px]
+                   leading-[1.75]
+                   text-[#53616a]"
+          >
+            Your surgeon will discuss what to expect
+            for your knee specifically, including guidance on kneeling, squatting and
+            cross-legged sitting.
+          </p>
+
+        </article>
+
+
+        <!-- ================= ARTICLE 7 ================= -->
+
+        <article>
+
+          <h3
+            class="mb-5
+                   text-[22px]
+                   md:text-[24px]
+                   font-semibold
+                   leading-[1.3]
+                   text-[#252a2e]"
+          >
+            Conditions treated with this procedure
+          </h3>
+
+          <p
+            class="text-[16px]
+                   md:text-[17px]
+                   leading-[1.75]
+                   text-[#53616a]"
+          >
+            Knee arthritis · Rheumatoid arthritis ·
+            Post-traumatic arthritis · Bow legs and knock knees · Knee cartilage damage
+          </p>
+
+        </article>
+
+      </main>
+
+
+      <!-- =====================================================
+           RIGHT SIDEBAR
+      ====================================================== -->
+
+      <aside class="lg:sticky lg:top-6">
+
+        <!-- ================= DOCTOR CARD ================= -->
+
+        <div
+          class="overflow-hidden
+                 rounded-[10px]
+                 border
+                 border-[#dce9ef]
+                 bg-white
+                 shadow-sm"
+        >
+
+          <img
+            src="./assets/images/Orthopedic surgeon in mumbai  (2).webp"
+            alt="Dr. Vaibhav Bagaria"
+            class="block
+                   h-[400px]
+                   w-full
+                   object-cover
+                   object-top"
+          />
+
+
+          <div class="px-5 py-5">
+
+            <h3
+              class="text-center
+                     text-[18px]
+                     font-semibold
+                     text-[#005783]"
+            >
+              Dr. Vaibhav Bagaria
+            </h3>
+
+
+            <p
+              class="mt-2
+                     text-center
+                     text-[14px]
+                     leading-[1.5]
+                     text-[#53616a]"
+            >
+              MBBS, MS (Orthopaedics), DNB
+            </p>
+
+
+            <div
+              class="mt-5
+                     border-t
+                     border-[#e5e5e5]
+                     pt-4"
+            >
+
+              <p
+                class="text-[14px]
+                       leading-[1.6]
+                       text-[#53616a]"
+              >
+                Director & Head, Department of Orthopaedics —
+                Sir H. N. Reliance Foundation Hospital, Mumbai
+              </p>
+
+
+              <p
+                class="mt-3
+                       text-[13px]
+                       leading-[1.6]
+                       text-[#53616a]"
+              >
+                Specialist in Robotic Knee & Hip Replacement
+              </p>
+
+
+              <p
+                class="mt-3
+                       text-[14px]
+                       leading-[1.6]
+                       text-[#53616a]"
+              >
+                Specialist in Sports Injury, Arthroscopy &
+                Complex Trauma
+              </p>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- ================= APPOINTMENT ================= -->
+
+        <div
+          class="mt-5
+                 rounded-[10px]
+                 bg-[#e2f6fd]
+                 px-6
+                 py-8
+                 text-center"
+        >
+
+          <div
+            class="mx-auto
+                   flex
+                   h-14
+                   w-14
+                   items-center
+                   justify-center
+                   rounded-full
+                   bg-[#005783]"
+          >
+
+            <i
+              class="fa-solid fa-calendar-check
+                     text-[21px]
+                     text-white"
+            ></i>
+
+          </div>
+
+
+          <h3
+            class="mt-4
+                   text-[20px]
+                   font-semibold
+                   text-[#005783]"
+          >
+            Book Appointment
+          </h3>
+
+
+          <p
+            class="mt-2
+                   text-[14px]
+                   leading-[1.6]
+                   text-[#53616a]"
+          >
+            Book your appointment with Dr. Vaibhav
+            Bagaria today.
+          </p>
+
+
+          <a
+            href="#appointment"
+            class="mt-5
+                   inline-flex
+                   items-center
+                   justify-center
+                   rounded-full
+                   border
+                   border-[#0084d1]
+                   bg-white
+                   px-6
+                   py-2.5
+                   text-[13px]
+                   font-semibold
+                   text-[#0084d1]
+                   transition
+                   duration-300
+                   hover:bg-[#0084d1]
+                   hover:text-white"
+          >
+            BOOK APPOINTMENT
+          </a>
+
+        </div>
+
+
+        <!-- ================= SIDEBAR LINKS ================= -->
+
+        <nav
+          class="mt-5
+                 overflow-hidden
+                 rounded-[10px]
+                 border
+                 border-[#dce9ef]"
+        >
+
+          <a
+            href="./robotic-hip-replacement.html"
+            class="flex
+                   items-center
+                   justify-between
+                   bg-[#005783]
+                   px-5
+                   py-4
+                   text-[16px]
+                   font-semibold
+                   text-white"
+          >
+            <span>Robotic Hip Replacement </span>
+
+            <i class="fa-solid fa-chevron-right text-[12px]"></i>
+          </a>
+
+
+          <a
+            href="./robotic-partial-knee-replacement.html"
+            class="flex
+                   items-center
+                   justify-between
+                   border-b
+                   border-white
+                   bg-[#eef9ff]
+                   px-5
+                   py-4
+                   text-[16px]
+                   text-[#252a2e]
+                   transition
+                   hover:bg-[#dff3fb]"
+          >
+            <span>Partial Knee Replacement</span>
+
+            <i
+              class="fa-solid fa-chevron-right
+                     text-[12px]
+                     text-[#0084d1]"
+            ></i>
+          </a>
+
+
+          <a
+            href="./sports-injury-and-arthroscopy.html"
+            class="flex
+                   items-center
+                   justify-between
+                   border-b
+                   border-white
+                   bg-[#eef9ff]
+                   px-5
+                   py-4
+                   text-[16px]
+                   text-[#252a2e]
+                   transition
+                   hover:bg-[#dff3fb]"
+          >
+            <span>Sports Injury Treatment</span>
+
+            <i
+              class="fa-solid fa-chevron-right
+                     text-[12px]
+                     text-[#0084d1]"
+            ></i>
+          </a>
+
+
+          <a
+            href="./hip-fracture.html"
+            class="flex
+                   items-center
+                   justify-between
+                   border-b
+                   border-white
+                   bg-[#eef9ff]
+                   px-5
+                   py-4
+                   text-[16px]
+                   text-[#252a2e]
+                   transition
+                   hover:bg-[#dff3fb]"
+          >
+            <span>Hip Fracture Treatment in Mumbai</span>
+
+            <i
+              class="fa-solid fa-chevron-right
+                     text-[12px]
+                     text-[#0084d1]"
+            ></i>
+          </a>
+
+
+          <a
+            href="./revision-joint-replacement.html"
+            class="flex
+                   items-center
+                   justify-between
+                   border-b
+                   border-white
+                   bg-[#eef9ff]
+                   px-5
+                   py-4
+                   text-[16px]
+                   text-[#252a2e]
+                   transition
+                   hover:bg-[#dff3fb]"
+          >
+            <span>Revision Joint Replacement in Mumbai</span>
+
+            <i
+              class="fa-solid fa-chevron-right
+                     text-[12px]
+                     text-[#0084d1]"
+            ></i>
+          </a>
+
+
+          <a
+            href="#"
+            class="flex
+                   items-center
+                   justify-between
+                   border-b
+                   border-white
+                   bg-[#eef9ff]
+                   px-5
+                   py-4
+                   text-[16px]
+                   text-[#252a2e]
+                   transition
+                   hover:bg-[#dff3fb]"
+          >
+            <span>Lorem</span>
+
+            <i
+              class="fa-solid fa-chevron-right
+                     text-[12px]
+                     text-[#0084d1]"
+            ></i>
+          </a>
+
+
+          <a
+            href="#"
+            class="flex
+                   items-center
+                   justify-between
+                   border-b
+                   border-white
+                   bg-[#eef9ff]
+                   px-5
+                   py-4
+                   text-[16px]
+                   text-[#252a2e]
+                   transition
+                   hover:bg-[#dff3fb]"
+          >
+            <span>Lorem</span>
+
+            <i
+              class="fa-solid fa-chevron-right
+                     text-[12px]
+                     text-[#0084d1]"
+            ></i>
+          </a>
+
+
+          <a
+            href="#"
+            class="flex
+                   items-center
+                   justify-between
+                   bg-[#eef9ff]
+                   px-5
+                   py-4
+                   text-[16px]
+                   text-[#252a2e]
+                   transition
+                   hover:bg-[#dff3fb]"
+          >
+            <span>Lorem</span>
+
+            <i
+              class="fa-solid fa-chevron-right
+                     text-[12px]
+                     text-[#0084d1]"
+            ></i>
+          </a>
+
+        </nav>
+
+      </aside>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+<!-- cta -->
+
+<section id="appointment" class="py-20 ">
+    <div class="container mx-auto px-4 md:px-6">
+      <div class="relative overflow-hidden rounded-3xl px-6 py-16 text-center text-white shadow-2xl bg-[#0060AE]">
+        <div class="relative z-10 mx-auto max-w-2xl space-y-6">
+          <h2 class="text-3xl tracking-tighter sm:text-4xl md:text-5xl font-medium">Start Your Journey to Pain-Free Life</h2>
+          <p class="text-white/70 md:text-lg">
+            Book a consultation with Dr. Vaibhav Bagaria and discover if robotic knee replacement is right for you.
+          </p>
+          <div class="flex flex-col sm:flex-row justify-center gap-4 pt-4">
+            <a href="contact" class="h-14 inline-flex items-center justify-center rounded-full bg-white px-10 text-sm font-bold text-neutral-900 transition-colors hover:bg-neutral-200 uppercase tracking-widest">
+              Book Your Consultation
+            </a>
+            <a href="tel:+919876543210" class="h-14 inline-flex items-center justify-center rounded-full border border-white/30 bg-transparent px-10 text-sm font-bold text-white transition-colors hover:bg-white/10 uppercase tracking-widest">
+              Call Now
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- =========================================================
+     VIDEO + FAQ SECTION
+========================================================= -->
+
+<section
+  id="faq"
+  class="w-full bg-[#effaff] py-16 md:py-20 lg:py-24"
+>
+
+  <div
+    class="mx-auto"
+    style="width: min(1600px, calc(100% - 80px));"
+  >
+
+    <div
+      class="grid
+             grid-cols-1
+             gap-10
+             lg:grid-cols-[380px_1fr]
+             lg:items-start
+             lg:gap-16
+             xl:grid-cols-[420px_1fr]
+             xl:gap-20"
+    >
+
+      <!-- =====================================================
+           LEFT — VIDEO
+      ====================================================== -->
+
+      <div
+        class="w-full
+               max-w-[420px]
+               mx-auto
+               lg:mx-0"
+      >
+
+        <div
+          class="relative
+                 overflow-hidden
+                 rounded-[18px]
+                 bg-black
+                 shadow-sm"
+          style="aspect-ratio: 9 / 16;"
+        >
+
+          <!-- VIDEO -->
+
+          <iframe
+            class="absolute inset-0 h-full w-full"
+            src="https://www.youtube.com/embed/Bhv7br7EtL8?autoplay=1&mute=1&loop=1&playlist=Bhv7br7EtL8"
+            title="Dr. Vaibhav Bagaria"
+            frameborder="0"
+            allow="autoplay; encrypted-media; picture-in-picture"
+            allowfullscreen
+          ></iframe>
+
+        </div>
+
+      </div>
+
+
+      <!-- =====================================================
+           RIGHT — FAQ
+      ====================================================== -->
+
+      <div class="min-w-0">
+
+        <!-- ================= FAQ HEADING ================= -->
+
+        <h2
+          class="mb-8
+                 text-center
+                 font-sans
+                 text-[40px]
+                 font-medium
+                 leading-[1.2]
+                 tracking-[-1px]
+                 text-[#252a2e]
+                 md:text-[44px]
+                 lg:text-left"
+        >
+          Frequently Asked Questions
+        </h2>
+
+
+        <!-- ================= FAQ LIST ================= -->
+
+        <div class="space-y-4">
+
+
+          <!-- =================================================
+               FAQ 1
+          ================================================== -->
+
+          <div
+            class="faq-items
+                   overflow-hidden
+                   rounded-[18px]
+                   border
+                   border-[#dce9ef]
+                   bg-white"
+          >
+
+            <button
+              type="button"
+              class="faq-question
+                     flex
+                     w-full
+                     items-center
+                     justify-between
+                     gap-5
+                     bg-white
+                     px-6
+                     py-5
+                     text-left
+                     transition-colors
+                     duration-300
+                     hover:bg-[#f8fdff]
+                     md:px-7
+                     md:py-6"
+            >
+
+              <span
+                class="text-[16px]
+                       font-medium
+                       leading-[1.45]
+                       text-[#252a2e]
+                       md:text-[17px]"
+              >
+                Who is the best robotic knee replacement surgeon in Mumbai?
+              </span>
+
+              <span
+                class="faq-icon
+                       flex
+                       h-9
+                       w-9
+                       shrink-0
+                       items-center
+                       justify-center
+                       rounded-full
+                       border
+                       border-[#dce9ef]
+                       bg-white
+                       transition-transform
+                       duration-300"
+              >
+
+                <i
+                  class="fa-solid
+                         fa-plus
+                         text-[13px]
+                         text-[#0084d1]"
+                ></i>
+
+              </span>
+
+            </button>
+
+
+            <div class="faq-answer hidden">
+
+              <div
+                class="border-t
+                       border-[#edf3f6]
+                       px-6
+                       pb-6
+                       pt-5
+                       text-[16px]
+                       leading-[1.7]
+                       text-[#53616a]
+                       md:px-7"
+              >
+                Dr. Vaibhav Bagaria is among Mumbai's most experienced robotic
+                knee replacement surgeons. He is Director and Head of the
+                Department of Orthopaedics at Sir H. N. Reliance Foundation
+                Hospital, Girgaon, was one of the earliest surgeons in India
+                to adopt robotic knee replacement, and now trains other
+                surgeons in the technique. He has over 22 years of experience
+                and more than 150 peer-reviewed publications.
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- =================================================
+               FAQ 2
+          ================================================== -->
+
+          <div
+            class="faq-items
+                   overflow-hidden
+                   rounded-[18px]
+                   border
+                   border-[#dce9ef]
+                   bg-white"
+          >
+
+            <button
+              type="button"
+              class="faq-question
+                     flex
+                     w-full
+                     items-center
+                     justify-between
+                     gap-5
+                     bg-white
+                     px-6
+                     py-5
+                     text-left
+                     transition-colors
+                     duration-300
+                     hover:bg-[#f8fdff]
+                     md:px-7
+                     md:py-6"
+            >
+
+              <span
+                class="text-[16px]
+                       font-medium
+                       leading-[1.45]
+                       text-[#252a2e]
+                       md:text-[17px]"
+              >
+                Is robotic knee replacement better than conventional knee replacement?
+              </span>
+
+              <span
+                class="faq-icon
+                       flex
+                       h-9
+                       w-9
+                       shrink-0
+                       items-center
+                       justify-center
+                       rounded-full
+                       border
+                       border-[#dce9ef]
+                       bg-white
+                       transition-transform
+                       duration-300"
+              >
+
+                <i
+                  class="fa-solid
+                         fa-plus
+                         text-[13px]
+                         text-[#0084d1]"
+                ></i>
+
+              </span>
+
+            </button>
+
+
+            <div class="faq-answer hidden">
+
+              <div
+                class="border-t
+                       border-[#edf3f6]
+                       px-6
+                       pb-6
+                       pt-5
+                       text-[16px]
+                       leading-[1.7]
+                       text-[#53616a]
+                       md:px-7"
+              >
+                Robotic assistance helps position components more consistently,
+                which is why many patients find the knee feels natural sooner.
+                A conventional replacement performed by an experienced surgeon
+                also gives excellent results. The more important question is
+                whether the operation is right for you at all.
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- =================================================
+               FAQ 3
+          ================================================== -->
+
+          <div
+            class="faq-items
+                   overflow-hidden
+                   rounded-[18px]
+                   border
+                   border-[#dce9ef]
+                   bg-white"
+          >
+
+            <button
+              type="button"
+              class="faq-question
+                     flex
+                     w-full
+                     items-center
+                     justify-between
+                     gap-5
+                     bg-white
+                     px-6
+                     py-5
+                     text-left
+                     transition-colors
+                     duration-300
+                     hover:bg-[#f8fdff]
+                     md:px-7
+                     md:py-6"
+            >
+
+              <span
+                class="text-[16px]
+                       font-medium
+                       leading-[1.45]
+                       text-[#252a2e]
+                       md:text-[17px]"
+              >
+                Does a robot perform the surgery?
+              </span>
+
+              <span
+                class="faq-icon
+                       flex
+                       h-9
+                       w-9
+                       shrink-0
+                       items-center
+                       justify-center
+                       rounded-full
+                       border
+                       border-[#dce9ef]
+                       bg-white
+                       transition-transform
+                       duration-300"
+              >
+
+                <i
+                  class="fa-solid
+                         fa-plus
+                         text-[13px]
+                         text-[#0084d1]"
+                ></i>
+
+              </span>
+
+            </button>
+
+
+            <div class="faq-answer hidden">
+
+              <div
+                class="border-t
+                       border-[#edf3f6]
+                       px-6
+                       pb-6
+                       pt-5
+                       text-[16px]
+                       leading-[1.7]
+                       text-[#53616a]
+                       md:px-7"
+              >
+                No. Dr. Bagaria performs the operation. The robotic arm is a
+                guide that helps him work accurately to the plan made for your
+                knee — it does not operate independently or make decisions.
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- =================================================
+               FAQ 4
+          ================================================== -->
+
+          <div
+            class="faq-items
+                   overflow-hidden
+                   rounded-[18px]
+                   border
+                   border-[#dce9ef]
+                   bg-white"
+          >
+
+            <button
+              type="button"
+              class="faq-question
+                     flex
+                     w-full
+                     items-center
+                     justify-between
+                     gap-5
+                     bg-white
+                     px-6
+                     py-5
+                     text-left
+                     transition-colors
+                     duration-300
+                     hover:bg-[#f8fdff]
+                     md:px-7
+                     md:py-6"
+            >
+
+              <span
+                class="text-[16px]
+                       font-medium
+                       leading-[1.45]
+                       text-[#252a2e]
+                       md:text-[17px]"
+              >
+                How long does a knee replacement last?
+              </span>
+
+              <span
+                class="faq-icon
+                       flex
+                       h-9
+                       w-9
+                       shrink-0
+                       items-center
+                       justify-center
+                       rounded-full
+                       border
+                       border-[#dce9ef]
+                       bg-white
+                       transition-transform
+                       duration-300"
+              >
+
+                <i
+                  class="fa-solid
+                         fa-plus
+                         text-[13px]
+                         text-[#0084d1]"
+                ></i>
+
+              </span>
+
+            </button>
+
+
+            <div class="faq-answer hidden">
+
+              <div
+                class="border-t
+                       border-[#edf3f6]
+                       px-6
+                       pb-6
+                       pt-5
+                       text-[16px]
+                       leading-[1.7]
+                       text-[#53616a]
+                       md:px-7"
+              >
+                Modern implants function well for many years. Longevity
+                depends on your age at surgery, weight, activity level and
+                implant type. Your surgeon can give guidance for your
+                circumstances.
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- =================================================
+               FAQ 5
+          ================================================== -->
+
+          <div
+            class="faq-items
+                   overflow-hidden
+                   rounded-[18px]
+                   border
+                   border-[#dce9ef]
+                   bg-white"
+          >
+
+            <button
+              type="button"
+              class="faq-question
+                     flex
+                     w-full
+                     items-center
+                     justify-between
+                     gap-5
+                     bg-white
+                     px-6
+                     py-5
+                     text-left
+                     transition-colors
+                     duration-300
+                     hover:bg-[#f8fdff]
+                     md:px-7
+                     md:py-6"
+            >
+
+              <span
+                class="text-[16px]
+                       font-medium
+                       leading-[1.45]
+                       text-[#252a2e]
+                       md:text-[17px]"
+              >
+                When can I drive after knee replacement?
+              </span>
+
+              <span
+                class="faq-icon
+                       flex
+                       h-9
+                       w-9
+                       shrink-0
+                       items-center
+                       justify-center
+                       rounded-full
+                       border
+                       border-[#dce9ef]
+                       bg-white
+                       transition-transform
+                       duration-300"
+              >
+
+                <i
+                  class="fa-solid
+                         fa-plus
+                         text-[13px]
+                         text-[#0084d1]"
+                ></i>
+
+              </span>
+
+            </button>
+
+
+            <div class="faq-answer hidden">
+
+              <div
+                class="border-t
+                       border-[#edf3f6]
+                       px-6
+                       pb-6
+                       pt-5
+                       text-[16px]
+                       leading-[1.7]
+                       text-[#53616a]
+                       md:px-7"
+              >
+                Usually somewhere between four and six weeks, once you can
+                control the pedals safely and perform an emergency stop, and
+                are no longer taking strong pain medication. It is worth
+                checking your insurer's position too.
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- =================================================
+               FAQ 6
+          ================================================== -->
+
+          <div
+            class="faq-items
+                   overflow-hidden
+                   rounded-[18px]
+                   border
+                   border-[#dce9ef]
+                   bg-white"
+          >
+
+            <button
+              type="button"
+              class="faq-question
+                     flex
+                     w-full
+                     items-center
+                     justify-between
+                     gap-5
+                     bg-white
+                     px-6
+                     py-5
+                     text-left
+                     transition-colors
+                     duration-300
+                     hover:bg-[#f8fdff]
+                     md:px-7
+                     md:py-6"
+            >
+
+              <span
+                class="text-[16px]
+                       font-medium
+                       leading-[1.45]
+                       text-[#252a2e]
+                       md:text-[17px]"
+              >
+                Can both knees be replaced at the same time?
+              </span>
+
+              <span
+                class="faq-icon
+                       flex
+                       h-9
+                       w-9
+                       shrink-0
+                       items-center
+                       justify-center
+                       rounded-full
+                       border
+                       border-[#dce9ef]
+                       bg-white
+                       transition-transform
+                       duration-300"
+              >
+
+                <i
+                  class="fa-solid
+                         fa-plus
+                         text-[13px]
+                         text-[#0084d1]"
+                ></i>
+
+              </span>
+
+            </button>
+
+
+            <div class="faq-answer hidden">
+
+              <div
+                class="border-t
+                       border-[#edf3f6]
+                       px-6
+                       pb-6
+                       pt-5
+                       text-[16px]
+                       leading-[1.7]
+                       text-[#53616a]
+                       md:px-7"
+              >
+                Yes, either in one sitting or a few months apart. Doing both
+                together means one hospital stay and one recovery period;
+                doing them separately is gentler on the body. The decision
+                depends on your general health and how much each knee troubles
+                you.
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- =================================================
+               FAQ 7
+          ================================================== -->
+
+          <div
+            class="faq-items
+                   overflow-hidden
+                   rounded-[18px]
+                   border
+                   border-[#dce9ef]
+                   bg-white"
+          >
+
+            <button
+              type="button"
+              class="faq-question
+                     flex
+                     w-full
+                     items-center
+                     justify-between
+                     gap-5
+                     bg-white
+                     px-6
+                     py-5
+                     text-left
+                     transition-colors
+                     duration-300
+                     hover:bg-[#f8fdff]
+                     md:px-7
+                     md:py-6"
+            >
+
+              <span
+                class="text-[16px]
+                       font-medium
+                       leading-[1.45]
+                       text-[#252a2e]
+                       md:text-[17px]"
+              >
+                Will I be able to sit cross-legged afterwards?
+              </span>
+
+              <span
+                class="faq-icon
+                       flex
+                       h-9
+                       w-9
+                       shrink-0
+                       items-center
+                       justify-center
+                       rounded-full
+                       border
+                       border-[#dce9ef]
+                       bg-white
+                       transition-transform
+                       duration-300"
+              >
+
+                <i
+                  class="fa-solid
+                         fa-plus
+                         text-[13px]
+                         text-[#0084d1]"
+                ></i>
+
+              </span>
+
+            </button>
+
+
+            <div class="faq-answer hidden">
+
+              <div
+                class="border-t
+                       border-[#edf3f6]
+                       px-6
+                       pb-6
+                       pt-5
+                       text-[16px]
+                       leading-[1.7]
+                       text-[#53616a]
+                       md:px-7"
+              >
+                This varies between patients and depends on the individual
+                case. Your surgeon will discuss what to expect for you
+                specifically.
+              </div>
+
+            </div>
+
+          </div>
+
+
+          <!-- =================================================
+               FAQ 8
+          ================================================== -->
+
+          <div
+            class="faq-items
+                   overflow-hidden
+                   rounded-[18px]
+                   border
+                   border-[#dce9ef]
+                   bg-white"
+          >
+
+            <button
+              type="button"
+              class="faq-question
+                     flex
+                     w-full
+                     items-center
+                     justify-between
+                     gap-5
+                     bg-white
+                     px-6
+                     py-5
+                     text-left
+                     transition-colors
+                     duration-300
+                     hover:bg-[#f8fdff]
+                     md:px-7
+                     md:py-6"
+            >
+
+              <span
+                class="text-[16px]
+                       font-medium
+                       leading-[1.45]
+                       text-[#252a2e]
+                       md:text-[17px]"
+              >
+                How soon can I return to work?
+              </span>
+
+              <span
+                class="faq-icon
+                       flex
+                       h-9
+                       w-9
+                       shrink-0
+                       items-center
+                       justify-center
+                       rounded-full
+                       border
+                       border-[#dce9ef]
+                       bg-white
+                       transition-transform
+                       duration-300"
+              >
+
+                <i
+                  class="fa-solid
+                         fa-plus
+                         text-[13px]
+                         text-[#0084d1]"
+                ></i>
+
+              </span>
+
+            </button>
+
+
+            <div class="faq-answer hidden">
+
+              <div
+                class="border-t
+                       border-[#edf3f6]
+                       px-6
+                       pb-6
+                       pt-5
+                       text-[16px]
+                       leading-[1.7]
+                       text-[#53616a]
+                       md:px-7"
+              >
+                Desk-based work is often possible from around four to six
+                weeks. Physically demanding work takes longer, and your
+                surgeon will advise based on your job.
+              </div>
+
+            </div>
+
+          </div>
+
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     ABOUT DR. VAIBHAV BAGARIA
+====================================================== -->
+
+<section class="w-full bg-white py-12 md:py-16 lg:py-20">
+
+  <div
+    class="mx-auto
+           w-[calc(100%-24px)]
+           md:w-[calc(100%-48px)]
+           lg:w-[calc(100%-80px)]
+           max-w-[1500px]
+           rounded-[18px]
+           border border-[#dce9ef]
+           bg-white
+           p-5
+           md:p-7
+           lg:p-9
+           shadow-[0_2px_12px_rgba(0,87,131,0.03)]"
+  >
+
+    <div
+      class="grid
+             grid-cols-1
+             lg:grid-cols-[1.35fr_0.75fr]
+             gap-8
+             lg:gap-10"
+    >
+
+      <!-- =================================================
+           LEFT CONTENT
+      ================================================== -->
+
+      <div class="min-w-0">
+
+        <!-- ================= HEADING ================= -->
+
+        <div class="mb-5">
+
+          <h2
+            class="m-0
+                   text-[30px]
+                   md:text-[36px]
+                   lg:text-[38px]
+                   font-semibold
+                   leading-[1.15]
+                   tracking-[-1px]
+                   text-[#252a2e]"
+          >
+            About Dr.
+            <span class="text-[#075f91]">
+              Vaibhav Bagaria
+            </span>
+          </h2>
+
+          <div
+            class="mt-3
+                   h-[3px]
+                   w-[72px]
+                   rounded-full
+                   bg-gradient-to-r
+                   from-[#075f91]
+                   via-[#70b1d1]
+                   to-transparent"
+          ></div>
+
+        </div>
+
+
+        <!-- ================= INTRO ================= -->
+
+        <p
+          class="m-0
+                 max-w-[850px]
+                 text-[15px]
+                 md:text-[16px]
+                 lg:text-[17px]
+                 leading-[1.65]
+                 text-[#59666f]"
+        >
+          Dr. Vaibhav Bagaria is Director and Head of the Department of Orthopaedics at Sir H. N. Reliance Foundation Hospital, Mumbai, and one of the earliest surgeons in India to adopt robotic joint replacement. Over twenty-two years of practice he has treated patients across the full range of bone and joint conditions, with a particular focus on robotic knee and hip replacement, partial knee replacement, sports injury and arthroscopy, and complex pelvic and acetabular reconstruction.
+        </p>
+
+
+        <!-- ================= DIVIDER ================= -->
+
+        <div class="my-6 h-px w-full bg-[#e4edf2]"></div>
+
+
+        <!-- =================================================
+             DETAILS GRID
+        ================================================== -->
+
+        <div
+          class="grid
+                 grid-cols-1
+                 sm:grid-cols-2
+                 gap-x-8
+                 gap-y-7"
+        >
+
+
+          <!-- ================= NAME ================= -->
+
+          <div class="flex items-start gap-4">
+
+            <div
+              class="flex h-[42px] w-[42px]
+                     shrink-0
+                     items-center justify-center
+                     rounded-[9px]
+                     bg-[#eaf4fa]
+                     text-[#075f91]"
+            >
+              <i class="fa-solid fa-user text-[16px]"></i>
+            </div>
+
+            <div>
+
+              <p
+                class="m-0
+                       text-[11px]
+                       font-medium
+                       uppercase
+                       tracking-[0.7px]
+                       text-[#075f91]"
+              >
+                Name
+              </p>
+
+              <p
+                class="mt-2 mb-0
+                       text-[16px]
+                       md:text-[17px]
+                       font-medium
+                       text-[#252a2e]"
+              >
+                Dr. Vaibhav Bagaria
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <!-- ================= EXPERIENCE ================= -->
+
+          <div class="flex items-start gap-4">
+
+            <div
+              class="flex h-[42px] w-[42px]
+                     shrink-0
+                     items-center justify-center
+                     rounded-[9px]
+                     bg-[#eaf4fa]
+                     text-[#075f91]"
+            >
+              <i class="fa-regular fa-clock text-[16px]"></i>
+            </div>
+
+            <div>
+
+              <p
+                class="m-0
+                       text-[11px]
+                       font-medium
+                       uppercase
+                       tracking-[0.7px]
+                       text-[#075f91]"
+              >
+                Experience
+              </p>
+
+              <p
+                class="mt-2 mb-0
+                       text-[16px]
+                       md:text-[17px]
+                       font-medium
+                       text-[#252a2e]"
+              >
+                20+ Years
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <!-- ================= QUALIFICATIONS ================= -->
+
+          <div class="flex items-start gap-4">
+
+            <div
+              class="flex h-[42px] w-[42px]
+                     shrink-0
+                     items-center justify-center
+                     rounded-[9px]
+                     bg-[#eaf4fa]
+                     text-[#075f91]"
+            >
+              <i class="fa-solid fa-graduation-cap text-[16px]"></i>
+            </div>
+
+            <div>
+
+              <p
+                class="m-0
+                       text-[11px]
+                       font-medium
+                       uppercase
+                       tracking-[0.7px]
+                       text-[#075f91]"
+              >
+                Qualifications
+              </p>
+
+              <p
+                class="mt-2 mb-0
+                       text-[16px]
+                       md:text-[17px]
+                       font-medium
+                       leading-[1.5]
+                       text-[#252a2e]"
+              >
+                MS (Ortho) FASSI, FNUS, FNAMS..
+              </p>
+              
+
+            </div>
+
+          </div>
+
+
+          <!-- ================= SPECIALITY ================= -->
+
+          <div class="flex items-start gap-4">
+
+            <div
+              class="flex h-[42px] w-[42px]
+                     shrink-0
+                     items-center justify-center
+                     rounded-[9px]
+                     bg-[#eaf4fa]
+                     text-[#075f91]"
+            >
+              <i class="fa-solid fa-user-doctor text-[16px]"></i>
+            </div>
+
+            <div class="min-w-0">
+
+              <p
+                class="m-0
+                       text-[11px]
+                       font-medium
+                       uppercase
+                       tracking-[0.7px]
+                       text-[#075f91]"
+              >
+                Speciality
+              </p>
+
+              <ul
+                class="mt-2 mb-0
+                       list-disc
+                       pl-5
+                       space-y-1.5
+                       text-[15px]
+                       md:text-[16px]
+                       leading-[1.45]
+                       text-[#252a2e]"
+              >
+
+                <li>
+                 Specialist in Robotic Knee & Hip Replacement
+                </li>
+
+                <li>
+                  Specialist in Sports Injury, Arthroscopy & Complex Trauma
+                </li>
+
+              </ul>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- ================= DIVIDER ================= -->
+
+        <div class="my-7 h-px w-full bg-[#e4edf2]"></div>
+
+
+        <!-- =================================================
+             PRACTICE
+        ================================================== -->
+
+        <div class="flex items-start gap-4">
+
+          <div
+            class="flex h-[42px] w-[42px]
+                   shrink-0
+                   items-center justify-center
+                   rounded-[9px]
+                   bg-[#eaf4fa]
+                   text-[#075f91]"
+          >
+            <i class="fa-solid fa-briefcase-medical text-[16px]"></i>
+          </div>
+
+
+          <div class="min-w-0">
+
+            <p
+              class="m-0
+                     text-[11px]
+                     font-medium
+                     uppercase
+                     tracking-[0.7px]
+                     text-[#075f91]"
+            >
+              Practice
+            </p>
+
+
+            <ul
+              class="mt-3 mb-0
+                     list-disc
+                     pl-5
+                     space-y-5
+                     text-[15px]
+                     md:text-[16px]
+                     leading-[1.45]
+                     text-[#252a2e]"
+            >
+
+              <li>
+
+                <span class="font-medium">
+                  President & National Delegate
+                </span>
+
+                <span
+                  class="block
+                         mt-1
+                         pl-0
+                         text-[14px]
+                         md:text-[15px]
+                         text-[#66747d]"
+                >
+                  SICOT India
+                </span>
+
+              </li>
+
+
+              <li>
+
+                <span class="font-medium">
+                 Director & Head
+                </span>
+
+                <span
+                  class="block
+                         mt-1
+                         text-[14px]
+                         md:text-[15px]
+                         text-[#66747d]"
+                >
+                  Department of Orthopaedics —
+  Sir H. N. Reliance Foundation Hospital, Mumbai
+                </span>
+
+              </li>
+
+            </ul>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- =================================================
+           RIGHT SIDEBAR
+      ================================================== -->
+
+      <div class="flex flex-col">
+
+        <!-- ================= DOCTOR IMAGE ================= -->
+
+        <div
+          class="overflow-hidden
+                 rounded-[11px]
+                 border border-[#dce9ef]
+                 bg-[#eef9ff]"
+        >
+
+          <img
+            src="../assets/images/doctor-vaibhav.webp"
+            alt="Dr. Vaibhav Bagaria"
+            class="block
+                   aspect-[1/1]
+                   w-full
+                   object-cover"
+          >
+
+        </div>
+
+
+        <!-- ================= CONSULTATION ================= -->
+
+        <div
+          class="mt-4
+                 rounded-[11px]
+                 border border-[#dce9ef]
+                 bg-white
+                 px-5
+                 py-5"
+        >
+
+          <div class="flex items-start gap-4">
+
+            <div
+              class="flex h-[42px] w-[42px]
+                     shrink-0
+                     items-center justify-center
+                     rounded-[9px]
+                     bg-[#eaf4fa]
+                     text-[#075f91]"
+            >
+              <i class="fa-solid fa-phone text-[16px]"></i>
+            </div>
+
+            <div>
+
+              <p
+                class="m-0
+                       text-[11px]
+                       font-medium
+                       uppercase
+                       tracking-[0.7px]
+                       text-[#075f91]"
+              >
+                Consultation
+              </p>
+
+              <div
+                class="mt-2
+                       space-y-1
+                       text-[15px]
+                       md:text-[16px]
+                       font-medium
+                       leading-[1.5]
+                       text-[#252a2e]"
+              >
+
+                <p class="m-0">
+                  02261305757
+                </p>
+
+              </div>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- ================= BOOK APPOINTMENT ================= -->
+
+        <a
+          href="https://myhealthrecord.rfhospital.org/frmAppointment.aspx"
+          class="group
+                 mt-3
+                 flex min-h-[54px]
+                 items-center
+                 justify-center
+                 gap-3
+                 rounded-[9px]
+                 bg-[#075f91]
+                 px-5
+                 py-3
+                 text-[15px]
+                 font-medium
+                 text-white
+                 shadow-[0_5px_14px_rgba(0,87,131,0.16)]
+                 transition-all duration-300
+                 hover:bg-[#005783]
+                 hover:-translate-y-[1px]"
+                 target=" "
+        >
+
+          <span>
+            Book Appointment
+          </span>
+
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</section>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/main.js"></script>
+</body>
+
+</html>
