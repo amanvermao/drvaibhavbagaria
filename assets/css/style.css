@@ -583,150 +583,431 @@ color: #004d77;
   }
 
 
-  /* =========================================================
-     MOBILE
-  ========================================================= */
+/* =========================================================
+   MOBILE HERO FIX
+   Does NOT affect desktop / laptop styling
+========================================================= */
 
-  @media (max-width: 767px) {
-    #header .doctor-container,
-    #hero .doctor-container {
-      width: calc(100% - 30px);
-    }
+@media (max-width: 767px) {
 
-    #hero .hero-copy {
-      padding-top: 65px;
-    }
+  /* -------------------------
+     HERO CONTAINER
+  ------------------------- */
 
-    #hero .hero-copy > div:first-child {
-      font-size: 13px;
-      line-height: 1.45;
-    }
+  #hero {
+    min-height: 0 !important;
+    height: auto !important;
+    padding: 0 0 30px !important;
+    overflow: hidden !important;
+    background: #EFFAFF !important;
+  }
 
-    #hero h1 {
-      font-size: clamp(28px, 8vw, 34px);
-      line-height: 1.2;
-      letter-spacing: 0.5px;
-    }
+  #hero .doctor-container {
+    width: 100% !important;
+    min-height: 0 !important;
+    height: auto !important;
+    margin: 0 !important;
+    padding: 30px 16px 0 !important;
 
-    #hero p {
-      font-size: 14px;
-      line-height: 1.55;
-    }
+    /* REMOVE bg-hero.png ON MOBILE */
+    background-image: none !important;
+    background: transparent !important;
 
-    #hero .doctor-visual {
-      height: min(500px, 105vw);
-    }
-
-    #hero .doctor-visual img {
-      max-height: 500px;
-    }
-
-    #hero .feature-cards {
-      grid-template-columns: 1fr;
-    }
-
-    #hero .feature-cards > div {
-      min-height: 68px;
-      height: auto;
-      padding-block: 12px;
-    }
-
-    #hero .feature-cards span {
-      font-size: 15px;
-    }
-
-    #hero .stats-panel {
-      margin-top: 25px;
-    }
-
-    .stats-top-row {
-      grid-template-columns: repeat(2, minmax(0, 1fr));
-    }
-
-    .stat-item {
-      min-height: 155px;
-      padding: 18px 8px;
-    }
-
-    .stat-item-divider::after {
-      height: 65px;
-    }
-
-    .stat-number {
-      font-size: clamp(27px, 7vw, 36px);
-    }
-
-    .stat-number-wide {
-      font-size: clamp(26px, 7vw, 34px);
-    }
-
-    .stat-label {
-      font-size: 13px;
-    }
-
-    .stat-icon {
-      width: 52px;
-      height: 52px;
-      flex-basis: 52px;
-    }
-
-    .stats-horizontal-divider {
-      margin-inline: 12px;
-    }
+    display: flex !important;
+    flex-direction: column !important;
   }
 
 
-  /* =========================================================
-     VERY SMALL PHONES
-  ========================================================= */
+  /* -------------------------
+     LEFT CONTENT
+  ------------------------- */
 
-  @media (max-width: 420px) {
-    #header .doctor-container,
-    #hero .doctor-container {
-      width: calc(100% - 24px);
-    }
+  #hero .hero-copy {
+    position: relative !important;
+    inset: auto !important;
 
-    #hero .hero-copy {
-      padding-top: 50px;
-    }
+    order: 1 !important;
 
-    #hero .flex.items-center.gap-\[15px\] {
-      flex-wrap: wrap;
-      gap: 10px;
-    }
+    width: 100% !important;
+    max-width: 100% !important;
 
-    #hero .flex.items-center.gap-\[15px\] a {
-      flex: 1 1 145px;
-      padding-inline: 18px;
-    }
-
-    #hero .doctor-visual {
-      height: 390px;
-    }
-
-    #hero .doctor-visual img {
-      max-height: 390px;
-    }
-
-    .stat-item {
-      min-height: 140px;
-      padding-inline: 5px;
-    }
-
-    .stat-number {
-      font-size: 28px;
-    }
-
-    .stat-number-wide {
-      font-size: 26px;
-    }
-
-    .stat-label {
-      font-size: 12px;
-    }
+    padding: 25px 0 0 !important;
+    margin: 0 !important;
   }
 
 
+  /* Eyebrow */
+
+  #hero .hero-copy h2 {
+    width: 100% !important;
+
+    font-size: 12px !important;
+    line-height: 1.5 !important;
+
+    margin: 0 0 14px !important;
+  }
+
+
+  /* Main heading
+     Your heading is a SPAN, not h1,
+     so target the span directly.
+  */
+
+  #hero .hero-copy > span {
+    display: block !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    font-size: 28px !important;
+    line-height: 1.22 !important;
+
+    margin: 0 0 15px !important;
+  }
+
+
+  /* Description */
+
+  #hero .hero-copy p {
+    width: 100% !important;
+    max-width: 100% !important;
+
+    font-size: 14px !important;
+    line-height: 1.6 !important;
+
+    padding-top: 0 !important;
+    margin: 0 0 22px !important;
+  }
+
+
+  /* -------------------------
+     BUTTONS
+  ------------------------- */
+
+  #hero .hero-copy .flex.items-center {
+    width: 100% !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+    align-items: stretch !important;
+
+    gap: 10px !important;
+  }
+
+  #hero .hero-copy .flex.items-center a {
+    width: 100% !important;
+    min-height: 50px !important;
+    height: 50px !important;
+
+    padding: 0 20px !important;
+
+    font-size: 13px !important;
+  }
+
+
+  /* =====================================================
+     REMOVE DOCTOR IMAGE COMPLETELY ON MOBILE
+  ===================================================== */
+
+  #hero .doctor-visual {
+    display: none !important;
+  }
+
+
+  /* =====================================================
+     FEATURE CARDS
+  ===================================================== */
+
+  #hero .feature-cards {
+    position: relative !important;
+    inset: auto !important;
+
+    order: 2 !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    margin: 25px 0 0 !important;
+
+    display: grid !important;
+    grid-template-columns: 1fr 1fr !important;
+
+    gap: 10px !important;
+  }
+
+  #hero .feature-cards > div {
+    width: 100% !important;
+    min-width: 0 !important;
+
+    height: 68px !important;
+    min-height: 68px !important;
+
+    padding: 10px !important;
+  }
+
+  #hero .feature-cards > div > div {
+    width: 36px !important;
+    height: 36px !important;
+
+    margin-right: 9px !important;
+
+    flex: 0 0 36px !important;
+  }
+
+  #hero .feature-cards > div img {
+    max-width: 18px !important;
+    max-height: 18px !important;
+  }
+
+  #hero .feature-cards span {
+    font-size: 13px !important;
+    line-height: 1.25 !important;
+  }
+
+
+  /* =====================================================
+     STATISTICS PANEL
+  ===================================================== */
+
+  #hero .stats-panel {
+    position: relative !important;
+    inset: auto !important;
+
+    order: 3 !important;
+
+    width: 100% !important;
+    max-width: 100% !important;
+
+    height: auto !important;
+
+    margin: 25px 0 0 !important;
+
+    border: 1px solid #267D9F !important;
+    border-radius: 6px !important;
+
+    overflow: hidden !important;
+  }
+
+
+  /* -------------------------
+     TOP STATS
+  ------------------------- */
+
+  #hero .stats-top-row {
+    display: grid !important;
+
+    grid-template-columns: 1fr 1fr !important;
+
+    width: 100% !important;
+    height: auto !important;
+  }
+
+
+  /* -------------------------
+     BOTTOM STATS
+  ------------------------- */
+
+  #hero .stats-bottom-row {
+    display: grid !important;
+
+    grid-template-columns: 1fr !important;
+
+    width: 100% !important;
+    height: auto !important;
+  }
+
+
+  /* -------------------------
+     STAT ITEM
+  ------------------------- */
+
+  #hero .stat-item {
+    width: 100% !important;
+    min-width: 0 !important;
+
+    min-height: 145px !important;
+    height: auto !important;
+
+    padding: 18px 8px !important;
+
+    display: flex !important;
+    flex-direction: column !important;
+
+    align-items: center !important;
+    justify-content: center !important;
+
+    text-align: center !important;
+  }
+
+
+  /* Vertical divider */
+
+  #hero .stat-item-divider::after {
+    height: 65px !important;
+  }
+
+
+  /* Horizontal divider */
+
+  #hero .stats-horizontal-divider {
+    display: block !important;
+
+    width: calc(100% - 24px) !important;
+
+    height: 1px !important;
+
+    margin: 0 12px !important;
+  }
+
+
+  /* -------------------------
+     STAT ICON
+  ------------------------- */
+
+  #hero .stat-icon {
+    width: 48px !important;
+    height: 48px !important;
+
+    flex: 0 0 48px !important;
+
+    margin-bottom: 9px !important;
+  }
+
+  #hero .stat-icon i {
+    font-size: 16px !important;
+  }
+
+
+  /* -------------------------
+     STAT NUMBERS
+  ------------------------- */
+
+  #hero .stat-number {
+    width: 100% !important;
+
+    font-size: 26px !important;
+    line-height: 1.15 !important;
+
+    white-space: normal !important;
+
+    text-align: center !important;
+  }
+
+  #hero .stat-number-wide {
+    font-size: 24px !important;
+    line-height: 1.2 !important;
+
+    white-space: normal !important;
+  }
+
+
+  /* -------------------------
+     STAT LABEL
+  ------------------------- */
+
+  #hero .stat-label {
+    width: 100% !important;
+
+    max-width: 100% !important;
+
+    margin-top: 7px !important;
+
+    font-size: 12px !important;
+    line-height: 1.35 !important;
+
+    text-align: center !important;
+  }
+
+
+  /* Disable hover movement on touch screens */
+
+  #hero .stat-item:hover .stat-icon {
+    transform: none !important;
+    box-shadow: none !important;
+    background-color: #004d77 !important;
+    color: #ffffff !important;
+  }
+
+  #hero .stat-item:hover .stat-icon::before {
+    transform: translate(-50%, -50%) scale(0.75) !important;
+    border-color: transparent !important;
+    box-shadow: none !important;
+  }
+
+  #hero .stat-item:hover .stat-number {
+    color: #20252A !important;
+    transform: none !important;
+  }
+
+  #hero .stat-item:hover .stat-label {
+    color: #15536D !important;
+    transform: none !important;
+  }
+}
+
+
+/* =========================================================
+   VERY SMALL PHONES
+   <= 420px
+========================================================= */
+
+@media (max-width: 420px) {
+
+  #hero .doctor-container {
+    padding-left: 12px !important;
+    padding-right: 12px !important;
+  }
+
+  #hero .hero-copy {
+    padding-top: 20px !important;
+  }
+
+  #hero .hero-copy h2 {
+    font-size: 11px !important;
+  }
+
+  #hero .hero-copy > span {
+    font-size: 26px !important;
+  }
+
+  #hero .hero-copy p {
+    font-size: 13.5px !important;
+  }
+
+
+  /* Feature cards become single column */
+
+  #hero .feature-cards {
+    grid-template-columns: 1fr !important;
+  }
+
+
+  /* Stats remain 2 columns */
+
+  #hero .stats-top-row {
+    grid-template-columns: 1fr 1fr !important;
+  }
+
+  #hero .stat-item {
+    min-height: 135px !important;
+    padding: 15px 5px !important;
+  }
+
+  #hero .stat-number {
+    font-size: 24px !important;
+  }
+
+  #hero .stat-number-wide {
+    font-size: 22px !important;
+  }
+
+  #hero .stat-label {
+    font-size: 11px !important;
+  }
+}
+
+
+ 
 
 /* =========================================================
    TESTIMONIAL SECTION
@@ -1742,4 +2023,6 @@ line-height: 20px;
         min-width: 38px;
     }
 }
+
+
 

@@ -1,0 +1,56 @@
+@media (max-width: 1023px) {
+
+  .doctor-container {
+    min-height: auto !important;
+  }
+
+  .hero-copy {
+    position: relative !important;
+    top: 0 !important;
+    left: 0 !important;
+    width: 100% !important;
+  }
+
+  .doctor-visual {
+    position: relative !important;
+    left: 0 !important;
+    top: 0 !important;
+    width: 100% !important;
+  }
+
+  .feature-cards {
+    position: relative !important;
+    top: auto !important;
+    right: auto !important;
+    width: 100% !important;
+  }
+
+  .stats-panel {
+    position: relative !important;
+    top: auto !important;
+    left: auto !important;
+    right: auto !important;
+    bottom: auto !important;
+    width: 100% !important;
+  }
+}
+
+@media (max-width: 767px) {
+
+  .stats-top-row {
+    display: grid !important;
+    grid-template-columns: repeat(2, minmax(0, 1fr)) !important;
+    gap: 24px 10px !important;
+  }
+
+  .stats-bottom-row {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 24px !important;
+  }
+
+  .stat-item-divider {
+    border-right: 0 !important;
+  }
+
+}

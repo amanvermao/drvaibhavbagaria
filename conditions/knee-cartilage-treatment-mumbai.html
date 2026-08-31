@@ -69,7 +69,7 @@
   id="header"
   class="absolute top-0 left-0 w-full z-50"
 >
-  <div class="doctor-container header-inner">
+  <div class="doctor-container header-inner flex items-center justify-between">
 
     <!-- ================= LOGO ================= -->
 
@@ -98,9 +98,21 @@
 
     </a>
 
+    <!-- ================= MOBILE MENU BUTTON ================= -->
+    <button
+      type="button"
+      id="mobile-menu-button"
+      class="lg:hidden inline-flex h-11 w-11 items-center justify-center rounded-lg border border-[#dce9ef] bg-white/95 text-[#005783] shadow-sm transition hover:bg-[#effaff]"
+      aria-label="Open menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <i id="mobile-menu-icon" class="fa-solid fa-bars text-[20px]"></i>
+    </button>
+
     <!-- ================= NAVIGATION ================= -->
 
-    <nav class="header-nav">
+    <nav class="header-nav hidden lg:flex">
 
       <a
         href="../"
@@ -115,15 +127,6 @@
       >
         About Us
       </a>
-
-      <a
-        href="#services"
-        class="header-nav-link services-link"
-      >
-      Procedures
-        <i class="fa-solid fa-chevron-down"></i>
-      </a>
-
 
 
 <!-- ================= CONDITIONS NAV ITEM ================= -->
@@ -354,7 +357,7 @@
       </p>
 
       <a
-        href="#contact"
+        href="../contact.html"
         class="inline-flex items-center gap-2
                text-[12px] font-semibold
                text-[#005783]
@@ -371,21 +374,238 @@
 
 </div>
 
+<!-- ================= PROCEDURES DROPDOWN ================= -->
+
+<div class="relative group">
+
+  <a
+    href="../robotic-knee-replacement.html"
+    class="header-nav-link services-link inline-flex items-center gap-2"
+  >
+    Procedures
+    <i class="fa-solid fa-chevron-down text-[11px]"></i>
+  </a>
+
+  <!-- Dropdown Menu -->
+  <div
+    class="absolute
+           left-0
+           top-full
+           z-50
+           mt-3
+           w-[300px]
+           overflow-hidden
+           rounded-[12px]
+           border
+           border-[#dce9ef]
+           bg-white
+           opacity-0
+           invisible
+           translate-y-2
+           shadow-lg
+           transition-all
+           duration-300
+           group-hover:visible
+           group-hover:opacity-100
+           group-hover:translate-y-0"
+  >
+
+    <a
+      href="../robotic-knee-replacement.html"
+      class="block
+             px-5
+             py-3
+             text-[15px]
+             font-medium
+             text-[#252a2e]
+             transition-colors
+             duration-200
+             hover:bg-[#effaff]
+             hover:text-[#0084d1]"
+    >
+      Robotic Knee Replacement
+    </a>
+
+    <a
+      href="../robotic-hip-replacement.html"
+      class="block
+             px-5
+             py-3
+             text-[15px]
+             font-medium
+             text-[#252a2e]
+             transition-colors
+             duration-200
+             hover:bg-[#effaff]
+             hover:text-[#0084d1]"
+    >
+      Robotic Hip Replacement
+    </a>
+
+    <a
+      href="../robotic-partial-knee-replacement.html"
+      class="block
+             px-5
+             py-3
+             text-[15px]
+             font-medium
+             text-[#252a2e]
+             transition-colors
+             duration-200
+             hover:bg-[#effaff]
+             hover:text-[#0084d1]"
+    >
+      Partial Knee Replacement
+    </a>
+  
+<a
+      href="../revision-joint-replacement.html"
+      class="block
+             px-5
+             py-3
+             text-[15px]
+             font-medium
+             text-[#252a2e]
+             transition-colors
+             duration-200
+             hover:bg-[#effaff]
+             hover:text-[#0084d1]"
+    >
+      Revision Joint Replacement
+    </a>
+    
+    <a
+      href="../hip-fracture.html"
+      class="block
+             px-5
+             py-3
+             text-[15px]
+             font-medium
+             text-[#252a2e]
+             transition-colors
+             duration-200
+             hover:bg-[#effaff]
+             hover:text-[#0084d1]"
+    >
+      Hip Fracture Treatment 
+    </a>
+
+
+    <a
+      href="../sports-injury-and-arthroscopy.html"
+      class="block
+             px-5
+             py-3
+             text-[15px]
+             font-medium
+             text-[#252a2e]
+             transition-colors
+             duration-200
+             hover:bg-[#effaff]
+             hover:text-[#0084d1]"
+    >
+      Sports Injury Treatment
+    </a>
+
+  </div>
+
+</div>
+
       <a
-        href="#blogs"
+        href="../blogs.html"
         class="header-nav-link"
       >
         Insights
       </a>
 
       <a
-        href="#contact"
+        href="../contact.html"
         class="header-nav-link"
       >
         Contact Us
       </a>
 
     </nav>
+
+
+    <!-- ================= MOBILE NAVIGATION ================= -->
+    <div
+      id="mobile-menu"
+      class="absolute left-0 right-0 top-full hidden max-h-[calc(100vh-90px)] overflow-y-auto border-t border-[#dce9ef] bg-white shadow-[0_15px_40px_rgba(0,55,85,0.12)] lg:hidden"
+    >
+      <div class="px-5 py-4">
+
+        <a href="../" class="block border-b border-slate-100 py-4 text-[16px] font-semibold text-[#005783]">
+          Home
+        </a>
+
+        <a href="../about.html" class="block border-b border-slate-100 py-4 text-[16px] font-medium text-[#252a2e]">
+          About Us
+        </a>
+
+        
+
+        <!-- Mobile Conditions -->
+        <div class="border-b border-slate-100">
+          <button
+            type="button"
+            class="mobile-submenu-button flex w-full items-center justify-between py-4 text-left text-[16px] font-medium text-[#252a2e]"
+            aria-expanded="false"
+          >
+            <span>Conditions</span>
+            <i class="fa-solid fa-chevron-down text-[11px] transition-transform duration-300"></i>
+          </button>
+
+          <div class="mobile-submenu hidden pb-2 pl-3">
+            <a href="./acl-tear-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">ACL tear</a>
+            <a href="./ankle-ligament-injury-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Ankle sprain and instability</a>
+            <a href="./avascular-necrosis-hip-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Avascular necrosis of the hip</a>
+            <a href="./bow-legs-knock-knees-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Bow legs and knock knees</a>
+            <a href="./failed-hip-replacement-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Failed hip replacement</a>
+            <a href="./failed-knee-replacement-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Failed knee replacement</a>
+            <a href="./frozen-shoulder-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Frozen shoulder</a>
+            <a href="./hip-impingement-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Hip impingement (FAI)</a>
+            <a href="./hip-arthritis-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Hip osteoarthritis</a>
+            <a href="./knee-cartilage-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Knee cartilage damage</a>
+            <a href="./knee-arthritis-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Knee osteoarthritis</a>
+            <a href="./meniscus-tear-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Meniscus tear</a>
+            <a href="./osteoporosis-fracture-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Osteoporosis and fragility fractures</a>
+            <a href="./pelvic-fracture-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Pelvic and acetabular fracture</a>
+            <a href="./post-traumatic-arthritis-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Post-traumatic arthritis</a>
+            <a href="./rheumatoid-arthritis-joint-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Rheumatoid arthritis of the joints</a>
+            <a href="./rotator-cuff-tear-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Rotator cuff tear</a>
+            <a href="./shoulder-dislocation-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Shoulder dislocation and instability</a>
+          </div>
+        </div>
+
+        <!-- Mobile Procedures -->
+        <div class="border-b border-slate-100">
+          <button
+            type="button"
+            class="mobile-submenu-button flex w-full items-center justify-between py-4 text-left text-[16px] font-medium text-[#252a2e]"
+            aria-expanded="false"
+          >
+            <span>Procedures</span>
+            <i class="fa-solid fa-chevron-down text-[11px] transition-transform duration-300"></i>
+          </button>
+
+          <div class="mobile-submenu hidden pb-2 pl-3">
+            <a href="../robotic-knee-replacement.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Robotic Knee Replacement</a>
+            <a href="../robotic-hip-replacement.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Robotic Hip Replacement</a>
+            <a href="../robotic-partial-knee-replacement.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Partial Knee Replacement</a>
+             <a href="../revision-joint-replacement.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Revision Joint Replacement</a>
+             <a href="./hip-fracture.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Hip Fracture Treatment</a>
+            <a href="../sports-injury-and-arthroscopy.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Sports Injury Treatment</a>
+          
+           
+          </div>
+        </div>
+
+        <a href="../blogs.html" class="block border-b border-slate-100 py-4 text-[16px] font-medium text-[#252a2e]">Insights</a>
+        <a href="../contact.html" class="block py-4 text-[16px] font-medium text-[#252a2e]">Contact Us</a>
+
+      </div>
+    </div>
 
   </div>
 </header>

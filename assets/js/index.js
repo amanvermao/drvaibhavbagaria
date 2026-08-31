@@ -538,3 +538,58 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 
 });
+
+
+// header
+
+document.addEventListener('DOMContentLoaded', function () {
+  const menuButton = document.getElementById('mobile-menu-button');
+  const mobileMenu = document.getElementById('mobile-menu');
+  const menuIcon = document.getElementById('mobile-menu-icon');
+
+  if (!menuButton || !mobileMenu) return;
+
+  menuButton.addEventListener('click', function () {
+    const isOpen = !mobileMenu.classList.contains('hidden');
+
+    mobileMenu.classList.toggle('hidden');
+    menuButton.setAttribute('aria-expanded', String(!isOpen));
+    menuButton.setAttribute('aria-label', isOpen ? 'Open menu' : 'Close menu');
+
+    menuIcon.classList.toggle('fa-bars', isOpen);
+    menuIcon.classList.toggle('fa-xmark', !isOpen);
+  });
+
+  document.querySelectorAll('.mobile-submenu-button').forEach(function (button) {
+    button.addEventListener('click', function () {
+      const submenu = button.nextElementSibling;
+      const chevron = button.querySelector('i');
+      const isOpen = !submenu.classList.contains('hidden');
+
+      submenu.classList.toggle('hidden');
+      button.setAttribute('aria-expanded', String(!isOpen));
+      chevron.classList.toggle('rotate-180', !isOpen);
+    });
+  });
+
+  // Close the mobile menu after selecting a normal link.
+  mobileMenu.querySelectorAll('a').forEach(function (link) {
+    link.addEventListener('click', function () {
+      mobileMenu.classList.add('hidden');
+      menuButton.setAttribute('aria-expanded', 'false');
+      menuButton.setAttribute('aria-label', 'Open menu');
+      menuIcon.classList.add('fa-bars');
+      menuIcon.classList.remove('fa-xmark');
+    });
+  });
+
+  // Reset mobile menu when switching back to desktop.
+  window.addEventListener('resize', function () {
+    if (window.innerWidth >= 1024) {
+      mobileMenu.classList.add('hidden');
+      menuButton.setAttribute('aria-expanded', 'false');
+      menuIcon.classList.add('fa-bars');
+      menuIcon.classList.remove('fa-xmark');
+    }
+  });
+});

@@ -71,11 +71,11 @@
 
    <!-- header -->
 
-  <header
+    <header
   id="header"
   class="absolute top-0 left-0 w-full z-50"
 >
-  <div class="doctor-container header-inner">
+  <div class="doctor-container header-inner flex items-center justify-between">
 
     <!-- ================= LOGO ================= -->
 
@@ -104,9 +104,21 @@
 
     </a>
 
+    <!-- ================= MOBILE MENU BUTTON ================= -->
+    <button
+      type="button"
+      id="mobile-menu-button"
+      class="lg:hidden inline-flex h-11 w-11 items-center justify-center rounded-lg border border-[#dce9ef] bg-white/95 text-[#005783] shadow-sm transition hover:bg-[#effaff]"
+      aria-label="Open menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <i id="mobile-menu-icon" class="fa-solid fa-bars text-[20px]"></i>
+    </button>
+
     <!-- ================= NAVIGATION ================= -->
 
-    <nav class="header-nav">
+    <nav class="header-nav hidden lg:flex">
 
       <a
         href="./"
@@ -121,143 +133,9 @@
       >
         About Us
       </a>
-<!-- ================= PROCEDURES DROPDOWN ================= -->
 
-<div class="relative group">
 
-  <a
-    href="./robotic-knee-replacement.html"
-    class="header-nav-link services-link inline-flex items-center gap-2"
-  >
-    Procedures
-    <i class="fa-solid fa-chevron-down text-[11px]"></i>
-  </a>
-
-  <!-- Dropdown Menu -->
-  <div
-    class="absolute
-           left-0
-           top-full
-           z-50
-           mt-3
-           w-[300px]
-           overflow-hidden
-           rounded-[12px]
-           border
-           border-[#dce9ef]
-           bg-white
-           opacity-0
-           invisible
-           translate-y-2
-           shadow-lg
-           transition-all
-           duration-300
-           group-hover:visible
-           group-hover:opacity-100
-           group-hover:translate-y-0"
-  >
-
-    <a
-      href="./robotic-knee-replacement.html"
-      class="block
-             px-5
-             py-3
-             text-[15px]
-             font-medium
-             text-[#252a2e]
-             transition-colors
-             duration-200
-             hover:bg-[#effaff]
-             hover:text-[#0084d1]"
-    >
-      Robotic Knee Replacement
-    </a>
-
-    <a
-      href="./robotic-hip-replacement.html"
-      class="block
-             px-5
-             py-3
-             text-[15px]
-             font-medium
-             text-[#252a2e]
-             transition-colors
-             duration-200
-             hover:bg-[#effaff]
-             hover:text-[#0084d1]"
-    >
-      Robotic Hip Replacement
-    </a>
-
-    <a
-      href="./robotic-partial-knee-replacement.html"
-      class="block
-             px-5
-             py-3
-             text-[15px]
-             font-medium
-             text-[#252a2e]
-             transition-colors
-             duration-200
-             hover:bg-[#effaff]
-             hover:text-[#0084d1]"
-    >
-      Partial Knee Replacement
-    </a>
-
-    <a
-      href="./sports-injury-and-arthroscopy.html"
-      class="block
-             px-5
-             py-3
-             text-[15px]
-             font-medium
-             text-[#252a2e]
-             transition-colors
-             duration-200
-             hover:bg-[#effaff]
-             hover:text-[#0084d1]"
-    >
-      Sports Injury Treatment
-    </a>
-
-    <a
-      href="./hip-fracture.html"
-      class="block
-             px-5
-             py-3
-             text-[15px]
-             font-medium
-             text-[#252a2e]
-             transition-colors
-             duration-200
-             hover:bg-[#effaff]
-             hover:text-[#0084d1]"
-    >
-      Hip Fracture Treatment in Mumbai
-    </a>
-
-    <a
-      href="./revision-joint-replacement.html"
-      class="block
-             px-5
-             py-3
-             text-[15px]
-             font-medium
-             text-[#252a2e]
-             transition-colors
-             duration-200
-             hover:bg-[#effaff]
-             hover:text-[#0084d1]"
-    >
-      Revision Joint Replacement in Mumbai
-    </a>
-
-  </div>
-
-</div>
-
-<!-- ================= CONDITIONS NAV ITEM ================= -->
+      <!-- ================= CONDITIONS NAV ITEM ================= -->
 
 <div class="relative conditions-dropdown">
 
@@ -485,7 +363,7 @@
       </p>
 
       <a
-        href="#contact"
+        href="./contact.html"
         class="inline-flex items-center gap-2
                text-[12px] font-semibold
                text-[#005783]
@@ -501,22 +379,240 @@
   </div>
 
 </div>
+<!-- ================= PROCEDURES DROPDOWN ================= -->
+
+<div class="relative group">
+
+  <a
+    href="./robotic-knee-replacement.html"
+    class="header-nav-link services-link inline-flex items-center gap-2"
+  >
+    Procedures
+    <i class="fa-solid fa-chevron-down text-[11px]"></i>
+  </a>
+
+  <!-- Dropdown Menu -->
+  <div
+    class="absolute
+           left-0
+           top-full
+           z-50
+           mt-3
+           w-[300px]
+           overflow-hidden
+           rounded-[12px]
+           border
+           border-[#dce9ef]
+           bg-white
+           opacity-0
+           invisible
+           translate-y-2
+           shadow-lg
+           transition-all
+           duration-300
+           group-hover:visible
+           group-hover:opacity-100
+           group-hover:translate-y-0"
+  >
+
+    <a
+      href="./robotic-knee-replacement.html"
+      class="block
+             px-5
+             py-3
+             text-[15px]
+             font-medium
+             text-[#252a2e]
+             transition-colors
+             duration-200
+             hover:bg-[#effaff]
+             hover:text-[#0084d1]"
+    >
+      Robotic Knee Replacement
+    </a>
+
+    <a
+      href="./robotic-hip-replacement.html"
+      class="block
+             px-5
+             py-3
+             text-[15px]
+             font-medium
+             text-[#252a2e]
+             transition-colors
+             duration-200
+             hover:bg-[#effaff]
+             hover:text-[#0084d1]"
+    >
+      Robotic Hip Replacement
+    </a>
+
+    <a
+      href="./robotic-partial-knee-replacement.html"
+      class="block
+             px-5
+             py-3
+             text-[15px]
+             font-medium
+             text-[#252a2e]
+             transition-colors
+             duration-200
+             hover:bg-[#effaff]
+             hover:text-[#0084d1]"
+    >
+      Partial Knee Replacement
+    </a>
+
+   
+
+    <a
+      href="./revision-joint-replacement.html"
+      class="block
+             px-5
+             py-3
+             text-[15px]
+             font-medium
+             text-[#252a2e]
+             transition-colors
+             duration-200
+             hover:bg-[#effaff]
+             hover:text-[#0084d1]"
+    >
+      Revision Joint Replacement
+    </a>
 
       <a
-        href="#blogs"
+      href="./hip-fracture.html"
+      class="block
+             px-5
+             py-3
+             text-[15px]
+             font-medium
+             text-[#252a2e]
+             transition-colors
+             duration-200
+             hover:bg-[#effaff]
+             hover:text-[#0084d1]"
+    >
+      Hip Fracture Treatment
+    </a>
+
+     <a
+      href="./sports-injury-and-arthroscopy.html"
+      class="block
+             px-5
+             py-3
+             text-[15px]
+             font-medium
+             text-[#252a2e]
+             transition-colors
+             duration-200
+             hover:bg-[#effaff]
+             hover:text-[#0084d1]"
+    >
+      Sports Injury Treatment
+    </a>
+
+  </div>
+
+</div>
+
+
+
+      <a
+        href="./blogs.html"
         class="header-nav-link"
       >
         Insights
       </a>
 
       <a
-        href="#contact"
+        href="./contact.html"
         class="header-nav-link"
       >
         Contact Us
       </a>
 
     </nav>
+
+
+    <!-- ================= MOBILE NAVIGATION ================= -->
+    <div
+      id="mobile-menu"
+      class="absolute left-0 right-0 top-full hidden max-h-[calc(100vh-90px)] overflow-y-auto border-t border-[#dce9ef] bg-white shadow-[0_15px_40px_rgba(0,55,85,0.12)] lg:hidden"
+    >
+      <div class="px-5 py-4">
+
+        <a href="./" class="block border-b border-slate-100 py-4 text-[16px] font-semibold text-[#005783]">
+          Home
+        </a>
+
+        <a href="./about.html" class="block border-b border-slate-100 py-4 text-[16px] font-medium text-[#252a2e]">
+          About Us
+        </a>
+
+
+        <!-- Mobile Conditions -->
+        <div class="border-b border-slate-100">
+          <button
+            type="button"
+            class="mobile-submenu-button flex w-full items-center justify-between py-4 text-left text-[16px] font-medium text-[#252a2e]"
+            aria-expanded="false"
+          >
+            <span>Conditions</span>
+            <i class="fa-solid fa-chevron-down text-[11px] transition-transform duration-300"></i>
+          </button>
+
+          <div class="mobile-submenu hidden pb-2 pl-3">
+            <a href="./conditions/acl-tear-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">ACL tear</a>
+            <a href="./conditions/ankle-ligament-injury-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Ankle sprain and instability</a>
+            <a href="./conditions/avascular-necrosis-hip-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Avascular necrosis of the hip</a>
+            <a href="./conditions/bow-legs-knock-knees-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Bow legs and knock knees</a>
+            <a href="./conditions/failed-hip-replacement-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Failed hip replacement</a>
+            <a href="./conditions/failed-knee-replacement-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Failed knee replacement</a>
+            <a href="./conditions/frozen-shoulder-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Frozen shoulder</a>
+            <a href="./conditions/hip-impingement-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Hip impingement (FAI)</a>
+            <a href="./conditions/hip-arthritis-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Hip osteoarthritis</a>
+            <a href="./conditions/knee-cartilage-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Knee cartilage damage</a>
+            <a href="./conditions/knee-arthritis-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Knee osteoarthritis</a>
+            <a href="./conditions/meniscus-tear-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Meniscus tear</a>
+            <a href="./conditions/osteoporosis-fracture-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Osteoporosis and fragility fractures</a>
+            <a href="./conditions/pelvic-fracture-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Pelvic and acetabular fracture</a>
+            <a href="./conditions/post-traumatic-arthritis-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Post-traumatic arthritis</a>
+            <a href="./conditions/rheumatoid-arthritis-joint-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Rheumatoid arthritis of the joints</a>
+            <a href="./conditions/rotator-cuff-tear-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Rotator cuff tear</a>
+            <a href="./conditions/shoulder-dislocation-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Shoulder dislocation and instability</a>
+          </div>
+        </div>
+        
+        <!-- Mobile Procedures -->
+        <div class="border-b border-slate-100">
+          <button
+            type="button"
+            class="mobile-submenu-button flex w-full items-center justify-between py-4 text-left text-[16px] font-medium text-[#252a2e]"
+            aria-expanded="false"
+          >
+            <span>Procedures</span>
+            <i class="fa-solid fa-chevron-down text-[11px] transition-transform duration-300"></i>
+          </button>
+
+          <div class="mobile-submenu hidden pb-2 pl-3">
+            <a href="./robotic-knee-replacement.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Robotic Knee Replacement</a>
+            <a href="./robotic-hip-replacement.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Robotic Hip Replacement</a>
+            <a href="./robotic-partial-knee-replacement.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Partial Knee Replacement</a>
+           <a href="./revision-joint-replacement.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Revision Joint Replacement</a>
+           
+            <a href="./hip-fracture.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Hip Fracture Treatment</a>
+            
+             <a href="./sports-injury-and-arthroscopy.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Sports Injury Treatment</a>
+          </div>
+        </div>
+
+        <a href="./blogs.html" class="block border-b border-slate-100 py-4 text-[16px] font-medium text-[#252a2e]">Insights</a>
+        <a href="./contact.html" class="block py-4 text-[16px] font-medium text-[#252a2e]">Contact Us</a>
+
+      </div>
+    </div>
 
   </div>
 </header>
@@ -548,10 +644,15 @@
       </div>
 
       <h1
-        class="text-[36px] md:text-[56px] leading-[1.1] tracking-tight text-neutral-900 mb-6"
-      >
-        About Dr. Vaibhav Bagaria 
-      </h1>
+  class="text-[36px] md:text-[56px] leading-[1.1] tracking-tight text-neutral-900 mb-6"
+>
+  About Dr.
+  <span
+    class="bg-[#004d77] text-white px-2 py-0.5"
+  >
+    Vaibhav Bagaria
+  </span>
+</h1>
 
       <p
         class="text-[18px] md:text-[20px] text-neutral-600 max-w-3xl mx-auto leading-relaxed"
@@ -563,168 +664,172 @@
     </div>
 
 
-    <!-- ================= MAIN GRID ================= -->
+
+<!-- ================= MAIN GRID ================= -->
+
+<div
+  class="grid grid-cols-1 lg:grid-cols-[2fr_400px] gap-8 lg:gap-10 items-start"
+>
+
+  <!-- ================= LEFT ================= -->
+
+  <div class="doctor-content w-full">
+
+    <h1
+      class="text-[26px] md:text-[30px] font-bold leading-tight text-gray-900 mb-2"
+    >
+      Dr. Vaibhav Bagaria
+    </h1>
+
+
+    <!-- Qualifications -->
 
     <div
-      class="grid grid-cols-3 lg:grid-cols-[2fr_400px] gap-8 lg:gap-10 items-start"
+      class="text-[14px] md:text-[16px] leading-[1.55] text-[#00539b] font-medium"
     >
 
-      <!-- ================= LEFT ================= -->
+      <p>MS (Ortho) FASSI, FNUS, FNAMS..</p>
 
-      <div class="doctor-content">
+      <p>
+        Director & Head, Department of Orthopaedics
+      </p>
 
-        <h1
-          class="text-[30px] md:text-[30px] font-bold leading-tight text-gray-900 mb-2"
-        >
-          Dr. Vaibhav Bagaria 
-        </h1>
+      <p>
+        Sir H. N. Reliance Foundation Hospital, Mumbai
+      </p>
 
+      <p>
+        Robotic Knee & Hip Replacement Specialist
+      </p>
 
-        <!-- Qualifications -->
+      <p>
+        President, SICOT India
+      </p>
 
-        <div
-          class="text-[16px] md:text-[16px] leading-[1.55] text-[#00539b] font-medium"
-        >
+      <p>
+        Specialist in Sports Injury,
+        Arthroscopy and Complex Pelvic Reconstruction
+      </p>
 
-          <p>MS (Ortho) FASSI, FNUS, FNAMS..</p>
-
-          <p>
-           Director & Head, Department of Orthopaedics
-          </p>
-
-          <p>
-          Sir H. N. Reliance Foundation Hospital, Mumbai 
-          </p>
-
-          <p>
-            Robotic Knee & Hip Replacement Specialist
-
-          </p>
-
-          <p>
-            President, SICOT India 
-          </p>
-
-          <p>
-            Specialist in Sports Injury,
-Arthroscopy and Complex Pelvic Reconstruction
-
-          </p>
-
-        </div>
+    </div>
 
 
-        <!-- Divider -->
+    <!-- Divider -->
 
-        <div class="h-px bg-gray-200 my-3"></div>
-
-
-        <!-- ================= BIO ================= -->
-
-        <div
-          class="text-[17px] md:text-[17px] leading-[1.55] text-[#26384a]"
-        >
-
-          <p class="mb-3">
-            Dr. Vaibhav Bagaria is Director and Head of the Department of Orthopaedics at Sir H. N. Reliance Foundation Hospital, Mumbai, and one of the earliest surgeons in India to adopt robotic joint replacement. Over twenty-two years of practice he has treated patients across the full range of bone and joint conditions, with a particular focus on robotic knee and hip replacement, partial knee replacement, sports injury and arthroscopy, and complex pelvic and acetabular reconstruction.
-          </p>
-
-          <p class="mb-3">
-           He graduated MBBS from Government Medical College, Nagpur with three gold medals, and completed MS (Orthopaedics) at KEM Hospital, Mumbai. He went on to train at the Medical College of Wisconsin in Milwaukee, at the Endoklinik and König-Ludwig-Haus in Germany, and across Australia at Sir Charles Gairdner and Hollywood Private Hospital in Perth, Avenue Hospital in Melbourne, and Sportsmed SA in Adelaide. He is the first Indian surgeon to top the international S.I.C.O.T. Diploma examination, and today serves as President and National Delegate of SICOT India.
-          </p>
-
-          <p class="mb-3">
-          Alongside his clinical practice, Dr. Bagaria is an active researcher with more than 150 peer-reviewed publications and over 5,200 citations. His patented technique for converting medical scan data into 3D-printable models is now used widely in orthopaedic surgical planning, and his interest in regenerative medicine led him to establish India's first private tissue bank in Mumbai. His current research examines how far robotic assistance genuinely improves on surgical judgement in knee replacement  including in stiff knees, where conventional technique is most difficult.
-          </p>
-
-          <p class="mb-3">
-            He teaches for the National Board of Examinations, trains visiting international fellows in robotic technique, and is writing two books commissioned by Thieme and CBS on cartilage regeneration and comprehensive knee surgery. In 2008 he was chosen to represent the Indian medical community in the Beijing Olympic Torch Relay held in India
-          </p>
-
-        </div>
-
-      </div>
+    <div class="h-px bg-gray-200 my-4"></div>
 
 
-      <!-- ================= RIGHT CARD ================= -->
+    <!-- ================= BIO ================= -->
 
-      <div
-        class="doctor-card bg-white rounded-[8px] overflow-hidden shadow-[0_8px_25px_rgba(0,0,0,0.10)]"
+    <div
+      class="text-[15px] md:text-[17px] leading-[1.6] text-[#26384a]"
+    >
+
+      <p class="mb-4">
+        Dr. Vaibhav Bagaria is Director and Head of the Department of Orthopaedics at Sir H. N. Reliance Foundation Hospital, Mumbai, and one of the earliest surgeons in India to adopt robotic joint replacement. Over twenty-two years of practice he has treated patients across the full range of bone and joint conditions, with a particular focus on robotic knee and hip replacement, partial knee replacement, sports injury and arthroscopy, and complex pelvic and acetabular reconstruction.
+      </p>
+
+      <p class="mb-4">
+        He graduated MBBS from Government Medical College, Nagpur with three gold medals, and completed MS (Orthopaedics) at KEM Hospital, Mumbai. He went on to train at the Medical College of Wisconsin in Milwaukee, at the Endoklinik and König-Ludwig-Haus in Germany, and across Australia at Sir Charles Gairdner and Hollywood Private Hospital in Perth, Avenue Hospital in Melbourne, and Sportsmed SA in Adelaide. He is the first Indian surgeon to top the international S.I.C.O.T. Diploma examination, and today serves as President and National Delegate of SICOT India.
+      </p>
+
+      <p class="mb-4">
+        Alongside his clinical practice, Dr. Bagaria is an active researcher with more than 150 peer-reviewed publications and over 5,200 citations. His patented technique for converting medical scan data into 3D-printable models is now used widely in orthopaedic surgical planning, and his interest in regenerative medicine led him to establish India's first private tissue bank in Mumbai. His current research examines how far robotic assistance genuinely improves on surgical judgement in knee replacement including in stiff knees, where conventional technique is most difficult.
+      </p>
+
+      <p class="mb-4">
+        He teaches for the National Board of Examinations, trains visiting international fellows in robotic technique, and is writing two books commissioned by Thieme and CBS on cartilage regeneration and comprehensive knee surgery. In 2008 he was chosen to represent the Indian medical community in the Beijing Olympic Torch Relay held in India.
+      </p>
+
+    </div>
+
+  </div>
+
+
+  <!-- ================= RIGHT CARD ================= -->
+
+  <div
+    class="doctor-card w-full max-w-[400px] mx-auto lg:mx-0 bg-white rounded-[8px] overflow-hidden shadow-[0_8px_25px_rgba(0,0,0,0.10)]"
+  >
+
+    <div class="w-full h-[320px] sm:h-[380px] lg:h-[400px] overflow-hidden">
+
+      <img
+        src="assets/images/Orthopedic surgeon in mumbai  (2).webp"
+        alt="Dr. Vaibhav Bagaria"
+        class="w-full h-full object-cover object-center"
+      />
+
+    </div>
+
+
+    <div class="px-3 pb-3">
+
+      <h3
+        class="text-center text-[19px] md:text-[21px] font-bold text-[#00629b] py-3"
       >
-
-        <div class="w-full h-[400px] overflow-hidden">
-
-          <img
-            src="assets/images/Orthopedic surgeon in mumbai  (2).webp"
-            alt="Dr. Vishal Kundnani"
-            class="w-full h-full object-cover object-center"
-          />
-
-        </div>
+        Dr. Vaibhav Bagaria
+      </h3>
 
 
-        <div class="px-3 pb-3">
+      <div class="border-t border-gray-200">
 
-          <h3
-            class="text-center text-[20px] md:text-[21px] font-bold text-[#00629b] py-3"
-          >
-            Dr. Vaibhav Bagaria
-          </h3>
+        <p
+          class="py-2.5 text-[12px] md:text-[13px] leading-[1.4] text-[#344054]"
+        >
+          MBBS, MS (Orthopaedics), FCPS, Dip. S.I.C.O.T..
+        </p>
 
+        <div class="border-t border-gray-200"></div>
 
-          <div class="border-t border-gray-200">
+        <p
+          class="py-2.5 text-[12px] md:text-[13px] leading-[1.4] text-[#344054]"
+        >
+          Director & Head, Department of Orthopaedics —
+          <span class="underline">
+            Sir H. N. Reliance Foundation Hospital
+          </span>, Mumbai
+        </p>
 
-            <p
-              class="py-2.5 text-[12px] md:text-[13px] leading-[1.4] text-[#344054]"
-            >
-             MBBS, MS (Orthopaedics), FCPS, Dip. S.I.C.O.T..
-            </p>
+        <div class="border-t border-gray-200"></div>
 
-            <div class="border-t border-gray-200"></div>
+        <p
+          class="py-2.5 text-[12px] md:text-[13px] leading-[1.4] text-[#344054]"
+        >
+          President & National Delegate SICOT India
+        </p>
 
-            <p
-              class="py-2.5 text-[12px] md:text-[13px] leading-[1.4] text-[#344054]"
-            >
-              Director & Head, Department of Orthopaedics —
-              <span class="underline">Sir H. N. Reliance Foundation Hospital</span>, Mumbai
-            </p>
+        <div class="border-t border-gray-200"></div>
 
-            <div class="border-t border-gray-200"></div>
+        <p
+          class="py-2.5 text-[12px] md:text-[13px] leading-[1.4] text-[#344054]"
+        >
+          Specialist in Robotic Knee & Hip Replacement.
+        </p>
 
-            <p
-              class="py-2.5 text-[12px] md:text-[13px] leading-[1.4] text-[#344054]"
-            >
-              President & National Delegate  SICOT India
-            </p>
+        <div class="border-t border-gray-200"></div>
 
-            <div class="border-t border-gray-200"></div>
+        <p
+          class="py-2.5 text-[12px] md:text-[13px] leading-[1.4] text-[#344054]"
+        >
+          Specialist in Sports Injury, Arthroscopy & Complex Trauma
+        </p>
 
-            <p
-              class="py-2.5 text-[12px] md:text-[13px] leading-[1.4] text-[#344054]"
-            >
-              Specialist in Robotic Knee & Hip Replacement.
-            </p>
+        <div class="border-t border-gray-200"></div>
 
-            <div class="border-t border-gray-200"></div>
-
-            <p
-              class="pt-2.5 text-[12px] md:text-[13px] leading-[1.4] text-[#344054]"
-            >
-              Specialist in Sports Injury, Arthroscopy & Complex Trauma
-            </p>
-             <p
-              class="pt-2.5 text-[12px] md:text-[13px] leading-[1.4] text-[#344054]"
-            >
-              Teacher  National Board of Examinations
-            </p>
-
-          </div>
-
-        </div>
+        <p
+          class="pt-2.5 text-[12px] md:text-[13px] leading-[1.4] text-[#344054]"
+        >
+          Teacher National Board of Examinations
+        </p>
 
       </div>
 
     </div>
+
+  </div>
+
+</div>
 
   </div>
 

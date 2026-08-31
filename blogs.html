@@ -1,0 +1,1353 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr Vaibhav Bagaria</title>
+    <link rel="stylesheet" href="assets/css/header.css">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/main.css">
+    <link rel="icon" type="image/png" href="assets/images/newlogov1.png">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+/>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+<!-- ScrollTrigger -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+
+<style>
+    .line-clamp-2 {
+      display: -webkit-box;
+      -webkit-line-clamp: 2;
+      -webkit-box-orient: vertical;
+      overflow: hidden;
+    }
+
+    .fade-up {
+      opacity: 0;
+      transform: translateY(20px);
+      animation: fadeUp 0.7s ease forwards;
+    }
+
+    .reveal-text {
+      opacity: 0;
+      animation: fadeIn 0.8s ease forwards;
+      animation-delay: 0.2s;
+    }
+
+    @keyframes fadeUp {
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    @keyframes fadeIn {
+      to {
+        opacity: 1;
+      }
+    }
+
+    .blog-card-hidden {
+      display: none;
+    }
+  </style>
+
+<!-- Swiper CSS -->
+<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      
+      
+      <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        raleway: ['"Raleway"', 'sans-serif'],
+                        inter: ['"Inter"', 'sans-serif']
+                    },
+                    colors: {
+                        brand: {
+                            blue: '#0060ae',
+                            dark: '#000000',
+                            bg: '#f8f8f8',
+                            red: '#ee4442',
+                            gray: '#7a7a7a'
+                        }
+                    }
+                }
+            }
+        };
+    </script>
+</head>
+<body>
+    
+<!-- header -->
+
+  
+      <header
+  id="header"
+  class="absolute top-0 left-0 w-full z-50"
+>
+  <div class="doctor-container header-inner flex items-center justify-between">
+
+    <!-- ================= LOGO ================= -->
+
+    <a
+      href="./"
+      class="header-logo shrink-0 flex items-center"
+    >
+
+      <img
+        src="assets/images/newlogov1.png"
+        alt="Dr Vaibhav Bagaria"
+        class="header-logo-icon object-contain shrink-0"
+      />
+
+      <div class="header-logo-text flex flex-col">
+
+        <h1 class="header-logo-name text-[17px]">
+          Dr Vaibhav Bagaria
+        </h1>
+
+        <span class="header-logo-qualification">
+          MBBS, MS (Orthopaedics), FCPS, DNB, SICOT
+        </span>
+
+      </div>
+
+    </a>
+
+    <!-- ================= MOBILE MENU BUTTON ================= -->
+    <button
+      type="button"
+      id="mobile-menu-button"
+      class="lg:hidden inline-flex h-11 w-11 items-center justify-center rounded-lg border border-[#dce9ef] bg-white/95 text-[#005783] shadow-sm transition hover:bg-[#effaff]"
+      aria-label="Open menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <i id="mobile-menu-icon" class="fa-solid fa-bars text-[20px]"></i>
+    </button>
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <nav class="header-nav hidden lg:flex">
+
+      <a
+        href="./"
+        class="header-nav-link active"
+      >
+        Home
+      </a>
+
+      <a
+        href="./about.html"
+        class="header-nav-link"
+      >
+        About Us
+      </a>
+
+
+      <!-- ================= CONDITIONS NAV ITEM ================= -->
+
+<div class="relative conditions-dropdown">
+
+  <!-- Conditions Button -->
+  <button
+    type="button"
+    class="header-nav-link services-link inline-flex items-center gap-2"
+    id="conditions-menu-button"
+    aria-expanded="false"
+    aria-haspopup="true"
+  >
+    Conditions
+    <i
+      class="fa-solid fa-chevron-down text-[10px] transition-transform duration-300"
+      id="conditions-chevron"
+    ></i>
+  </button>
+
+
+  <!-- ================= SUBMENU ================= -->
+
+  <div
+    id="conditions-submenu"
+    class="conditions-submenu absolute left-1/2 top-full z-50
+           mt-4 w-[min(92vw,900px)]
+           -translate-x-1/2
+           rounded-2xl border border-slate-200
+           bg-white p-5
+           opacity-0 invisible
+           translate-y-2
+           shadow-[0_20px_60px_rgba(0,55,85,0.15)]
+           transition-all duration-300"
+  >
+
+    <!-- Small top accent -->
+    <div
+      class="absolute left-1/2 top-0 h-[3px] w-20
+             -translate-x-1/2 rounded-b-full
+             bg-[#005783]"
+    ></div>
+
+
+    <!-- Header -->
+    <div class="mb-4 border-b border-slate-100 pb-4">
+
+      <h3
+        class="text-[16px] font-semibold text-[#005783]"
+      >
+        Conditions We Treat
+      </h3>
+
+      <p
+        class="mt-1 text-[12px] leading-relaxed text-slate-500"
+      >
+        Explore common orthopaedic conditions and joint problems.
+      </p>
+
+    </div>
+
+
+    <!-- ================= CONDITIONS GRID ================= -->
+
+    <div
+      class="grid grid-cols-1 gap-x-8
+             sm:grid-cols-2
+             lg:grid-cols-3"
+    >
+
+      <!-- COLUMN 1 -->
+      <div class="space-y-1">
+
+        <a
+          href="./conditions/acl-tear-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          ACL tear
+        </a>
+
+        <a
+          href="./conditions/ankle-ligament-injury-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Ankle sprain and instability
+        </a>
+
+        <a
+          href="./conditions/avascular-necrosis-hip-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Avascular necrosis of the hip
+        </a>
+
+        <a
+          href="./conditions/bow-legs-knock-knees-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Bow legs and knock knees
+          <span>(malalignment)</span>
+        </a>
+
+        <a
+          href="./conditions/failed-hip-replacement-mumbai.html"
+          class="condition-menu-item"
+        >
+          Failed hip replacement
+        </a>
+
+        <a
+          href="./conditions/failed-knee-replacement-mumbai.html"
+          class="condition-menu-item"
+        >
+          Failed knee replacement
+        </a>
+
+      </div>
+
+
+      <!-- COLUMN 2 -->
+      <div class="space-y-1">
+
+        <a
+          href="./conditions/frozen-shoulder-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Frozen shoulder
+        </a>
+
+        <a
+          href="./conditions/hip-impingement-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Hip impingement (FAI)
+        </a>
+
+        <a
+          href="./conditions/hip-arthritis-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Hip osteoarthritis
+        </a>
+
+        <a
+          href="./conditions/knee-cartilage-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Knee cartilage damage
+        </a>
+
+        <a
+          href="./conditions/knee-arthritis-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Knee osteoarthritis
+        </a>
+
+        <a
+          href="./conditions/meniscus-tear-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Meniscus tear
+        </a>
+
+      </div>
+
+
+      <!-- COLUMN 3 -->
+      <div class="space-y-1">
+
+        <a
+          href="./conditions/osteoporosis-fracture-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Osteoporosis and fragility fractures
+        </a>
+
+        <a
+          href="./conditions/pelvic-fracture-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Pelvic and acetabular fracture
+        </a>
+
+        <a
+          href="./conditions/post-traumatic-arthritis-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Post-traumatic arthritis
+        </a>
+
+        <a
+          href="./conditions/rheumatoid-arthritis-joint-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Rheumatoid arthritis of the joints
+        </a>
+
+        <a
+          href="./conditions/rotator-cuff-tear-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Rotator cuff tear
+        </a>
+
+        <a
+          href="./conditions/shoulder-dislocation-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Shoulder dislocation and instability
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <!-- Bottom CTA -->
+    <div
+      class="mt-5 flex flex-col gap-3
+             border-t border-slate-100 pt-4
+             sm:flex-row sm:items-center sm:justify-between"
+    >
+
+      <p class="text-[11px] text-slate-500">
+        Can't find your condition?
+      </p>
+
+      <a
+        href="./contact.html"
+        class="inline-flex items-center gap-2
+               text-[12px] font-semibold
+               text-[#005783]
+               transition-colors duration-200
+               hover:text-[#003d5c]"
+      >
+        Talk to our specialist
+        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+      </a>
+
+    </div>
+
+  </div>
+
+</div>
+<!-- ================= PROCEDURES DROPDOWN ================= -->
+
+<div class="relative group">
+
+  <a
+    href="./robotic-knee-replacement.html"
+    class="header-nav-link services-link inline-flex items-center gap-2"
+  >
+    Procedures
+    <i class="fa-solid fa-chevron-down text-[11px]"></i>
+  </a>
+
+  <!-- Dropdown Menu -->
+  <div
+    class="absolute
+           left-0
+           top-full
+           z-50
+           mt-3
+           w-[300px]
+           overflow-hidden
+           rounded-[12px]
+           border
+           border-[#dce9ef]
+           bg-white
+           opacity-0
+           invisible
+           translate-y-2
+           shadow-lg
+           transition-all
+           duration-300
+           group-hover:visible
+           group-hover:opacity-100
+           group-hover:translate-y-0"
+  >
+
+    <a
+      href="./robotic-knee-replacement.html"
+      class="block
+             px-5
+             py-3
+             text-[15px]
+             font-medium
+             text-[#252a2e]
+             transition-colors
+             duration-200
+             hover:bg-[#effaff]
+             hover:text-[#0084d1]"
+    >
+      Robotic Knee Replacement
+    </a>
+
+    <a
+      href="./robotic-hip-replacement.html"
+      class="block
+             px-5
+             py-3
+             text-[15px]
+             font-medium
+             text-[#252a2e]
+             transition-colors
+             duration-200
+             hover:bg-[#effaff]
+             hover:text-[#0084d1]"
+    >
+      Robotic Hip Replacement
+    </a>
+
+    <a
+      href="./robotic-partial-knee-replacement.html"
+      class="block
+             px-5
+             py-3
+             text-[15px]
+             font-medium
+             text-[#252a2e]
+             transition-colors
+             duration-200
+             hover:bg-[#effaff]
+             hover:text-[#0084d1]"
+    >
+      Partial Knee Replacement
+    </a>
+
+   
+
+    <a
+      href="./revision-joint-replacement.html"
+      class="block
+             px-5
+             py-3
+             text-[15px]
+             font-medium
+             text-[#252a2e]
+             transition-colors
+             duration-200
+             hover:bg-[#effaff]
+             hover:text-[#0084d1]"
+    >
+      Revision Joint Replacement
+    </a>
+
+      <a
+      href="./hip-fracture.html"
+      class="block
+             px-5
+             py-3
+             text-[15px]
+             font-medium
+             text-[#252a2e]
+             transition-colors
+             duration-200
+             hover:bg-[#effaff]
+             hover:text-[#0084d1]"
+    >
+      Hip Fracture Treatment
+    </a>
+
+     <a
+      href="./sports-injury-and-arthroscopy.html"
+      class="block
+             px-5
+             py-3
+             text-[15px]
+             font-medium
+             text-[#252a2e]
+             transition-colors
+             duration-200
+             hover:bg-[#effaff]
+             hover:text-[#0084d1]"
+    >
+      Sports Injury Treatment
+    </a>
+
+  </div>
+
+</div>
+
+
+
+      <a
+        href="./blogs.html"
+        class="header-nav-link"
+      >
+        Insights
+      </a>
+
+      <a
+        href="./contact.html"
+        class="header-nav-link"
+      >
+        Contact Us
+      </a>
+
+    </nav>
+
+
+    <!-- ================= MOBILE NAVIGATION ================= -->
+    <div
+      id="mobile-menu"
+      class="absolute left-0 right-0 top-full hidden max-h-[calc(100vh-90px)] overflow-y-auto border-t border-[#dce9ef] bg-white shadow-[0_15px_40px_rgba(0,55,85,0.12)] lg:hidden"
+    >
+      <div class="px-5 py-4">
+
+        <a href="./" class="block border-b border-slate-100 py-4 text-[16px] font-semibold text-[#005783]">
+          Home
+        </a>
+
+        <a href="./about.html" class="block border-b border-slate-100 py-4 text-[16px] font-medium text-[#252a2e]">
+          About Us
+        </a>
+
+
+        <!-- Mobile Conditions -->
+        <div class="border-b border-slate-100">
+          <button
+            type="button"
+            class="mobile-submenu-button flex w-full items-center justify-between py-4 text-left text-[16px] font-medium text-[#252a2e]"
+            aria-expanded="false"
+          >
+            <span>Conditions</span>
+            <i class="fa-solid fa-chevron-down text-[11px] transition-transform duration-300"></i>
+          </button>
+
+          <div class="mobile-submenu hidden pb-2 pl-3">
+            <a href="./conditions/acl-tear-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">ACL tear</a>
+            <a href="./conditions/ankle-ligament-injury-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Ankle sprain and instability</a>
+            <a href="./conditions/avascular-necrosis-hip-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Avascular necrosis of the hip</a>
+            <a href="./conditions/bow-legs-knock-knees-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Bow legs and knock knees</a>
+            <a href="./conditions/failed-hip-replacement-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Failed hip replacement</a>
+            <a href="./conditions/failed-knee-replacement-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Failed knee replacement</a>
+            <a href="./conditions/frozen-shoulder-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Frozen shoulder</a>
+            <a href="./conditions/hip-impingement-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Hip impingement (FAI)</a>
+            <a href="./conditions/hip-arthritis-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Hip osteoarthritis</a>
+            <a href="./conditions/knee-cartilage-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Knee cartilage damage</a>
+            <a href="./conditions/knee-arthritis-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Knee osteoarthritis</a>
+            <a href="./conditions/meniscus-tear-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Meniscus tear</a>
+            <a href="./conditions/osteoporosis-fracture-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Osteoporosis and fragility fractures</a>
+            <a href="./conditions/pelvic-fracture-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Pelvic and acetabular fracture</a>
+            <a href="./conditions/post-traumatic-arthritis-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Post-traumatic arthritis</a>
+            <a href="./conditions/rheumatoid-arthritis-joint-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Rheumatoid arthritis of the joints</a>
+            <a href="./conditions/rotator-cuff-tear-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Rotator cuff tear</a>
+            <a href="./conditions/shoulder-dislocation-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Shoulder dislocation and instability</a>
+          </div>
+        </div>
+        
+        <!-- Mobile Procedures -->
+        <div class="border-b border-slate-100">
+          <button
+            type="button"
+            class="mobile-submenu-button flex w-full items-center justify-between py-4 text-left text-[16px] font-medium text-[#252a2e]"
+            aria-expanded="false"
+          >
+            <span>Procedures</span>
+            <i class="fa-solid fa-chevron-down text-[11px] transition-transform duration-300"></i>
+          </button>
+
+          <div class="mobile-submenu hidden pb-2 pl-3">
+            <a href="./robotic-knee-replacement.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Robotic Knee Replacement</a>
+            <a href="./robotic-hip-replacement.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Robotic Hip Replacement</a>
+            <a href="./robotic-partial-knee-replacement.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Partial Knee Replacement</a>
+           <a href="./revision-joint-replacement.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Revision Joint Replacement</a>
+           
+            <a href="./hip-fracture.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Hip Fracture Treatment</a>
+            
+             <a href="./sports-injury-and-arthroscopy.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Sports Injury Treatment</a>
+          </div>
+        </div>
+
+        <a href="./blogs.html" class="block border-b border-slate-100 py-4 text-[16px] font-medium text-[#252a2e]">Insights</a>
+        <a href="./contact.html" class="block py-4 text-[16px] font-medium text-[#252a2e]">Contact Us</a>
+
+      </div>
+    </div>
+
+  </div>
+</header>
+
+
+
+  <main id="main-content">
+
+    <!-- =====================================================
+         HERO SECTION
+    ====================================================== -->
+
+    <section
+      id="blogs-hero"
+      class="relative pt-48 pb-32 bg-neutral-900 overflow-hidden"
+    >
+
+      <div class="absolute inset-0 z-0">
+
+        <div
+          class="absolute inset-0 bg-gradient-to-r from-neutral-900 via-neutral-900/60 to-transparent"
+        ></div>
+
+        <img
+          src="assets/images/Orthopedic surgeon in mumbai  (2).webp"
+          class="w-full h-full object-cover opacity-30"
+          alt="Health Insights"
+        >
+
+      </div>
+
+      <div
+        class="max-w-7xl mx-auto px-5 md:px-[60px] relative z-10"
+      >
+
+        <div class="max-w-3xl text-center md:text-left">
+
+          <div
+            class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-white/10 backdrop-blur-md border border-white/20 text-white/90 text-[10px] uppercase tracking-[3px] mb-8 fade-up"
+          >
+
+            <span
+              class="w-1.5 h-1.5 rounded-full bg-brand-blue animate-pulse"
+            ></span>
+
+            Medical Insights
+
+          </div>
+
+          <h1
+            class="text-white text-[40px] md:text-[64px] lg:text-[80px] leading-[1] tracking-tight font-medium mb-8"
+          >
+            Health & Wellness<br>
+
+            <span class="text-brand-blue">
+              Knowledge
+            </span>
+
+          </h1>
+
+          <p
+            class="text-white/70 text-[18px] md:text-[20px] leading-relaxed reveal-text"
+          >
+            Expert advice, surgical breakthroughs, and patient success
+            stories from the forefront of orthopedic medicine.
+          </p>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- =====================================================
+         BLOG LISTING
+    ====================================================== -->
+
+    <section
+      id="blog-listing"
+      class="py-16 md:py-24 px-5 md:px-[60px] bg-white"
+    >
+
+      <div class="max-w-7xl mx-auto">
+
+
+        <!-- =================================================
+             FILTERS
+        ================================================== -->
+
+        <div
+          class="flex flex-col lg:flex-row justify-between items-center gap-8 mb-16 fade-up"
+        >
+
+          <!-- Categories -->
+
+          <div
+            id="categoryFilters"
+            class="flex flex-wrap gap-4"
+          >
+            <!-- Categories generated by JS -->
+          </div>
+
+
+          <!-- Search -->
+
+          <form
+            id="searchForm"
+            class="relative w-full lg:w-96"
+          >
+
+            <input
+              type="text"
+              id="searchInput"
+              placeholder="Search insights..."
+              class="w-full bg-neutral-50 border border-neutral-200 rounded-full px-8 py-3.5 focus:outline-none focus:border-brand-blue transition-all text-sm"
+            >
+
+            <button
+              type="submit"
+              class="absolute right-4 top-1/2 -translate-y-1/2 text-neutral-400 hover:text-brand-blue transition-colors"
+              aria-label="Search"
+            >
+              <i class="fa-solid fa-magnifying-glass"></i>
+            </button>
+
+          </form>
+
+        </div>
+
+
+        <!-- =================================================
+             NO RESULTS
+        ================================================== -->
+
+        <div
+          id="noResults"
+          class="hidden text-center py-20 bg-neutral-50 rounded-[40px]"
+        >
+
+          <i
+            class="fa-solid fa-newspaper text-6xl text-neutral-200 mb-6"
+          ></i>
+
+          <h3
+            class="text-2xl font-medium text-neutral-900 mb-4"
+          >
+            No insights found
+          </h3>
+
+          <p
+            class="text-neutral-500 mb-8"
+          >
+            Try adjusting your search or filters to find what you're
+            looking for.
+          </p>
+
+          <button
+            id="viewAllButton"
+            class="text-brand-blue font-bold uppercase tracking-widest text-xs border-b-2 border-brand-blue pb-1"
+          >
+            View All Articles
+          </button>
+
+        </div>
+
+
+        <!-- =================================================
+             BLOG GRID
+        ================================================== -->
+
+        <div
+          id="blogGrid"
+          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12"
+        >
+          <!-- Blogs generated by JS -->
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- =====================================================
+       JAVASCRIPT
+  ====================================================== -->
+
+  <script>
+
+    /*
+    |--------------------------------------------------------------------------
+    | BLOG DATA
+    |--------------------------------------------------------------------------
+    | Add your blogs here.
+    */
+
+    const blogs = [
+
+      {
+        title: "Bone Marrow Concentrate: Application and Techniques ",
+
+        slug: "future-of-joint-replacement",
+
+        featuredImage:
+          "assets/images/blog/featured-article.webp",
+
+        category: "Technology",
+
+        shortDescription:
+          "Disclaimer: This educational video is intended for trained healthcare professional. The information...",
+
+        createdAt: "2026-08-29",
+
+        content:
+          "Discover how robotic-assisted surgery is changing the landscape of orthopedic treatments and patient outcomes. Robotic technology allows surgeons to plan procedures with greater precision and improve implant positioning."
+      },
+
+
+      {
+        title: "Complex primary Hip Replacement",
+
+        slug: "recovering-from-acl-surgery",
+
+        featuredImage:
+          "assets/images/blog/speach.webp",
+
+        category: "Recovery",
+
+        shortDescription:
+          "What things need to be done differently for complex hip replacement like ankylosing...",
+
+        createdAt: "2026-08-28",
+
+        content:
+          "A comprehensive look at the rehabilitation process following an ACL reconstruction for athletes. Recovery involves physiotherapy, strengthening exercises, mobility training and a gradual return to sports."
+      },
+
+
+      {
+        title: "Sports Injuries ",
+
+        slug: "healthy-joints-tips",
+
+        featuredImage:
+          "assets/images/blog/Sports-Injuries.webp",
+
+        category: "Wellness",
+
+        shortDescription:
+          "Anterior Cruciate Ligament Injuries ( ACL Injuries) Achiles tendon Dysfunction Ankle Sprain &...",
+
+        createdAt: "2026-08-27",
+
+        content:
+          "Simple lifestyle changes and exercises that can help keep your joints mobile and pain-free. Staying active, maintaining a healthy weight and strengthening the muscles around your joints can support long-term joint health."
+      },
+      {
+        title: "Knee Replacement",
+
+        slug: "healthy-joints-tips",
+
+        featuredImage:
+          "assets/images/blog/knee-replacement.webp",
+
+        category: "Wellness",
+
+        shortDescription:
+          "A total knee replacement also known as TKR or Knee arthroplasty is an intervention where in the...",
+
+        createdAt: "2026-08-27",
+
+        content:
+          "Simple lifestyle changes and exercises that can help keep your joints mobile and pain-free. Staying active, maintaining a healthy weight and strengthening the muscles around your joints can support long-term joint health."
+      },
+
+      {
+        title: "Hip Replacement",
+
+        slug: "healthy-joints-tips",
+
+        featuredImage:
+          "assets/images/blog/hip-replacement.webp",
+
+        category: "Wellness",
+
+        shortDescription:
+          "Medications: Using acetaminophen, aspirin, or other medicines for the pain and inflammation ",
+
+        createdAt: "2026-08-27",
+
+        content:
+          "Simple lifestyle changes and exercises that can help keep your joints mobile and pain-free. Staying active, maintaining a healthy weight and strengthening the muscles around your joints can support long-term joint health."
+      }
+
+    ];
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | GET UNIQUE CATEGORIES
+    |--------------------------------------------------------------------------
+    */
+
+    const categories = [
+      "All Articles",
+      ...new Set(
+        blogs.map(blog => blog.category)
+      )
+    ];
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | DOM ELEMENTS
+    |--------------------------------------------------------------------------
+    */
+
+    const categoryFilters =
+      document.getElementById("categoryFilters");
+
+    const blogGrid =
+      document.getElementById("blogGrid");
+
+    const searchForm =
+      document.getElementById("searchForm");
+
+    const searchInput =
+      document.getElementById("searchInput");
+
+    const noResults =
+      document.getElementById("noResults");
+
+    const viewAllButton =
+      document.getElementById("viewAllButton");
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | CURRENT FILTER
+    |--------------------------------------------------------------------------
+    */
+
+    let activeCategory = "All Articles";
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | FORMAT DATE
+    |--------------------------------------------------------------------------
+    */
+
+    function formatDate(dateString) {
+
+      const date = new Date(dateString);
+
+      return date.toLocaleDateString("en-US", {
+        month: "short",
+        day: "numeric",
+        year: "numeric"
+      });
+
+    }
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | CALCULATE READING TIME
+    |--------------------------------------------------------------------------
+    */
+
+    function calculateReadingTime(content) {
+
+      const words =
+        content.trim().split(/\s+/).length;
+
+      const minutes =
+        Math.ceil(words / 200);
+
+      return Math.max(minutes, 1);
+
+    }
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | RENDER CATEGORY BUTTONS
+    |--------------------------------------------------------------------------
+    */
+
+    function renderCategories() {
+
+      categoryFilters.innerHTML = "";
+
+      categories.forEach(category => {
+
+        const button =
+          document.createElement("button");
+
+        button.type = "button";
+
+        button.textContent = category;
+
+        button.className =
+          "category-button px-6 py-2.5 rounded-full text-sm font-medium transition-all " +
+          (
+            category === activeCategory
+              ? "bg-brand-blue text-white shadow-lg"
+              : "bg-neutral-100 text-neutral-600 hover:bg-neutral-200"
+          );
+
+        button.addEventListener(
+          "click",
+          () => {
+
+            activeCategory = category;
+
+            renderCategories();
+
+            filterBlogs();
+
+          }
+        );
+
+        categoryFilters.appendChild(button);
+
+      });
+
+    }
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | CREATE BLOG CARD
+    |--------------------------------------------------------------------------
+    */
+
+    function createBlogCard(blog) {
+
+      const article =
+        document.createElement("article");
+
+      article.className =
+        "group cursor-pointer blog-card";
+
+
+      article.innerHTML = `
+
+        <div
+          class="relative rounded-[30px] overflow-hidden mb-8 aspect-[16/10] shadow-md"
+        >
+
+          <img
+            src="${blog.featuredImage}"
+            alt="${escapeHTML(blog.title)}"
+            class="w-full h-full object-cover transition-transform duration-700 group-hover:scale-110"
+            loading="lazy"
+          >
+
+          <div class="absolute top-6 left-6">
+
+            <span
+              class="bg-white/90 backdrop-blur-md text-brand-blue px-4 py-1.5 rounded-full text-[10px] font-bold uppercase tracking-widest shadow-lg"
+            >
+              ${escapeHTML(blog.category)}
+            </span>
+
+          </div>
+
+        </div>
+
+
+        <div
+          class="flex items-center gap-4 text-xs text-neutral-400 mb-4 font-medium uppercase tracking-widest"
+        >
+
+          <span>
+            ${formatDate(blog.createdAt)}
+          </span>
+
+          <span
+            class="w-1 h-1 rounded-full bg-neutral-300"
+          ></span>
+
+          <span>
+            ${calculateReadingTime(blog.content)} Min Read
+          </span>
+
+        </div>
+
+
+        <h3
+          class="text-2xl font-medium text-neutral-900 mb-4 group-hover:text-brand-blue transition-colors leading-snug"
+        >
+
+          <a
+            href="blog/${encodeURIComponent(blog.slug)}"
+          >
+            ${escapeHTML(blog.title)}
+          </a>
+
+        </h3>
+
+
+        <p
+          class="text-neutral-600 leading-relaxed mb-6 line-clamp-2"
+        >
+          ${escapeHTML(blog.shortDescription)}
+        </p>
+
+
+        <a
+          href="blog/${encodeURIComponent(blog.slug)}"
+          class="inline-flex items-center gap-2 text-sm font-bold text-brand-blue uppercase tracking-widest hover:gap-4 transition-all"
+        >
+
+          Read Article
+
+          <i
+            class="fa-solid fa-arrow-right-long"
+          ></i>
+
+        </a>
+
+      `;
+
+      return article;
+
+    }
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | ESCAPE HTML
+    |--------------------------------------------------------------------------
+    */
+
+    function escapeHTML(value) {
+
+      const div =
+        document.createElement("div");
+
+      div.textContent =
+        value ?? "";
+
+      return div.innerHTML;
+
+    }
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | RENDER BLOGS
+    |--------------------------------------------------------------------------
+    */
+
+    function renderBlogs(blogList) {
+
+      blogGrid.innerHTML = "";
+
+      if (blogList.length === 0) {
+
+        noResults.classList.remove("hidden");
+
+        blogGrid.classList.add("hidden");
+
+        return;
+
+      }
+
+      noResults.classList.add("hidden");
+
+      blogGrid.classList.remove("hidden");
+
+      blogList.forEach(blog => {
+
+        blogGrid.appendChild(
+          createBlogCard(blog)
+        );
+
+      });
+
+    }
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | FILTER BLOGS
+    |--------------------------------------------------------------------------
+    */
+
+    function filterBlogs() {
+
+      const searchTerm =
+        searchInput.value
+          .trim()
+          .toLowerCase();
+
+
+      const filteredBlogs =
+        blogs.filter(blog => {
+
+          const matchesCategory =
+            activeCategory === "All Articles" ||
+            blog.category === activeCategory;
+
+
+          const matchesSearch =
+            !searchTerm ||
+            blog.title.toLowerCase().includes(searchTerm) ||
+            blog.content.toLowerCase().includes(searchTerm) ||
+            blog.shortDescription.toLowerCase().includes(searchTerm);
+
+
+          return (
+            matchesCategory &&
+            matchesSearch
+          );
+
+        });
+
+
+      renderBlogs(filteredBlogs);
+
+    }
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | SEARCH
+    |--------------------------------------------------------------------------
+    */
+
+    searchForm.addEventListener(
+      "submit",
+      function(event) {
+
+        event.preventDefault();
+
+        filterBlogs();
+
+      }
+    );
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | LIVE SEARCH
+    |--------------------------------------------------------------------------
+    */
+
+    searchInput.addEventListener(
+      "input",
+      function() {
+
+        filterBlogs();
+
+      }
+    );
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | VIEW ALL
+    |--------------------------------------------------------------------------
+    */
+
+    viewAllButton.addEventListener(
+      "click",
+      function() {
+
+        activeCategory = "All Articles";
+
+        searchInput.value = "";
+
+        renderCategories();
+
+        filterBlogs();
+
+      }
+    );
+
+
+    /*
+    |--------------------------------------------------------------------------
+    | INITIAL LOAD
+    |--------------------------------------------------------------------------
+    */
+
+    renderCategories();
+
+    renderBlogs(blogs);
+
+  </script>
+
+
+
+  
+<script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="assets/js/index.js"></script>
+    <script src="assets/js/main.js"></script>
+    
+    
+
+</body>
+
+</html>
