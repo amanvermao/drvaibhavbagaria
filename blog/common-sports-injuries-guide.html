@@ -1,0 +1,3429 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr Vaibhav Bagaria</title>
+    <link rel="stylesheet" href="../assets/css/header.css">
+    <link rel="stylesheet" href="../assets/css/style.css">
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/about.css">
+    <link rel="icon" type="image/png" href="../assets/images/newlogov1.png">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.css"
+/>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&family=Raleway:wght@300;400;500;600;700&family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+      <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+
+      <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+
+<!-- ScrollTrigger -->
+<script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+</style>
+
+<!-- Swiper CSS -->
+<link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+/>
+
+<!-- Swiper JS -->
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+      
+      
+      <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['"Plus Jakarta Sans"', 'sans-serif'],
+                        raleway: ['"Raleway"', 'sans-serif'],
+                        inter: ['"Inter"', 'sans-serif']
+                    },
+                    colors: {
+                        brand: {
+                            blue: '#0060ae',
+                            dark: '#000000',
+                            bg: '#f8f8f8',
+                            red: '#ee4442',
+                            gray: '#7a7a7a'
+                        }
+                    }
+                }
+            }
+        };
+    </script>
+
+    
+</head>
+<body>
+    
+    <!-- header -->
+
+  <header
+  id="header"
+  class="absolute top-0 left-0 w-full z-50"
+>
+  <div class="doctor-container header-inner flex items-center justify-between">
+
+    <!-- ================= LOGO ================= -->
+
+    <a
+      href="../"
+      class="header-logo shrink-0 flex items-center"
+    >
+
+      <img
+        src="../assets/images/newlogov1.png"
+        alt="Dr Vaibhav Bagaria"
+        class="header-logo-icon object-contain shrink-0"
+      />
+
+      <div class="header-logo-text flex flex-col">
+
+        <h1 class="header-logo-name text-[17px]">
+          Dr Vaibhav Bagaria
+        </h1>
+
+        <span class="header-logo-qualification">
+          MBBS, MS (Orthopaedics), FCPS, DNB, SICOT
+        </span>
+
+      </div>
+
+    </a>
+
+    <!-- ================= MOBILE MENU BUTTON ================= -->
+    <button
+      type="button"
+      id="mobile-menu-button"
+      class="lg:hidden inline-flex h-11 w-11 items-center justify-center rounded-lg border border-[#dce9ef] bg-white/95 text-[#005783] shadow-sm transition hover:bg-[#effaff]"
+      aria-label="Open menu"
+      aria-expanded="false"
+      aria-controls="mobile-menu"
+    >
+      <i id="mobile-menu-icon" class="fa-solid fa-bars text-[20px]"></i>
+    </button>
+
+    <!-- ================= NAVIGATION ================= -->
+
+    <nav class="header-nav hidden lg:flex">
+
+      <a
+        href="../"
+        class="header-nav-link active"
+      >
+        Home
+      </a>
+
+      <a
+        href="../about.html"
+        class="header-nav-link"
+      >
+        About Us
+      </a>
+
+
+<!-- ================= CONDITIONS NAV ITEM ================= -->
+
+<div class="relative conditions-dropdown">
+
+  <!-- Conditions Button -->
+  <button
+    type="button"
+    class="header-nav-link services-link inline-flex items-center gap-2"
+    id="conditions-menu-button"
+    aria-expanded="false"
+    aria-haspopup="true"
+  >
+    Conditions
+    <i
+      class="fa-solid fa-chevron-down text-[10px] transition-transform duration-300"
+      id="conditions-chevron"
+    ></i>
+  </button>
+
+
+  <!-- ================= SUBMENU ================= -->
+
+  <div
+    id="conditions-submenu"
+    class="conditions-submenu absolute left-1/2 top-full z-50
+           mt-4 w-[min(92vw,900px)]
+           -translate-x-1/2
+           rounded-2xl border border-slate-200
+           bg-white p-5
+           opacity-0 invisible
+           translate-y-2
+           shadow-[0_20px_60px_rgba(0,55,85,0.15)]
+           transition-all duration-300"
+  >
+
+    <!-- Small top accent -->
+    <div
+      class="absolute left-1/2 top-0 h-[3px] w-20
+             -translate-x-1/2 rounded-b-full
+             bg-[#005783]"
+    ></div>
+
+
+    <!-- Header -->
+    <div class="mb-4 border-b border-slate-100 pb-4">
+
+      <h3
+        class="text-[16px] font-semibold text-[#005783]"
+      >
+        Conditions We Treat
+      </h3>
+
+      <p
+        class="mt-1 text-[12px] leading-relaxed text-slate-500"
+      >
+        Explore common orthopaedic conditions and joint problems.
+      </p>
+
+    </div>
+
+
+    <!-- ================= CONDITIONS GRID ================= -->
+
+    <div
+      class="grid grid-cols-1 gap-x-8
+             sm:grid-cols-2
+             lg:grid-cols-3"
+    >
+
+      <!-- COLUMN 1 -->
+      <div class="space-y-1">
+
+        <a
+          href="./acl-tear-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          ACL tear
+        </a>
+
+        <a
+          href="./ankle-ligament-injury-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Ankle sprain and instability
+        </a>
+
+        <a
+          href="./avascular-necrosis-hip-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Avascular necrosis of the hip
+        </a>
+
+        <a
+          href="./bow-legs-knock-knees-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Bow legs and knock knees
+          <span>(malalignment)</span>
+        </a>
+
+        <a
+          href="./failed-hip-replacement-mumbai.html"
+          class="condition-menu-item"
+        >
+          Failed hip replacement
+        </a>
+
+        <a
+          href="./failed-knee-replacement-mumbai.html"
+          class="condition-menu-item"
+        >
+          Failed knee replacement
+        </a>
+
+      </div>
+
+
+      <!-- COLUMN 2 -->
+      <div class="space-y-1">
+
+        <a
+          href="./frozen-shoulder-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Frozen shoulder
+        </a>
+
+        <a
+          href="./hip-impingement-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Hip impingement (FAI)
+        </a>
+
+        <a
+          href="./hip-arthritis-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Hip osteoarthritis
+        </a>
+
+        <a
+          href="./knee-cartilage-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Knee cartilage damage
+        </a>
+
+        <a
+          href="./knee-arthritis-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Knee osteoarthritis
+        </a>
+
+        <a
+          href="./meniscus-tear-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Meniscus tear
+        </a>
+
+      </div>
+
+
+      <!-- COLUMN 3 -->
+      <div class="space-y-1">
+
+        <a
+          href="./osteoporosis-fracture-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Osteoporosis and fragility fractures
+        </a>
+
+        <a
+          href="./pelvic-fracture-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Pelvic and acetabular fracture
+        </a>
+
+        <a
+          href="./post-traumatic-arthritis-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Post-traumatic arthritis
+        </a>
+
+        <a
+          href="./rheumatoid-arthritis-joint-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Rheumatoid arthritis of the joints
+        </a>
+
+        <a
+          href="./rotator-cuff-tear-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Rotator cuff tear
+        </a>
+
+        <a
+          href="./shoulder-dislocation-treatment-mumbai.html"
+          class="condition-menu-item"
+        >
+          Shoulder dislocation and instability
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <!-- Bottom CTA -->
+    <div
+      class="mt-5 flex flex-col gap-3
+             border-t border-slate-100 pt-4
+             sm:flex-row sm:items-center sm:justify-between"
+    >
+
+      <p class="text-[11px] text-slate-500">
+        Can't find your condition?
+      </p>
+
+      <a
+        href="../contact.html"
+        class="inline-flex items-center gap-2
+               text-[12px] font-semibold
+               text-[#005783]
+               transition-colors duration-200
+               hover:text-[#003d5c]"
+      >
+        Talk to our specialist
+        <i class="fa-solid fa-arrow-right text-[10px]"></i>
+      </a>
+
+    </div>
+
+  </div>
+
+</div>
+
+<!-- ================= PROCEDURES DROPDOWN ================= -->
+
+<div class="relative group">
+
+  <a
+    href="../robotic-knee-replacement.html"
+    class="header-nav-link services-link inline-flex items-center gap-2"
+  >
+    Procedures
+    <i class="fa-solid fa-chevron-down text-[11px]"></i>
+  </a>
+
+  <!-- Dropdown Menu -->
+  <div
+    class="absolute
+           left-0
+           top-full
+           z-50
+           mt-3
+           w-[300px]
+           overflow-hidden
+           rounded-[12px]
+           border
+           border-[#dce9ef]
+           bg-white
+           opacity-0
+           invisible
+           translate-y-2
+           shadow-lg
+           transition-all
+           duration-300
+           group-hover:visible
+           group-hover:opacity-100
+           group-hover:translate-y-0"
+  >
+
+    <a
+      href="../robotic-knee-replacement.html"
+      class="block
+             px-5
+             py-3
+             text-[15px]
+             font-medium
+             text-[#252a2e]
+             transition-colors
+             duration-200
+             hover:bg-[#effaff]
+             hover:text-[#0084d1]"
+    >
+      Robotic Knee Replacement
+    </a>
+
+    <a
+      href="../robotic-hip-replacement.html"
+      class="block
+             px-5
+             py-3
+             text-[15px]
+             font-medium
+             text-[#252a2e]
+             transition-colors
+             duration-200
+             hover:bg-[#effaff]
+             hover:text-[#0084d1]"
+    >
+      Robotic Hip Replacement
+    </a>
+
+    <a
+      href="../robotic-partial-knee-replacement.html"
+      class="block
+             px-5
+             py-3
+             text-[15px]
+             font-medium
+             text-[#252a2e]
+             transition-colors
+             duration-200
+             hover:bg-[#effaff]
+             hover:text-[#0084d1]"
+    >
+      Partial Knee Replacement
+    </a>
+  
+<a
+      href="../revision-joint-replacement.html"
+      class="block
+             px-5
+             py-3
+             text-[15px]
+             font-medium
+             text-[#252a2e]
+             transition-colors
+             duration-200
+             hover:bg-[#effaff]
+             hover:text-[#0084d1]"
+    >
+      Revision Joint Replacement
+    </a>
+    
+    <a
+      href="../hip-fracture.html"
+      class="block
+             px-5
+             py-3
+             text-[15px]
+             font-medium
+             text-[#252a2e]
+             transition-colors
+             duration-200
+             hover:bg-[#effaff]
+             hover:text-[#0084d1]"
+    >
+      Hip Fracture Treatment 
+    </a>
+
+
+    <a
+      href="../sports-injury-and-arthroscopy.html"
+      class="block
+             px-5
+             py-3
+             text-[15px]
+             font-medium
+             text-[#252a2e]
+             transition-colors
+             duration-200
+             hover:bg-[#effaff]
+             hover:text-[#0084d1]"
+    >
+      Sports Injury Treatment
+    </a>
+
+  </div>
+
+</div>
+
+      <a
+        href="../blogs.html"
+        class="header-nav-link"
+      >
+        Insights
+      </a>
+
+      <a
+        href="../contact.html"
+        class="header-nav-link"
+      >
+        Contact Us
+      </a>
+
+    </nav>
+
+
+    <!-- ================= MOBILE NAVIGATION ================= -->
+    <div
+      id="mobile-menu"
+      class="absolute left-0 right-0 top-full hidden max-h-[calc(100vh-90px)] overflow-y-auto border-t border-[#dce9ef] bg-white shadow-[0_15px_40px_rgba(0,55,85,0.12)] lg:hidden"
+    >
+      <div class="px-5 py-4">
+
+        <a href="../" class="block border-b border-slate-100 py-4 text-[16px] font-semibold text-[#005783]">
+          Home
+        </a>
+
+        <a href="../about.html" class="block border-b border-slate-100 py-4 text-[16px] font-medium text-[#252a2e]">
+          About Us
+        </a>
+
+        
+
+        <!-- Mobile Conditions -->
+        <div class="border-b border-slate-100">
+          <button
+            type="button"
+            class="mobile-submenu-button flex w-full items-center justify-between py-4 text-left text-[16px] font-medium text-[#252a2e]"
+            aria-expanded="false"
+          >
+            <span>Conditions</span>
+            <i class="fa-solid fa-chevron-down text-[11px] transition-transform duration-300"></i>
+          </button>
+
+          <div class="mobile-submenu hidden pb-2 pl-3">
+            <a href="./acl-tear-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">ACL tear</a>
+            <a href="./ankle-ligament-injury-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Ankle sprain and instability</a>
+            <a href="./avascular-necrosis-hip-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Avascular necrosis of the hip</a>
+            <a href="./bow-legs-knock-knees-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Bow legs and knock knees</a>
+            <a href="./failed-hip-replacement-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Failed hip replacement</a>
+            <a href="./failed-knee-replacement-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Failed knee replacement</a>
+            <a href="./frozen-shoulder-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Frozen shoulder</a>
+            <a href="./hip-impingement-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Hip impingement (FAI)</a>
+            <a href="./hip-arthritis-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Hip osteoarthritis</a>
+            <a href="./knee-cartilage-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Knee cartilage damage</a>
+            <a href="./knee-arthritis-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Knee osteoarthritis</a>
+            <a href="./meniscus-tear-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Meniscus tear</a>
+            <a href="./osteoporosis-fracture-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Osteoporosis and fragility fractures</a>
+            <a href="./pelvic-fracture-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Pelvic and acetabular fracture</a>
+            <a href="./post-traumatic-arthritis-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Post-traumatic arthritis</a>
+            <a href="./rheumatoid-arthritis-joint-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Rheumatoid arthritis of the joints</a>
+            <a href="./rotator-cuff-tear-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Rotator cuff tear</a>
+            <a href="./shoulder-dislocation-treatment-mumbai.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Shoulder dislocation and instability</a>
+          </div>
+        </div>
+
+        <!-- Mobile Procedures -->
+        <div class="border-b border-slate-100">
+          <button
+            type="button"
+            class="mobile-submenu-button flex w-full items-center justify-between py-4 text-left text-[16px] font-medium text-[#252a2e]"
+            aria-expanded="false"
+          >
+            <span>Procedures</span>
+            <i class="fa-solid fa-chevron-down text-[11px] transition-transform duration-300"></i>
+          </button>
+
+          <div class="mobile-submenu hidden pb-2 pl-3">
+            <a href="../robotic-knee-replacement.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Robotic Knee Replacement</a>
+            <a href="../robotic-hip-replacement.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Robotic Hip Replacement</a>
+            <a href="../robotic-partial-knee-replacement.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Partial Knee Replacement</a>
+             <a href="../revision-joint-replacement.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Revision Joint Replacement</a>
+             <a href="./hip-fracture.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Hip Fracture Treatment</a>
+            <a href="../sports-injury-and-arthroscopy.html" class="block rounded-lg px-3 py-3 text-[14px] text-[#444] hover:bg-[#effaff] hover:text-[#0084d1]">Sports Injury Treatment</a>
+          
+           
+          </div>
+        </div>
+
+        <a href="../blogs.html" class="block border-b border-slate-100 py-4 text-[16px] font-medium text-[#252a2e]">Insights</a>
+        <a href="../contact.html" class="block py-4 text-[16px] font-medium text-[#252a2e]">Contact Us</a>
+
+      </div>
+    </div>
+
+  </div>
+</header>
+
+
+
+
+<!-- ================= BACK PAIN HERO SECTION ================= -->
+
+<section id="hero-service" class="relative w-full min-h-[400px] md:min-h-[500px] flex flex-col items-center justify-center bg-white overflow-visible pt-24 pb-10 md:pt-10 md:pb-10">
+    <div class="container relative z-10 mx-auto px-4 md:px-6 flex flex-col items-center text-center space-y-6 md:space-y-8 max-w-5xl">
+      <h1 class="text-[40px] md:text-[80px] leading-[1.1] tracking-tight text-[#004d77] font-medium">
+      12 Common Sports Injuries: Causes, <br> 
+        <span class="text-reveal">
+          <span class="text-reveal__word">Symptoms & Treatment  </span>
+          <span class="text-reveal_bg"></span>
+        </span>
+      </h1>
+    </div>
+  </section>
+
+
+<!-- start blog page -->
+
+<!-- =========================================================
+     SPORTS INJURIES BLOG DETAIL PAGE
+     Design system based on the existing ACL detail page
+========================================================= -->
+
+<section class="bg-[#eef8fc] py-6 md:py-8 font-['Plus_Jakarta_Sans']">
+
+  <div
+    class="mx-auto"
+    style="width: min(1600px, calc(100% - 80px));"
+  >
+
+    <!-- =====================================================
+         BLOG INTRODUCTION
+    ====================================================== -->
+
+    <div
+      class="rounded-[10px]
+             border border-[#dce9ef]
+             bg-white
+             px-6 py-6
+             md:px-8 md:py-8"
+    >
+
+      <h1
+        class="border-b-[2px]
+               border-[#005783]
+               pb-2
+               text-[32px]
+               md:text-[36px]
+               lg:text-[40px]
+               font-semibold
+               leading-[1.15]
+               text-[#163b55]"
+      >
+        Sports Injuries: Common Types, Symptoms & Treatment
+      </h1>
+
+      <p
+        class="mt-5
+               text-[16px]
+               leading-[1.7]
+               text-[#34495e]"
+      >
+        Sports injuries do not only happen to professional athletes. Most of
+        the injuries I see occur in people who play recreationally at the
+        weekend, train at a gym after work, or simply run on uneven ground and
+        in many cases they follow a period of doing more, or doing something
+        different, than the body was prepared for.
+      </p>
+
+      <p
+        class="mt-4
+               text-[16px]
+               leading-[1.7]
+               text-[#34495e]"
+      >
+        The encouraging part is that a great many sports injuries recover fully
+        without surgery, provided they are diagnosed correctly and rehabilitated
+        properly. The difficulty is that the injuries which do need treatment
+        often look identical in the first week to the ones that do not.
+      </p>
+
+      <div
+        class="mt-5
+               rounded-[6px]
+               border-l-[3px]
+               border-[#005783]
+               bg-[#f4f9fc]
+               px-5 py-4"
+      >
+
+        <p
+          class="text-[16px]
+                 leading-[1.7]
+                 text-[#34495e]"
+        >
+          This guide covers twelve of the injuries I treat most frequently —
+          what causes them, what they feel like, and what treatment usually
+          involves.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         KNEE INJURIES
+    ====================================================== -->
+
+    <div
+      class="mt-5
+             rounded-[10px]
+             border border-[#dce9ef]
+             bg-white
+             px-6 py-6
+             md:px-8 md:py-8"
+    >
+
+      <h2
+        class="border-b-[2px]
+               border-[#005783]
+               pb-2
+               text-[32px]
+               md:text-[36px]
+               lg:text-[40px]
+               font-semibold
+               leading-[1.15]
+               text-[#163b55]"
+      >
+        Knee injuries
+      </h2>
+
+
+      <!-- ================= ACL ================= -->
+
+      <article
+        class="mt-7
+               rounded-[8px]
+               border border-[#dce9ef]
+               bg-[#f8fcfe]
+               p-5
+               md:p-6"
+      >
+
+        <div class="flex items-start gap-4">
+
+          <div
+            class="flex h-10 w-10
+                   shrink-0
+                   items-center justify-center
+                   rounded-full
+                   bg-[#005783]
+                   text-[15px]
+                   font-bold
+                   text-white"
+          >
+            01
+          </div>
+
+          <h3
+            class="pt-1
+                   text-[22px]
+                   md:text-[24px]
+                   font-semibold
+                   leading-[1.3]
+                   text-[#163b55]"
+          >
+            Anterior cruciate ligament (ACL) injury
+          </h3>
+
+        </div>
+
+        <p
+          class="mt-5
+                 text-[16px]
+                 leading-[1.7]
+                 text-[#34495e]"
+        >
+          The ACL runs through the centre of the knee and controls rotation.
+          It is most commonly torn during a sudden twist, pivot or awkward
+          landing in cricket, football, badminton, kabaddi and gym training,
+          and equally in slips and two-wheeler accidents.
+        </p>
+
+        <div
+          class="mt-5
+                 rounded-[6px]
+                 border-l-[3px]
+                 border-[#005783]
+                 bg-white
+                 px-5 py-4"
+        >
+
+          <p
+            class="text-[16px]
+                   leading-[1.7]
+                   text-[#34495e]"
+          >
+            <strong class="font-semibold text-[#163b55]">
+              What it feels like:
+            </strong>
+            many people describe a pop at the moment of injury, followed by
+            swelling within a few hours. The initial pain often settles over
+            days, but the knee is left feeling unreliable — giving way when
+            turning or on uneven ground.
+          </p>
+
+        </div>
+
+        <div
+          class="mt-4
+                 rounded-[6px]
+                 border-l-[3px]
+                 border-[#005783]
+                 bg-[#f4f9fc]
+                 px-5 py-4"
+        >
+
+          <p
+            class="text-[16px]
+                   leading-[1.7]
+                   text-[#34495e]"
+          >
+            <strong class="font-semibold text-[#163b55]">
+              Why swelling within hours matters:
+            </strong>
+            rapid swelling after a twisting injury suggests bleeding inside
+            the joint, which warrants assessment.
+          </p>
+
+        </div>
+
+        <p
+          class="mt-5
+                 text-[16px]
+                 leading-[1.7]
+                 text-[#34495e]"
+        >
+          <strong class="font-semibold text-[#163b55]">
+            Treatment:
+          </strong>
+          a completely torn ACL does not heal back together. Some patients
+          manage well with rehabilitation, particularly if they avoid
+          pivoting activity and the knee stays stable. Where instability affects
+          daily life or sport, arthroscopic reconstruction replaces the
+          ligament with a graft.
+        </p>
+
+        <a
+          href="#"
+          class="mt-5
+                 inline-flex
+                 items-center
+                 gap-2
+                 text-[15px]
+                 font-semibold
+                 text-[#005783]
+                 hover:underline"
+        >
+          ACL tear treatment in Mumbai
+          <span aria-hidden="true">→</span>
+        </a>
+
+      </article>
+
+
+      <!-- ================= MENISCUS ================= -->
+
+      <article
+        class="mt-5
+               rounded-[8px]
+               border border-[#dce9ef]
+               bg-[#f8fcfe]
+               p-5
+               md:p-6"
+      >
+
+        <div class="flex items-start gap-4">
+
+          <div
+            class="flex h-10 w-10
+                   shrink-0
+                   items-center justify-center
+                   rounded-full
+                   bg-[#005783]
+                   text-[15px]
+                   font-bold
+                   text-white"
+          >
+            02
+          </div>
+
+          <h3
+            class="pt-1
+                   text-[22px]
+                   md:text-[24px]
+                   font-semibold
+                   leading-[1.3]
+                   text-[#163b55]"
+          >
+            Meniscal tear
+          </h3>
+
+        </div>
+
+        <p class="mt-5 text-[16px] leading-[1.7] text-[#34495e]">
+          The menisci are two C-shaped cartilage cushions that spread load
+          across the knee. Tears happen suddenly during twisting, or gradually
+          as the tissue becomes less resilient with age — sometimes from
+          something as ordinary as rising from a squat.
+        </p>
+
+        <div
+          class="mt-5
+                 rounded-[6px]
+                 border-l-[3px]
+                 border-[#005783]
+                 bg-white
+                 px-5 py-4"
+        >
+
+          <p class="text-[16px] leading-[1.7] text-[#34495e]">
+            <strong class="font-semibold text-[#163b55]">
+              What it feels like:
+            </strong>
+            pain on the inner or outer side of the knee, swelling over a day
+            or two, and often clicking or catching. A knee that locks and
+            cannot be fully straightened needs prompt assessment.
+          </p>
+
+        </div>
+
+        <p class="mt-5 text-[16px] leading-[1.7] text-[#34495e]">
+          <strong class="font-semibold text-[#163b55]">
+            Treatment:
+          </strong>
+          repair-first wherever the tear pattern allows. The outer part of
+          the meniscus has a blood supply and can heal; the inner part largely
+          does not. Preserving meniscus protects the knee over the long term,
+          which is why I stitch rather than trim whenever the tear permits it.
+        </p>
+
+        <a
+          href="#"
+          class="mt-5 inline-flex items-center gap-2 text-[15px] font-semibold text-[#005783] hover:underline"
+        >
+          Meniscus tear treatment in Mumbai
+          <span aria-hidden="true">→</span>
+        </a>
+
+      </article>
+
+
+      <!-- ================= MCL ================= -->
+
+      <article
+        class="mt-5
+               rounded-[8px]
+               border border-[#dce9ef]
+               bg-[#f8fcfe]
+               p-5
+               md:p-6"
+      >
+
+        <div class="flex items-start gap-4">
+
+          <div
+            class="flex h-10 w-10 shrink-0
+                   items-center justify-center
+                   rounded-full
+                   bg-[#005783]
+                   text-[15px]
+                   font-bold
+                   text-white"
+          >
+            03
+          </div>
+
+          <h3
+            class="pt-1
+                   text-[22px]
+                   md:text-[24px]
+                   font-semibold
+                   leading-[1.3]
+                   text-[#163b55]"
+          >
+            Medial collateral ligament (MCL) injury
+          </h3>
+
+        </div>
+
+        <p class="mt-5 text-[16px] leading-[1.7] text-[#34495e]">
+          The MCL runs along the inner side of the knee and resists forces
+          pushing the knee inward. It is commonly injured by a blow to the
+          outside of the knee, or by a twist with the foot planted.
+        </p>
+
+        <div
+          class="mt-5 rounded-[6px]
+                 border-l-[3px]
+                 border-[#005783]
+                 bg-white px-5 py-4"
+        >
+
+          <p class="text-[16px] leading-[1.7] text-[#34495e]">
+            <strong class="font-semibold text-[#163b55]">
+              What it feels like:
+            </strong>
+            pain and tenderness along the inner side of the knee, swelling,
+            and a sense of instability when changing direction. Unlike an ACL
+            tear, there is usually pain on pressing directly over the ligament.
+          </p>
+
+        </div>
+
+        <p class="mt-5 text-[16px] leading-[1.7] text-[#34495e]">
+          <strong class="font-semibold text-[#163b55]">
+            Treatment:
+          </strong>
+          the good news with the MCL is that it has a good blood supply and
+          most injuries heal without surgery. Treatment is usually bracing,
+          protected movement and structured rehabilitation. Surgery is
+          considered mainly where the MCL is injured alongside other ligaments,
+          or where instability persists.
+        </p>
+
+      </article>
+
+
+      <!-- ================= CARTILAGE ================= -->
+
+      <article
+        class="mt-5
+               rounded-[8px]
+               border border-[#dce9ef]
+               bg-[#f8fcfe]
+               p-5
+               md:p-6"
+      >
+
+        <div class="flex items-start gap-4">
+
+          <div
+            class="flex h-10 w-10 shrink-0
+                   items-center justify-center
+                   rounded-full
+                   bg-[#005783]
+                   text-[15px]
+                   font-bold
+                   text-white"
+          >
+            04
+          </div>
+
+          <h3
+            class="pt-1
+                   text-[22px]
+                   md:text-[24px]
+                   font-semibold
+                   leading-[1.3]
+                   text-[#163b55]"
+          >
+            Cartilage injuries
+          </h3>
+
+        </div>
+
+        <p class="mt-5 text-[16px] leading-[1.7] text-[#34495e]">
+          Articular cartilage is the smooth surface covering the ends of the
+          bones. It has no blood supply of its own, which means its capacity
+          to repair is limited.
+        </p>
+
+        <div
+          class="mt-5 rounded-[6px]
+                 border-l-[3px]
+                 border-[#005783]
+                 bg-white px-5 py-4"
+        >
+
+          <p class="text-[16px] leading-[1.7] text-[#34495e]">
+            <strong class="font-semibold text-[#163b55]">
+              What it feels like:
+            </strong>
+            pain localised to one area of the knee, swelling after activity,
+            and sometimes catching or a sense of something not moving smoothly.
+            Because cartilage has no nerve supply, early damage may cause few
+            symptoms and is sometimes found incidentally.
+          </p>
+
+        </div>
+
+        <p class="mt-5 text-[16px] leading-[1.7] text-[#34495e]">
+          <strong class="font-semibold text-[#163b55]">
+            Treatment:
+          </strong>
+          depends on whether the damage is a focal defect with healthy
+          cartilage around it, or diffuse wear. A focal defect in a younger
+          patient may be treatable with repair or restoration techniques that
+          preserve the joint. Orthobiologic options are considered in selected
+          cases. Correcting contributing factors — leg alignment, meniscus loss —
+          is part of the plan.
+        </p>
+
+        <a
+          href="#"
+          class="mt-5 inline-flex items-center gap-2 text-[15px] font-semibold text-[#005783] hover:underline"
+        >
+          Knee cartilage damage treatment in Mumbai
+          <span aria-hidden="true">→</span>
+        </a>
+
+      </article>
+
+    </div>
+
+
+    <!-- =====================================================
+         ANKLE AND FOOT
+    ====================================================== -->
+
+    <div
+      class="mt-5
+             rounded-[10px]
+             border border-[#dce9ef]
+             bg-white
+             px-6 py-6
+             md:px-8 md:py-8"
+    >
+
+      <h2
+        class="border-b-[2px]
+               border-[#005783]
+               pb-2
+               text-[32px]
+               md:text-[36px]
+               lg:text-[40px]
+               font-semibold
+               leading-[1.15]
+               text-[#163b55]"
+      >
+        Ankle and foot injuries
+      </h2>
+
+
+      <!-- ================= ACHILLES ================= -->
+
+      <article
+        class="mt-7 rounded-[8px]
+               border border-[#dce9ef]
+               bg-[#f8fcfe]
+               p-5 md:p-6"
+      >
+
+        <div class="flex items-start gap-4">
+
+          <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#005783] text-[15px] font-bold text-white">
+            05
+          </div>
+
+          <h3 class="pt-1 text-[22px] md:text-[24px] font-semibold leading-[1.3] text-[#163b55]">
+            Achilles tendon dysfunction
+          </h3>
+
+        </div>
+
+        <p class="mt-5 text-[16px] leading-[1.7] text-[#34495e]">
+          The Achilles tendon connects the calf muscles to the heel and takes
+          very high loads with every step. Problems range from gradual tendon
+          irritation to complete rupture.
+        </p>
+
+        <div class="mt-5 rounded-[6px] border-l-[3px] border-[#005783] bg-white px-5 py-4">
+
+          <p class="text-[16px] leading-[1.7] text-[#34495e]">
+            <strong class="font-semibold text-[#163b55]">
+              What it feels like:
+            </strong>
+            with tendinopathy, pain and stiffness at the back of the heel,
+            typically worst on the first steps in the morning and after periods
+            of rest. With rupture, a sudden sharp sensation often described as
+            being struck on the back of the ankle followed by difficulty
+            pushing off.
+          </p>
+
+        </div>
+
+        <div class="mt-4 rounded-[6px] border-l-[3px] border-[#005783] bg-[#f4f9fc] px-5 py-4">
+
+          <p class="text-[16px] leading-[1.7] text-[#34495e]">
+            <strong class="font-semibold text-[#163b55]">
+              Common in:
+            </strong>
+            runners increasing distance quickly, and in racquet sports where
+            there is repeated push-off.
+          </p>
+
+        </div>
+
+        <p class="mt-5 text-[16px] leading-[1.7] text-[#34495e]">
+          <strong class="font-semibold text-[#163b55]">
+            Treatment:
+          </strong>
+          tendinopathy responds well to structured loading programmes, activity
+          modification and footwear adjustment — patience matters more than
+          anything else here, as tendons remodel slowly. Complete rupture is
+          treated either surgically or non-surgically depending on the patient's
+          age, activity and the specific injury.
+        </p>
+
+      </article>
+
+
+      <!-- ================= ANKLE SPRAIN ================= -->
+
+      <article class="mt-5 rounded-[8px] border border-[#dce9ef] bg-[#f8fcfe] p-5 md:p-6">
+
+        <div class="flex items-start gap-4">
+
+          <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#005783] text-[15px] font-bold text-white">
+            06
+          </div>
+
+          <h3 class="pt-1 text-[22px] md:text-[24px] font-semibold leading-[1.3] text-[#163b55]">
+            Ankle sprain and instability
+          </h3>
+
+        </div>
+
+        <p class="mt-5 text-[16px] leading-[1.7] text-[#34495e]">
+          The most common injury in sport, and the most commonly under-treated.
+          Most sprains involve the ligaments on the outer side, injured when
+          the foot rolls inward.
+        </p>
+
+        <div class="mt-5 rounded-[6px] border-l-[3px] border-[#005783] bg-white px-5 py-4">
+
+          <p class="text-[16px] leading-[1.7] text-[#34495e]">
+            <strong class="font-semibold text-[#163b55]">
+              What it feels like:
+            </strong>
+            pain on the outer side of the ankle, rapid swelling and bruising.
+            Most settle within a few weeks.
+          </p>
+
+        </div>
+
+        <div class="mt-4 rounded-[6px] border-l-[3px] border-[#005783] bg-[#f4f9fc] px-5 py-4">
+
+          <p class="text-[16px] leading-[1.7] text-[#34495e]">
+            <strong class="font-semibold text-[#163b55]">
+              The problem is the ones that don't.
+            </strong>
+            When a torn ligament heals loose, or when balance and proprioception
+            are never fully restored, the ankle is left prone to giving way and
+            each subsequent sprain takes less force than the last.
+          </p>
+
+        </div>
+
+        <p class="mt-5 text-[16px] leading-[1.7] text-[#34495e]">
+          <strong class="font-semibold text-[#163b55]">
+            Treatment:
+          </strong>
+          early controlled movement, then strength, then balance work. That
+          last phase is the one people skip, and it is the one that prevents
+          recurrence. Where the ankle continues to give way despite proper
+          rehabilitation, ligament repair or reconstruction is considered.
+        </p>
+
+        <a href="#" class="mt-5 inline-flex items-center gap-2 text-[15px] font-semibold text-[#005783] hover:underline">
+          Ankle ligament injury treatment in Mumbai
+          <span aria-hidden="true">→</span>
+        </a>
+
+      </article>
+
+
+      <!-- ================= PLANTAR FASCIITIS ================= -->
+
+      <article class="mt-5 rounded-[8px] border border-[#dce9ef] bg-[#f8fcfe] p-5 md:p-6">
+
+        <div class="flex items-start gap-4">
+
+          <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#005783] text-[15px] font-bold text-white">
+            07
+          </div>
+
+          <h3 class="pt-1 text-[22px] md:text-[24px] font-semibold leading-[1.3] text-[#163b55]">
+            Plantar fasciitis
+          </h3>
+
+        </div>
+
+        <p class="mt-5 text-[16px] leading-[1.7] text-[#34495e]">
+          The plantar fascia is a thick band of tissue running along the sole
+          of the foot. Irritation where it attaches to the heel is one of the
+          most common causes of heel pain.
+        </p>
+
+        <div class="mt-5 rounded-[6px] border-l-[3px] border-[#005783] bg-white px-5 py-4">
+
+          <p class="text-[16px] leading-[1.7] text-[#34495e]">
+            <strong class="font-semibold text-[#163b55]">
+              What it feels like:
+            </strong>
+            sharp pain under the heel with the first steps in the morning,
+            easing as you move, then returning after periods of sitting.
+            Prolonged standing on hard surfaces typically makes it worse.
+          </p>
+
+        </div>
+
+        <div class="mt-4 rounded-[6px] border-l-[3px] border-[#005783] bg-[#f4f9fc] px-5 py-4">
+
+          <p class="text-[16px] leading-[1.7] text-[#34495e]">
+            <strong class="font-semibold text-[#163b55]">
+              Common in:
+            </strong>
+            runners, people who have recently increased their walking, those
+            who stand for long periods at work, and often after a change of
+            footwear.
+          </p>
+
+        </div>
+
+        <p class="mt-5 text-[16px] leading-[1.7] text-[#34495e]">
+          <strong class="font-semibold text-[#163b55]">
+            Treatment:
+          </strong>
+          the large majority of cases settle without surgery. Calf and plantar
+          fascia stretching, appropriate footwear, insoles, activity
+          modification and load management form the mainstay. Recovery is
+          often measured in months rather than weeks, which is worth knowing
+          at the outset.
+        </p>
+
+      </article>
+
+
+      <!-- ================= TIBIALIS POSTERIOR ================= -->
+
+      <article class="mt-5 rounded-[8px] border border-[#dce9ef] bg-[#f8fcfe] p-5 md:p-6">
+
+        <div class="flex items-start gap-4">
+
+          <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#005783] text-[15px] font-bold text-white">
+            08
+          </div>
+
+          <h3 class="pt-1 text-[22px] md:text-[24px] font-semibold leading-[1.3] text-[#163b55]">
+            Tibialis posterior dysfunction
+          </h3>
+
+        </div>
+
+        <p class="mt-5 text-[16px] leading-[1.7] text-[#34495e]">
+          The tibialis posterior tendon runs behind the inner ankle bone and
+          supports the arch of the foot. When it becomes dysfunctional, the
+          arch gradually flattens.
+        </p>
+
+        <div class="mt-5 rounded-[6px] border-l-[3px] border-[#005783] bg-white px-5 py-4">
+
+          <p class="text-[16px] leading-[1.7] text-[#34495e]">
+            <strong class="font-semibold text-[#163b55]">
+              What it feels like:
+            </strong>
+            pain and swelling along the inner side of the ankle and arch,
+            difficulty standing on tiptoe on the affected side, and over time
+            a visible flattening of the foot with the heel drifting outward.
+          </p>
+
+        </div>
+
+        <div class="mt-4 rounded-[6px] border-l-[3px] border-[#005783] bg-[#f4f9fc] px-5 py-4">
+
+          <p class="text-[16px] leading-[1.7] text-[#34495e]">
+            <strong class="font-semibold text-[#163b55]">
+              Why it matters:
+            </strong>
+            this condition is progressive if left unaddressed, and the
+            treatment options in the earlier stages are considerably wider than
+            in the later ones. It is also frequently mistaken for a simple
+            ankle sprain.
+          </p>
+
+        </div>
+
+        <p class="mt-5 text-[16px] leading-[1.7] text-[#34495e]">
+          <strong class="font-semibold text-[#163b55]">
+            Treatment:
+          </strong>
+          in earlier stages, orthotics to support the arch, targeted
+          strengthening and activity modification. Where the deformity has
+          progressed, reconstructive surgery may be considered.
+        </p>
+
+      </article>
+
+    </div>
+
+
+    <!-- =====================================================
+         SHOULDER AND ELBOW
+    ====================================================== -->
+
+    <div class="mt-5 rounded-[10px] border border-[#dce9ef] bg-white px-6 py-6 md:px-8 md:py-8">
+
+      <h2 class="border-b-[2px] border-[#005783] pb-2 text-[32px] md:text-[36px] lg:text-[40px] font-semibold leading-[1.15] text-[#163b55]">
+        Shoulder and elbow injuries
+      </h2>
+
+
+      <!-- SHOULDER -->
+
+      <article class="mt-7 rounded-[8px] border border-[#dce9ef] bg-[#f8fcfe] p-5 md:p-6">
+
+        <div class="flex items-start gap-4">
+
+          <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#005783] text-[15px] font-bold text-white">
+            09
+          </div>
+
+          <h3 class="pt-1 text-[22px] md:text-[24px] font-semibold leading-[1.3] text-[#163b55]">
+            Shoulder dislocation
+          </h3>
+
+        </div>
+
+        <p class="mt-5 text-[16px] leading-[1.7] text-[#34495e]">
+          The shoulder is the most mobile joint in the body, and that mobility
+          comes at the cost of stability. Once a shoulder has dislocated, it
+          becomes more likely to dislocate again particularly in younger
+          patients.
+        </p>
+
+        <div class="mt-5 rounded-[6px] border-l-[3px] border-[#005783] bg-white px-5 py-4">
+
+          <p class="text-[16px] leading-[1.7] text-[#34495e]">
+            <strong class="font-semibold text-[#163b55]">
+              What it feels like:
+            </strong>
+            at the time, severe pain with the shoulder visibly out of position
+            and the arm unable to move. Afterwards, apprehension when the arm is
+            raised and rotated outward, and a persistent sense that the shoulder
+            is not reliable.
+          </p>
+
+        </div>
+
+        <div class="mt-4 rounded-[6px] border-l-[3px] border-[#005783] bg-[#f4f9fc] px-5 py-4">
+
+          <p class="text-[16px] leading-[1.7] text-[#34495e]">
+            <strong class="font-semibold text-[#163b55]">
+              Important:
+            </strong>
+            a dislocated shoulder needs medical reduction. It should not be
+            relocated by an untrained person.
+          </p>
+
+        </div>
+
+        <p class="mt-5 text-[16px] leading-[1.7] text-[#34495e]">
+          <strong class="font-semibold text-[#163b55]">
+            Why the first one matters:
+          </strong>
+          a first dislocation typically tears the labrum and stretches the
+          capsule. If these do not heal in the right position, the shoulder is
+          structurally looser than before which is why recurrence is common,
+          especially in teenagers and people in their twenties.
+        </p>
+
+        <p class="mt-4 text-[16px] leading-[1.7] text-[#34495e]">
+          <strong class="font-semibold text-[#163b55]">
+            Treatment:
+          </strong>
+          immobilisation, then rehabilitation focused on the rotator cuff and
+          shoulder blade muscles. Where dislocations recur, arthroscopic
+          stabilisation repairs the labrum and tightens the capsule.
+        </p>
+
+        <a href="#" class="mt-5 inline-flex items-center gap-2 text-[15px] font-semibold text-[#005783] hover:underline">
+          Shoulder dislocation treatment in Mumbai
+          <span aria-hidden="true">→</span>
+        </a>
+
+      </article>
+
+
+      <!-- TENNIS ELBOW -->
+
+      <article class="mt-5 rounded-[8px] border border-[#dce9ef] bg-[#f8fcfe] p-5 md:p-6">
+
+        <div class="flex items-start gap-4">
+
+          <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#005783] text-[15px] font-bold text-white">
+            10
+          </div>
+
+          <h3 class="pt-1 text-[22px] md:text-[24px] font-semibold leading-[1.3] text-[#163b55]">
+            Tennis elbow
+          </h3>
+
+        </div>
+
+        <p class="mt-5 text-[16px] leading-[1.7] text-[#34495e]">
+          Despite the name, most people with tennis elbow have never played
+          tennis. It is an overuse condition affecting the tendons on the outer
+          side of the elbow, where the muscles that extend the wrist attach.
+        </p>
+
+        <div class="mt-5 rounded-[6px] border-l-[3px] border-[#005783] bg-white px-5 py-4">
+
+          <p class="text-[16px] leading-[1.7] text-[#34495e]">
+            <strong class="font-semibold text-[#163b55]">
+              What it feels like:
+            </strong>
+            pain on the outer side of the elbow, often radiating into the
+            forearm. Gripping, lifting a kettle, turning a doorknob or shaking
+            hands typically provoke it. Grip strength reduces.
+          </p>
+
+        </div>
+
+        <div class="mt-4 rounded-[6px] border-l-[3px] border-[#005783] bg-[#f4f9fc] px-5 py-4">
+
+          <p class="text-[16px] leading-[1.7] text-[#34495e]">
+            <strong class="font-semibold text-[#163b55]">
+              Common in:
+            </strong>
+            racquet sports, but equally in people who do repetitive gripping
+            or lifting at work, and in those who have recently increased gym
+            training.
+          </p>
+
+        </div>
+
+        <p class="mt-5 text-[16px] leading-[1.7] text-[#34495e]">
+          <strong class="font-semibold text-[#163b55]">
+            Treatment:
+          </strong>
+          it settles without surgery in the large majority of cases, though
+          it can take several months. Load management, specific strengthening
+          exercises, technique and equipment review, and bracing all help.
+          Injections are used selectively. Surgery is reserved for the small
+          number of cases that do not respond.
+        </p>
+
+      </article>
+
+    </div>
+
+
+    <!-- =====================================================
+         HIP AND GROIN
+    ====================================================== -->
+
+    <div class="mt-5 rounded-[10px] border border-[#dce9ef] bg-white px-6 py-6 md:px-8 md:py-8">
+
+      <h2 class="border-b-[2px] border-[#005783] pb-2 text-[32px] md:text-[36px] lg:text-[40px] font-semibold leading-[1.15] text-[#163b55]">
+        Hip and groin
+      </h2>
+
+
+      <article class="mt-7 rounded-[8px] border border-[#dce9ef] bg-[#f8fcfe] p-5 md:p-6">
+
+        <div class="flex items-start gap-4">
+
+          <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#005783] text-[15px] font-bold text-white">
+            11
+          </div>
+
+          <h3 class="pt-1 text-[22px] md:text-[24px] font-semibold leading-[1.3] text-[#163b55]">
+            Groin pain
+          </h3>
+
+        </div>
+
+        <p class="mt-5 text-[16px] leading-[1.7] text-[#34495e]">
+          Groin pain in athletes is one of the more difficult problems to
+          diagnose, because several structures produce pain in the same area —
+          hip joint, adductor muscles, abdominal wall, pubic bone and,
+          occasionally, the lower back.
+        </p>
+
+        <div class="mt-5 rounded-[6px] border-l-[3px] border-[#005783] bg-white px-5 py-4">
+
+          <p class="text-[16px] leading-[1.7] text-[#34495e]">
+            <strong class="font-semibold text-[#163b55]">
+              What it feels like:
+            </strong>
+            varies with the source. Adductor-related pain is felt on the inner
+            thigh and provoked by kicking or sprinting. Hip joint pain often
+            from impingement tends to be deeper, felt in the front of the groin,
+            and worse after prolonged sitting or with deep flexion.
+          </p>
+
+        </div>
+
+        <div class="mt-4 rounded-[6px] border-l-[3px] border-[#005783] bg-[#f4f9fc] px-5 py-4">
+
+          <p class="text-[16px] leading-[1.7] text-[#34495e]">
+            <strong class="font-semibold text-[#163b55]">
+              Common in:
+            </strong>
+            football, kabaddi, hockey and any sport involving repeated kicking,
+            twisting or rapid changes of direction.
+          </p>
+
+        </div>
+
+        <div class="mt-4 rounded-[6px] border-l-[3px] border-[#005783] bg-white px-5 py-4">
+
+          <p class="text-[16px] leading-[1.7] text-[#34495e]">
+            <strong class="font-semibold text-[#163b55]">
+              Why it takes time to diagnose:
+            </strong>
+            groin pain is frequently attributed to a muscle strain that then
+            fails to settle. Where it persists beyond a few weeks, a proper
+            assessment including examination of the hip joint itself is
+            worthwhile.
+          </p>
+
+        </div>
+
+        <p class="mt-5 text-[16px] leading-[1.7] text-[#34495e]">
+          <strong class="font-semibold text-[#163b55]">
+            Treatment:
+          </strong>
+          depends entirely on the source. Muscle-related problems respond to
+          graduated loading programmes. Hip joint problems are treated according
+          to what is found, from activity modification through to arthroscopy.
+        </p>
+
+      </article>
+
+    </div>
+
+
+    <!-- =====================================================
+         FRACTURES AND TRAUMA
+    ====================================================== -->
+
+    <div class="mt-5 rounded-[10px] border border-[#dce9ef] bg-white px-6 py-6 md:px-8 md:py-8">
+
+      <h2 class="border-b-[2px] border-[#005783] pb-2 text-[32px] md:text-[36px] lg:text-[40px] font-semibold leading-[1.15] text-[#163b55]">
+        Fractures and trauma in sport
+      </h2>
+
+
+      <article class="mt-7 rounded-[8px] border border-[#dce9ef] bg-[#f8fcfe] p-5 md:p-6">
+
+        <div class="flex items-start gap-4">
+
+          <div class="flex h-10 w-10 shrink-0 items-center justify-center rounded-full bg-[#005783] text-[15px] font-bold text-white">
+            12
+          </div>
+
+          <h3 class="pt-1 text-[22px] md:text-[24px] font-semibold leading-[1.3] text-[#163b55]">
+            Fractures and sporting trauma
+          </h3>
+
+        </div>
+
+        <p class="mt-5 text-[16px] leading-[1.7] text-[#34495e]">
+          Fractures in sport range from stress fractures that develop gradually
+          to acute breaks from a fall or collision.
+        </p>
+
+        <div class="mt-5 rounded-[6px] border-l-[3px] border-[#005783] bg-white px-5 py-4">
+
+          <p class="text-[16px] leading-[1.7] text-[#34495e]">
+            <strong class="font-semibold text-[#163b55]">
+              Stress fractures:
+            </strong>
+            develop from repeated loading rather than a single event, most
+            often in the shin, foot or hip in runners. The pain typically builds
+            over weeks, is worse with activity, and eventually appears at rest.
+            They can be missed on early X-rays, so where the clinical picture
+            fits, further imaging is worthwhile.
+          </p>
+
+        </div>
+
+        <p class="mt-5 text-[16px] leading-[1.7] text-[#34495e]">
+          <strong class="font-semibold text-[#163b55]">
+            Acute fractures:
+          </strong>
+          follow falls, collisions or two-wheeler accidents. Wrist, collarbone
+          and ankle fractures are among the most common in sport.
+        </p>
+
+        <div class="mt-4 rounded-[6px] border-l-[3px] border-[#005783] bg-[#f4f9fc] px-5 py-4">
+
+          <p class="text-[16px] leading-[1.7] text-[#34495e]">
+            <strong class="font-semibold text-[#163b55]">
+              When to seek immediate care:
+            </strong>
+            obvious deformity, inability to bear weight, numbness or coldness
+            beyond the injury, or an open wound over a suspected fracture.
+          </p>
+
+        </div>
+
+        <p class="mt-5 text-[16px] leading-[1.7] text-[#34495e]">
+          <strong class="font-semibold text-[#163b55]">
+            Treatment:
+          </strong>
+          depends on the bone, the pattern and the displacement. Many fractures
+          are treated without surgery; those involving a joint surface, or that
+          are significantly displaced, are usually fixed surgically to restore
+          the anatomy accurately.
+        </p>
+
+        <a href="#" class="mt-5 inline-flex items-center gap-2 text-[15px] font-semibold text-[#005783] hover:underline">
+          Hip fracture and complex trauma treatment in Mumbai
+          <span aria-hidden="true">→</span>
+        </a>
+
+      </article>
+
+    </div>
+
+
+    <!-- =====================================================
+         WHEN TO SEE A DOCTOR
+    ====================================================== -->
+
+    <div class="mt-5 rounded-[10px] border border-[#dce9ef] bg-white px-6 py-6 md:px-8 md:py-8">
+
+      <h2 class="border-b-[2px] border-[#005783] pb-2 text-[32px] md:text-[36px] lg:text-[40px] font-semibold leading-[1.15] text-[#163b55]">
+        When to see a doctor
+      </h2>
+
+      <p class="mt-5 text-[16px] leading-[1.7] text-[#34495e]">
+        Any of the following are worth having assessed:
+      </p>
+
+      <ul class="mt-6 grid grid-cols-1 gap-x-10 gap-y-3 md:grid-cols-2">
+
+        <li class="flex items-start gap-3 text-[16px] leading-[1.6] text-[#34495e]">
+          <span class="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#075b88] text-[11px] font-bold text-white">✓</span>
+          Swelling within hours of a twisting injury
+        </li>
+
+        <li class="flex items-start gap-3 text-[16px] leading-[1.6] text-[#34495e]">
+          <span class="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#075b88] text-[11px] font-bold text-white">✓</span>
+          A joint that gives way, locks or catches
+        </li>
+
+        <li class="flex items-start gap-3 text-[16px] leading-[1.6] text-[#34495e]">
+          <span class="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#075b88] text-[11px] font-bold text-white">✓</span>
+          Inability to bear weight after an injury
+        </li>
+
+        <li class="flex items-start gap-3 text-[16px] leading-[1.6] text-[#34495e]">
+          <span class="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#075b88] text-[11px] font-bold text-white">✓</span>
+          Pain that has not settled after two to three weeks
+        </li>
+
+        <li class="flex items-start gap-3 text-[16px] leading-[1.6] text-[#34495e]">
+          <span class="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#075b88] text-[11px] font-bold text-white">✓</span>
+          A joint that has dislocated, even if it went back on its own
+        </li>
+
+        <li class="flex items-start gap-3 text-[16px] leading-[1.6] text-[#34495e]">
+          <span class="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#075b88] text-[11px] font-bold text-white">✓</span>
+          Recurrent injuries to the same area
+        </li>
+
+        <li class="flex items-start gap-3 text-[16px] leading-[1.6] text-[#34495e] md:col-span-2">
+          <span class="mt-1 flex h-5 w-5 shrink-0 items-center justify-center rounded-full bg-[#075b88] text-[11px] font-bold text-white">✓</span>
+          Pain that is limiting your training or your work
+        </li>
+
+      </ul>
+
+      <div
+        class="mt-6
+               rounded-[6px]
+               border-l-[3px]
+               border-[#005783]
+               bg-[#f4f9fc]
+               px-5 py-4"
+      >
+
+        <p class="text-[16px] leading-[1.7] text-[#34495e]">
+          <strong class="font-semibold text-[#163b55]">
+            Seek urgent care
+          </strong>
+          for obvious deformity, inability to bear any weight, numbness or
+          coldness beyond the injury, or a hot swollen joint with fever.
+        </p>
+
+      </div>
+
+    </div>
+
+
+    <!-- =====================================================
+         THREE THINGS THAT MAKE RECOVERY BETTER
+    ====================================================== -->
+
+    <div class="mt-5 rounded-[10px] border border-[#dce9ef] bg-white px-6 py-6 md:px-8 md:py-8">
+
+      <h2 class="border-b-[2px] border-[#005783] pb-2 text-[32px] md:text-[36px] lg:text-[40px] font-semibold leading-[1.15] text-[#163b55]">
+        Three things that make recovery go better
+      </h2>
+
+      <div class="mt-6 grid grid-cols-1 gap-5 md:grid-cols-3">
+
+        <!-- 01 -->
+
+        <div class="rounded-[8px] border border-[#dce9ef] bg-[#f8fcfe] p-5">
+
+          <div class="mb-4 flex h-11 w-11 items-center justify-center rounded-[7px] bg-[#e5f3f9] text-[#005783]">
+            <span class="text-lg font-bold">01</span>
+          </div>
+
+          <h3 class="text-[20px] font-semibold text-[#163b55]">
+            Get the diagnosis right first
+          </h3>
+
+          <p class="mt-3 text-[16px] leading-[1.7] text-[#34495e]">
+            Several of the injuries above look similar in the first week.
+            Treating an ankle sprain that is actually tibialis posterior
+            dysfunction, or a groin strain that is actually hip impingement,
+            wastes months.
+          </p>
+
+        </div>
+
+
+        <!-- 02 -->
+
+        <div class="rounded-[8px] border border-[#dce9ef] bg-[#f8fcfe] p-5">
+
+          <div class="mb-4 flex h-11 w-11 items-center justify-center rounded-[7px] bg-[#e5f3f9] text-[#005783]">
+            <span class="text-lg font-bold">02</span>
+          </div>
+
+          <h3 class="text-[20px] font-semibold text-[#163b55]">
+            Finish the rehabilitation
+          </h3>
+
+          <p class="mt-3 text-[16px] leading-[1.7] text-[#34495e]">
+            The commonest reason injuries recur is stopping when the pain goes
+            rather than when the strength and control return. Pain settles well
+            before the joint is protected.
+          </p>
+
+        </div>
+
+
+        <!-- 03 -->
+
+        <div class="rounded-[8px] border border-[#dce9ef] bg-[#f8fcfe] p-5">
+
+          <div class="mb-4 flex h-11 w-11 items-center justify-center rounded-[7px] bg-[#e5f3f9] text-[#005783]">
+            <span class="text-lg font-bold">03</span>
+          </div>
+
+          <h3 class="text-[20px] font-semibold text-[#163b55]">
+            Progress load gradually
+          </h3>
+
+          <p class="mt-3 text-[16px] leading-[1.7] text-[#34495e]">
+            A large proportion of the injuries I see follow a sudden increase
+            in training volume, a change of surface, or a return to sport after
+            a long gap. The body adapts, but it needs time to.
+          </p>
+
+        </div>
+
+      </div>
+
+    </div>
+
+<!-- =====================================================
+     RELATED PAGES
+====================================================== -->
+
+<div
+  class="mt-5
+         rounded-[10px]
+         border border-[#dce9ef]
+         bg-white
+         px-6 py-6
+         md:px-8 md:py-8"
+>
+
+  <h2
+    class="border-b-[2px]
+           border-[#005783]
+           pb-2
+           text-[32px]
+           md:text-[36px]
+           lg:text-[40px]
+           font-semibold
+           leading-[1.15]
+           text-[#163b55]"
+  >
+    Related pages
+  </h2>
+
+  <div
+    class="mt-6
+           grid grid-cols-1
+           gap-4
+           sm:grid-cols-2
+           lg:grid-cols-3"
+  >
+
+    <a
+      href="../sports-injury-and-arthroscopy.html"
+      class="group
+             rounded-[8px]
+             border border-[#dce9ef]
+             bg-[#f8fcfe]
+             px-5 py-4
+             transition-colors
+             hover:border-[#005783]"
+    >
+      <div class="flex items-center justify-between gap-4">
+        <span class="text-[16px] font-semibold text-[#163b55]">
+          Sports injury treatment and arthroscopy
+        </span>
+
+        <span
+          class="shrink-0
+                 text-[18px]
+                 text-[#005783]
+                 transition-transform
+                 group-hover:translate-x-1"
+        >
+          →
+        </span>
+      </div>
+    </a>
+
+
+    <a
+      href="../conditions/acl-tear-treatment-mumbai.html"
+      class="group
+             rounded-[8px]
+             border border-[#dce9ef]
+             bg-[#f8fcfe]
+             px-5 py-4
+             transition-colors
+             hover:border-[#005783]"
+    >
+      <div class="flex items-center justify-between gap-4">
+        <span class="text-[16px] font-semibold text-[#163b55]">
+          ACL tear
+        </span>
+
+        <span
+          class="shrink-0
+                 text-[18px]
+                 text-[#005783]
+                 transition-transform
+                 group-hover:translate-x-1"
+        >
+          →
+        </span>
+      </div>
+    </a>
+
+
+    <a
+      href="#"
+      class="group
+             rounded-[8px]
+             border border-[#dce9ef]
+             bg-[#f8fcfe]
+             px-5 py-4
+             transition-colors
+             hover:border-[#005783]"
+    >
+      <div class="flex items-center justify-between gap-4">
+        <span class="text-[16px] font-semibold text-[#163b55]">
+          Meniscus tear
+        </span>
+
+        <span
+          class="shrink-0
+                 text-[18px]
+                 text-[#005783]
+                 transition-transform
+                 group-hover:translate-x-1"
+        >
+          →
+        </span>
+      </div>
+    </a>
+
+
+    <a
+      href="../conditions/knee-cartilage-treatment-mumbai.html"
+      class="group
+             rounded-[8px]
+             border border-[#dce9ef]
+             bg-[#f8fcfe]
+             px-5 py-4
+             transition-colors
+             hover:border-[#005783]"
+    >
+      <div class="flex items-center justify-between gap-4">
+        <span class="text-[16px] font-semibold text-[#163b55]">
+          Knee cartilage damage
+        </span>
+
+        <span
+          class="shrink-0
+                 text-[18px]
+                 text-[#005783]
+                 transition-transform
+                 group-hover:translate-x-1"
+        >
+          →
+        </span>
+      </div>
+    </a>
+
+
+    <a
+      href="../conditions/shoulder-dislocation-treatment-mumbai.html"
+      class="group
+             rounded-[8px]
+             border border-[#dce9ef]
+             bg-[#f8fcfe]
+             px-5 py-4
+             transition-colors
+             hover:border-[#005783]"
+    >
+      <div class="flex items-center justify-between gap-4">
+        <span class="text-[16px] font-semibold text-[#163b55]">
+          Shoulder dislocation
+        </span>
+
+        <span
+          class="shrink-0
+                 text-[18px]
+                 text-[#005783]
+                 transition-transform
+                 group-hover:translate-x-1"
+        >
+          →
+        </span>
+      </div>
+    </a>
+
+
+    <a
+      href="../conditions/ankle-ligament-injury-treatment-mumbai.html"
+      class="group
+             rounded-[8px]
+             border border-[#dce9ef]
+             bg-[#f8fcfe]
+             px-5 py-4
+             transition-colors
+             hover:border-[#005783]"
+    >
+      <div class="flex items-center justify-between gap-4">
+        <span class="text-[16px] font-semibold text-[#163b55]">
+          Ankle ligament injury
+        </span>
+
+        <span
+          class="shrink-0
+                 text-[18px]
+                 text-[#005783]
+                 transition-transform
+                 group-hover:translate-x-1"
+        >
+          →
+        </span>
+      </div>
+    </a>
+
+  </div>
+
+</div>
+
+
+<!-- =====================================================
+     MEDICAL DISCLAIMER
+====================================================== -->
+
+<div
+  class="mt-5
+         rounded-[10px]
+         border border-[#dce9ef]
+         bg-white
+         px-6 py-6
+         md:px-8 md:py-8"
+>
+
+  <h2
+    class="border-b-[2px]
+           border-[#005783]
+           pb-2
+           text-[32px]
+           md:text-[36px]
+           lg:text-[40px]
+           font-semibold
+           leading-[1.15]
+           text-[#163b55]"
+  >
+    Medical disclaimer
+  </h2>
+
+  <div
+    class="mt-5
+           rounded-[6px]
+           border-l-[3px]
+           border-[#005783]
+           bg-[#f4f9fc]
+           px-5 py-4"
+  >
+
+    <p
+      class="text-[16px]
+             leading-[1.7]
+             text-[#34495e]"
+    >
+      <strong class="font-semibold text-[#163b55]">
+        Medical Disclaimer:
+      </strong>
+      This article provides general information about common sports injuries
+      and is not a substitute for individual medical consultation. Diagnosis
+      and treatment should be determined by a qualified healthcare professional
+      after assessing your symptoms and clinical findings. If you are unable
+      to bear weight after an injury, have an obvious deformity, or develop
+      numbness or coldness beyond the injury, seek urgent medical evaluation.
+    </p>
+
+  </div>
+
+</div>
+  </div>
+
+</section>
+
+
+
+<!-- why choose dr vaibhav -->
+
+  
+  <section
+  id="why-choose-doctor"
+  class="relative min-h-[520px] overflow-hidden"
+  style="background-image: url('../assets/images/featured-img.jpg');"
+>
+  
+  <!-- Gradient Overlay -->
+  <div
+    class="absolute inset-0 bg-gradient-to-r
+           from-[#005487]/80
+           via-[#0068a5]/70"
+  ></div>
+
+  <!-- Content -->
+  <div
+    class="relative z-10 max-w-[1350px] mx-auto
+           px-6 sm:px-8 lg:px-12 xl:px-16
+           py-20 lg:py-[88px]"
+  >
+
+    <h2
+      class="font-jakarta text-white
+             text-[32px] sm:text-[38px] lg:text-[40px]
+             font-semibold leading-[1.2]
+             tracking-[-1px] mb-10"
+    >
+      Why Patients Choose Dr. Vaibhav Bagaria?
+    </h2>
+
+    <div class="grid grid-cols-1 lg:grid-cols-2 gap-x-16 xl:gap-x-24 gap-y-7">
+
+      <!-- LEFT -->
+      <div class="space-y-7">
+
+        <div class="flex items-start gap-4">
+          <div class="feature-icon">
+            <i class="fa-solid fa-briefcase-medical"></i>
+          </div>
+          <p class="feature-text">
+            Over two decades of orthopaedic surgical
+            <br class="hidden sm:block">
+            experience
+          </p>
+        </div>
+
+        <div class="flex items-start gap-4">
+          <div class="feature-icon">
+            <i class="fa-solid fa-globe"></i>
+          </div>
+          <p class="feature-text">
+            Internationally fellowship-trained in the USA,
+            <br class="hidden sm:block">
+            Germany and Australia
+          </p>
+        </div>
+
+        <div class="flex items-start gap-4">
+          <div class="feature-icon">
+           <i class="fa-solid fa-kit-medical"></i>
+          </div>
+          <p class="feature-text">
+            Surgery recommended only when it is
+            <br class="hidden sm:block">
+            genuinely the better option
+          </p>
+        </div>
+
+      </div>
+
+      <!-- RIGHT -->
+      <div class="space-y-7">
+
+        <div class="flex items-start gap-4">
+          <div class="feature-icon">
+            <i class="fa-solid fa-robot"></i>
+          </div>
+          <p class="feature-text">
+            Among India's earliest robotic joint
+            <br class="hidden sm:block">
+            replacement surgeons
+          </p>
+        </div>
+
+        <div class="flex items-start gap-4">
+          <div class="feature-icon">
+            <i class="fa-solid fa-file-medical"></i>
+          </div>
+          <p class="feature-text">
+            150+ peer-reviewed publications and multiple
+            <br class="hidden sm:block">
+            device patents
+          </p>
+        </div>
+
+        <div class="flex items-start gap-4">
+          <div class="feature-icon">
+            <i class="fa-solid fa-notes-medical"></i>
+          </div>
+          <p class="feature-text">
+            Structured rehabilitation planned before the
+            <br class="hidden sm:block">
+            operation, not after
+          </p>
+        </div>
+
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
+
+
+<section
+  id="faq"
+  class="py-24 px-4 lg:px-[60px] bg-[#effaff]"
+>
+  <div class="max-w-4xl mx-auto">
+
+    <!-- ================= FAQ HEADING ================= -->
+
+    <h2
+      class="font-sans
+             text-[40px]
+             md:text-[44px]
+             font-medium
+             leading-[1.2]
+             tracking-[-1px]
+             text-center
+             text-gray-900
+             mb-12"
+    >
+      Frequently Asked Questions
+    </h2>
+
+
+    <!-- ================= FAQ LIST ================= -->
+
+    <div class="space-y-5">
+
+
+      <!-- FAQ 1 -->
+      <div
+        class="faq-items
+               border border-neutral-200
+               rounded-3xl
+               overflow-hidden
+               bg-white"
+      >
+
+        <button
+          type="button"
+          class="faq-question
+                 w-full
+                 flex items-center justify-between
+                 gap-5
+                 p-6 md:p-8
+                 text-left
+                 bg-neutral-50
+                 hover:bg-white
+                 transition-colors duration-300"
+        >
+
+          <span
+            class="text-base
+                   md:text-xl
+                   font-medium
+                   text-neutral-900"
+          >
+          Do all sports injuries need surgery?
+          </span>
+
+          <span
+            class="faq-icon
+                   w-10 h-10
+                   rounded-full
+                   bg-white
+                   border border-neutral-200
+                   flex items-center justify-center
+                   flex-shrink-0
+                   transition-transform duration-300"
+          >
+            <i class="fa-solid fa-plus text-[#0084d1]"></i>
+          </span>
+
+        </button>
+
+
+        <div class="faq-answer hidden">
+
+          <div
+            class="px-6 md:px-8
+                   pb-7
+                   text-neutral-600
+                   leading-relaxed
+                   text-base md:text-lg"
+          >
+            No the large majority do not. Most ligament sprains, tendon problems and overuse conditions respond well to properly structured rehabilitation. Surgery is considered where a joint is unstable, where there are mechanical symptoms such as locking, or where symptoms persist despite adequate physiotherapy.
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- FAQ 2 -->
+      <div
+        class="faq-items
+               border border-neutral-200
+               rounded-3xl
+               overflow-hidden
+               bg-white"
+      >
+
+        <button
+          type="button"
+          class="faq-question
+                 w-full
+                 flex items-center justify-between
+                 gap-5
+                 p-6 md:p-8
+                 text-left
+                 bg-neutral-50
+                 hover:bg-white
+                 transition-colors duration-300"
+        >
+
+          <span
+            class="text-base
+                   md:text-xl
+                   font-medium
+                   text-neutral-900"
+          >
+            How soon after an injury should I see a doctor?
+          </span>
+
+          <span
+            class="faq-icon
+                   w-10 h-10
+                   rounded-full
+                   bg-white
+                   border border-neutral-200
+                   flex items-center justify-center
+                   flex-shrink-0
+                   transition-transform duration-300"
+          >
+            <i class="fa-solid fa-plus text-[#0084d1]"></i>
+          </span>
+
+        </button>
+
+
+        <div class="faq-answer hidden">
+
+          <div
+            class="px-6 md:px-8
+                   pb-7
+                   text-neutral-600
+                   leading-relaxed
+                   text-base md:text-lg"
+          >
+            Urgently if you cannot bear weight, if there is obvious deformity, or if there is numbness or coldness beyond the injury. Otherwise, if swelling appeared within hours, if the joint gives way, or if symptoms have not settled after two to three weeks.
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- FAQ 3 -->
+      <div
+        class="faq-items
+               border border-neutral-200
+               rounded-3xl
+               overflow-hidden
+               bg-white"
+      >
+
+        <button
+          type="button"
+          class="faq-question
+                 w-full
+                 flex items-center justify-between
+                 gap-5
+                 p-6 md:p-8
+                 text-left
+                 bg-neutral-50
+                 hover:bg-white
+                 transition-colors duration-300"
+        >
+
+          <span
+            class="text-base
+                   md:text-xl
+                   font-medium
+                   text-neutral-900"
+          >
+            Can I keep playing through a minor injury? 
+          </span>
+
+          <span
+            class="faq-icon
+                   w-10 h-10
+                   rounded-full
+                   bg-white
+                   border border-neutral-200
+                   flex items-center justify-center
+                   flex-shrink-0
+                   transition-transform duration-300"
+          >
+            <i class="fa-solid fa-plus text-[#0084d1]"></i>
+          </span>
+
+        </button>
+
+
+        <div class="faq-answer hidden">
+
+          <div
+            class="px-6 md:px-8
+                   pb-7
+                   text-neutral-600
+                   leading-relaxed
+                   text-base md:text-lg"
+          >
+            It depends entirely on the injury. Continuing through pain and swelling generally makes things worse, and playing on an unstable joint risks further damage to the cartilage and meniscus. An assessment will establish what is safe.
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- FAQ 4 -->
+      <div
+        class="faq-items
+               border border-neutral-200
+               rounded-3xl
+               overflow-hidden
+               bg-white"
+      >
+
+        <button
+          type="button"
+          class="faq-question
+                 w-full
+                 flex items-center justify-between
+                 gap-5
+                 p-6 md:p-8
+                 text-left
+                 bg-neutral-50
+                 hover:bg-white
+                 transition-colors duration-300"
+        >
+
+          <span
+            class="text-base
+                   md:text-xl
+                   font-medium
+                   text-neutral-900"
+          >
+            Why does my old injury keep coming back?
+          </span>
+
+          <span
+            class="faq-icon
+                   w-10 h-10
+                   rounded-full
+                   bg-white
+                   border border-neutral-200
+                   flex items-center justify-center
+                   flex-shrink-0
+                   transition-transform duration-300"
+          >
+            <i class="fa-solid fa-plus text-[#0084d1]"></i>
+          </span>
+
+        </button>
+
+
+        <div class="faq-answer hidden">
+
+          <div
+            class="px-6 md:px-8
+                   pb-7
+                   text-neutral-600
+                   leading-relaxed
+                   text-base md:text-lg"
+          >
+            Usually because the rehabilitation was not completed. Strength, balance and control take considerably longer to restore than pain takes to settle, and returning before they have is the commonest cause of recurrence.
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- FAQ 5 -->
+      <div
+        class="faq-items
+               border border-neutral-200
+               rounded-3xl
+               overflow-hidden
+               bg-white"
+      >
+
+        <button
+          type="button"
+          class="faq-question
+                 w-full
+                 flex items-center justify-between
+                 gap-5
+                 p-6 md:p-8
+                 text-left
+                 bg-neutral-50
+                 hover:bg-white
+                 transition-colors duration-300"
+        >
+
+          <span
+            class="text-base
+                   md:text-xl
+                   font-medium
+                   text-neutral-900"
+          >
+            Who is the best sports injury doctor in Mumbai? 
+          </span>
+
+          <span
+            class="faq-icon
+                   w-10 h-10
+                   rounded-full
+                   bg-white
+                   border border-neutral-200
+                   flex items-center justify-center
+                   flex-shrink-0
+                   transition-transform duration-300"
+          >
+            <i class="fa-solid fa-plus text-[#0084d1]"></i>
+          </span>
+
+        </button>
+
+
+        <div class="faq-answer hidden">
+
+          <div
+            class="px-6 md:px-8
+                   pb-7
+                   text-neutral-600
+                   leading-relaxed
+                   text-base md:text-lg"
+          >
+           professional athletes and active adults for over two decades and is Director of Orthopaedics at Sir H. N. Reliance Foundation Hospital, Girgaon. He trained in sports medicine and arthroscopy in Perth, Melbourne and Adelaide, and treats knee, shoulder and ankle injuries.
+          </div>
+
+        </div>
+
+      </div>
+
+
+    </div>
+
+  </div>
+</section>
+
+  <!-- CTA Ribbon -->
+  <section
+  id="cta-ribbon"
+  class="w-full py-6 px-4 md:px-[60px] shadow-lg"
+  style="
+    background: linear-gradient(
+      105deg,
+      #00599c 42%,
+      #00599c 68%,
+      #0084d1 100%
+    );
+  "
+>
+  <div
+    class="w-full mx-auto flex flex-col md:flex-row items-center justify-between gap-6"
+  >
+
+    <!-- LEFT CONTENT -->
+    <div class="text-center md:text-left">
+
+      <h3
+        class="font-sans text-[24px] md:text-[28px] leading-[1.2] text-white font-semibold mb-2"
+      >
+        Ready to Restore Your Mobility?
+      </h3>
+
+      <p
+        class="text-[#e4f4fc] text-sm md:text-[15px]"
+      >
+        Schedule your consultation with Dr. Vaibhav Bagaria today
+      </p>
+
+    </div>
+
+
+    <!-- RIGHT BUTTONS -->
+    <div
+      class="flex flex-wrap justify-center gap-4 items-center flex-shrink-0"
+    >
+
+      <!-- BOOK APPOINTMENT -->
+      <a
+        href="https://myhealthrecord.rfhospital.org/frmAppointment.aspx"
+        class="inline-flex items-center justify-center gap-3 bg-white text-[#111827] px-10 py-4 rounded-full text-sm font-semibold shadow-md hover:shadow-xl hover:scale-[1.03] transition-all duration-300"
+      >
+        Book Appointment
+
+        <i class="fa-solid fa-arrow-right text-[16px]"></i>
+      </a>
+
+
+      <!-- CALL NOW -->
+      <a
+        href="tel:+919876543210"
+        class="inline-flex items-center justify-center gap-3 border-2 border-white text-white px-8 py-[14px] rounded-full text-sm font-semibold hover:bg-white hover:text-[#087fc5] transition-all duration-300"
+      >
+        <i class="fa-solid fa-phone text-[14px]"></i>
+
+        Call Now
+      </a>
+
+    </div>
+
+  </div>
+</section>
+
+<section id="contact-location" class="py-16 md:py-24 px-4 md:px-[60px] bg-white ">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+      <!-- Left: Contact Info -->
+     <section class="visit-centre-section">
+  <div class="visit-centre-container">
+
+    <!-- Section Heading -->
+    <div class="visit-centre-heading">
+      <div class="visit-centre-label">
+        GET IN TOUCH
+      </div>
+
+      <h2>
+        Visit Our Centre
+      </h2>
+    </div>
+
+
+    <!-- Contact Details -->
+    <div class="visit-centre-details">
+
+      <!-- Name -->
+      <div class="visit-centre-item">
+        <div class="visit-centre-icon">
+          <i class="fa-solid fa-location-dot"></i>
+        </div>
+
+        <div class="visit-centre-content">
+          <h3>Name</h3>
+          <p>Dr Vaibhav Bagaria</p>
+        </div>
+      </div>
+
+
+      <!-- Address -->
+      <div class="visit-centre-item">
+        <div class="visit-centre-icon">
+          <i class="fa-solid fa-phone"></i>
+        </div>
+
+        <div class="visit-centre-content">
+          <h3>Address</h3>
+          <p>
+            Prathna Samaj, Khetwadi, Girgaon,<br>
+            Mumbai, Maharashtra 400004
+          </p>
+        </div>
+      </div>
+
+
+      <!-- Phone -->
+      <div class="visit-centre-item">
+        <div class="visit-centre-icon">
+          <i class="fa-solid fa-envelope"></i>
+        </div>
+
+        <div class="visit-centre-content">
+          <h3>Phone</h3>
+          <p>02261305757</p>
+        </div>
+      </div>
+
+    </div>
+
+
+    <!-- Button -->
+    <a href="https://myhealthrecord.rfhospital.org/frmAppointment.aspx" class="visit-centre-button">
+      <span>Book Appointment</span>
+      <i class="fa-solid fa-arrow-right"></i>
+    </a>
+
+  </div>
+</section>
+      <!-- Right: Google Maps -->
+      <div class="w-full h-[500px] rounded-[20px] overflow-hidden shadow-xl border border-gray-100 ">
+       
+      <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.3706147542493!2d72.81965509999999!3d18.959232899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce13d7326fdd%3A0x60bf450557a13a5e!2sDr%20Vaibhav%20Bagaria!5e0!3m2!1sen!2sin!4v1784142062563!5m2!1sen!2sin" width="100%" height="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="grayscale-[20%]"></iframe>
+      <!-- <iframe frameborder="0" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.8042847756394!2d72.8196!3d18.9593!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce7c3a4e3c8b%3A0x1c8e1c8e1c8e1c8e!2sSir%20H.%20N.%20Reliance%20Foundation%20Hospital!5e0!3m2!1sen!2sin!4v1234567890" width="100%" height="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="grayscale-[20%]"></iframe> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- =====================================================
+     MODERN FOOTER
+====================================================== -->
+
+<footer
+  class="mx-2
+         mt-8
+         overflow-hidden
+         rounded-[22px]
+         border border-[#dce9ef]
+         bg-[#004d77]
+         font-['Plus_Jakarta_Sans']
+         text-white
+         shadow-[0_8px_30px_rgba(7,91,131,0.12)]
+         md:mx-4
+         md:mt-10
+         md:rounded-[24px]"
+>
+
+  <div
+    class="mx-auto
+           max-w-[1600px]
+           px-6
+           py-10
+           sm:px-8
+           sm:py-12
+           lg:px-12
+           lg:py-14"
+  >
+
+    <!-- =================================================
+         MAIN FOOTER
+    ================================================== -->
+
+    <div
+      class="grid
+             grid-cols-1
+             gap-10
+             sm:grid-cols-2
+             lg:grid-cols-[1.4fr_0.75fr_1.25fr_0.75fr]
+             lg:gap-12"
+    >
+
+
+      <!-- ===============================================
+           BRAND / LOCATION
+      ================================================ -->
+
+      <div>
+
+        <!-- LOGO -->
+
+        <a
+          href="../"
+          class="inline-flex
+                 items-center
+                 gap-3"
+        >
+
+          <div
+            class="flex
+                   h-[58px]
+                   w-[58px]
+                   shrink-0
+                   items-center
+                   justify-center
+                   rounded-[12px]
+                   bg-white
+                   p-2
+                   shadow-sm"
+          >
+
+            <img
+              src="../assets/images/newlogov1.png"
+              alt="Dr Vaibhav Bagaria"
+              class="h-full
+                     w-full
+                     object-contain"
+            />
+
+          </div>
+
+
+          <div class="flex flex-col">
+
+            <span
+              class="text-[20px]
+                     font-semibold
+                     leading-tight
+                     tracking-[-0.02em]"
+            >
+              Dr Vaibhav Bagaria
+            </span>
+
+            <span
+              class="mt-1
+                     text-[9px]
+                     font-medium
+                     uppercase
+                     tracking-[0.04em]
+                     text-white/65"
+            >
+              MBBS, MS (Orthopaedics), FCPS, DNB, SICOT
+            </span>
+
+          </div>
+
+        </a>
+
+
+        <!-- LOCATION -->
+
+        <div class="mt-7">
+
+          <div
+            class="flex
+                   items-start
+                   gap-3"
+          >
+
+            <div
+              class="flex
+                     h-9
+                     w-9
+                     shrink-0
+                     items-center
+                     justify-center
+                     rounded-[9px]
+                     border border-white/10
+                     bg-white/10"
+            >
+
+              <i
+                class="fa-solid
+                       fa-location-dot
+                       text-[13px]"
+              ></i>
+
+            </div>
+
+
+            <div>
+
+              <p
+                class="text-[11px]
+                       font-semibold
+                       uppercase
+                       tracking-[0.12em]
+                       text-white/55"
+              >
+                Clinic Address
+              </p>
+
+              <p
+                class="mt-1.5
+                       max-w-[280px]
+                       text-[14px]
+                       leading-[1.55]
+                       text-white/85"
+              >
+                Prathna Samaj, Khetwadi, Girgaon<br>
+                Mumbai, Maharashtra 400004
+              </p>
+
+            </div>
+
+          </div>
+
+
+          <!-- PHONE -->
+
+          <div
+            class="mt-5
+                   flex
+                   items-center
+                   gap-3"
+          >
+
+            <div
+              class="flex
+                     h-9
+                     w-9
+                     shrink-0
+                     items-center
+                     justify-center
+                     rounded-[9px]
+                     border border-white/10
+                     bg-white/10"
+            >
+
+              <i
+                class="fa-solid
+                       fa-phone
+                       text-[13px]"
+              ></i>
+
+            </div>
+
+
+            <div>
+
+              <p
+                class="text-[11px]
+                       font-semibold
+                       uppercase
+                       tracking-[0.12em]
+                       text-white/55"
+              >
+                Phone
+              </p>
+
+              <a
+                href="tel:02261305757"
+                class="mt-1
+                       block
+                       text-[14px]
+                       text-white/90
+                       transition-colors
+                       hover:text-white"
+              >
+                02261305757
+              </a>
+
+            </div>
+
+          </div>
+
+        </div>
+
+
+        <!-- MAP -->
+
+        <div
+          class="mt-7
+                 overflow-hidden
+                 rounded-[14px]
+                 border border-white/15
+                 bg-white/5
+                 p-1"
+        >
+
+          <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3773.3706147542493!2d72.81965509999999!3d18.959232899999996!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3be7ce13d7326fdd%3A0x60bf450557a13a5e!2sDr%20Vaibhav%20Bagaria!5e0!3m2!1sen!2sin!4v1784142062563!5m2!1sen!2sin" width="100%" height="100%" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade" class="grayscale-[20%]"></iframe>
+
+        </div>
+
+      </div>
+
+
+      <!-- ===============================================
+           QUICK LINKS
+      ================================================ -->
+
+      <div>
+
+        <h3
+          class="text-[14px]
+                 font-semibold
+                 tracking-wide
+                 text-white"
+        >
+          Quick Links
+        </h3>
+
+        <div
+          class="mt-5
+                 flex
+                 flex-col
+                 items-start
+                 gap-3.5"
+        >
+
+          <a
+            href="../"
+            class="group
+                   flex
+                   items-center
+                   gap-2
+                   text-[14px]
+                   text-white/70
+                   transition-colors
+                   hover:text-white"
+          >
+            <span
+              class="h-px
+                     w-0
+                     bg-white
+                     transition-all
+                     group-hover:w-3"
+            ></span>
+            Home
+          </a>
+
+
+          <a
+            href="../about.html"
+            class="group
+                   flex
+                   items-center
+                   gap-2
+                   text-[14px]
+                   text-white/70
+                   transition-colors
+                   hover:text-white"
+          >
+            <span
+              class="h-px
+                     w-0
+                     bg-white
+                     transition-all
+                     group-hover:w-3"
+            ></span>
+            About Us
+          </a>
+
+
+          <a
+            href="../"
+            class="group
+                   flex
+                   items-center
+                   gap-2
+                   text-[14px]
+                   text-white/70
+                   transition-colors
+                   hover:text-white"
+          >
+            <span
+              class="h-px
+                     w-0
+                     bg-white
+                     transition-all
+                     group-hover:w-3"
+            ></span>
+            Other Links
+          </a>
+
+        </div>
+
+
+        <!-- SOCIAL -->
+
+        <div class="mt-10">
+
+          <h3
+            class="text-[14px]
+                   font-semibold
+                   tracking-wide"
+          >
+            Socials
+          </h3>
+
+          <div class="mt-4 flex gap-2.5">
+
+            <a
+              href="#"
+              aria-label="LinkedIn"
+              class="flex
+                     h-9
+                     w-9
+                     items-center
+                     justify-center
+                     rounded-[9px]
+                     border border-white/15
+                     bg-white/10
+                     text-white/80
+                     transition-all
+                     hover:border-white
+                     hover:bg-white
+                     hover:text-[#075b83]"
+            >
+              <i class="fa-brands fa-linkedin-in text-sm"></i>
+            </a>
+
+          </div>
+
+        </div>
+
+      </div>
+
+
+      <!-- ===============================================
+           PROCEDURES
+      ================================================ -->
+
+      <div>
+
+        <h3
+          class="text-[14px]
+                 font-semibold
+                 tracking-wide"
+        >
+          Procedures
+        </h3>
+
+        <div
+          class="mt-5
+                 flex
+                 flex-col
+                 items-start
+                 gap-3.5"
+        >
+
+          <a
+            href="../robotic-knee-replacement.html"
+            class="text-[14px]
+                   leading-[1.4]
+                   text-white/70
+                   transition-all
+                   hover:translate-x-1
+                   hover:text-white"
+          >
+            Robotic Knee Replacement
+          </a>
+
+          <a
+            href="../robotic-hip-replacement.html"
+            class="text-[14px]
+                   leading-[1.4]
+                   text-white/70
+                   transition-all
+                   hover:translate-x-1
+                   hover:text-white"
+          >
+            Robotic Hip Replacement
+          </a>
+
+          <a
+            href="../robotic-partial-knee-replacement.html"
+            class="text-[14px]
+                   leading-[1.4]
+                   text-white/70
+                   transition-all
+                   hover:translate-x-1
+                   hover:text-white"
+          >
+            Partial Knee Replacement
+          </a>
+
+          <a
+            href="../revision-joint-replacement.html"
+            class="text-[14px]
+                   leading-[1.4]
+                   text-white/70
+                   transition-all
+                   hover:translate-x-1
+                   hover:text-white"
+          >
+            Revision Joint Replacement
+          </a>
+
+          <a
+            href="../hip-fracture.html"
+            class="text-[14px]
+                   leading-[1.4]
+                   text-white/70
+                   transition-all
+                   hover:translate-x-1
+                   hover:text-white"
+          >
+            Hip Fracture
+          </a>
+
+          <a
+            href="../sports-injury-and-arthroscopy.html"
+            class="text-[14px]
+                   leading-[1.4]
+                   text-white/70
+                   transition-all
+                   hover:translate-x-1
+                   hover:text-white"
+          >
+            Sports Injury &amp; Arthroscopy
+          </a>
+
+        </div>
+
+      </div>
+
+
+      <!-- ===============================================
+           CONTACT
+      ================================================ -->
+
+      <div>
+
+        <h3
+          class="text-[14px]
+                 font-semibold
+                 tracking-wide"
+        >
+          Contact
+        </h3>
+
+        <div
+          class="mt-5
+                 flex
+                 flex-col
+                 items-start
+                 gap-3.5"
+        >
+
+          <a
+            href="../contact.html"
+            class="text-[14px]
+                   text-white/70
+                   transition-colors
+                   hover:text-white"
+          >
+            Contact Us
+          </a>
+
+          <a
+            href="#"
+            class="text-[14px]
+                   text-white/70
+                   transition-colors
+                   hover:text-white"
+          >
+            Sitemap
+          </a>
+
+          <a
+            href="#"
+            class="text-[14px]
+                   text-white/70
+                   transition-colors
+                   hover:text-white"
+          >
+            Privacy Policy
+          </a>
+
+        </div>
+
+
+        <!-- APPOINTMENT BUTTON -->
+
+        <a
+          href="https://myhealthrecord.rfhospital.org/frmAppointment.aspx"
+          class="mt-8
+                 inline-flex
+                 items-center
+                 gap-2
+                 rounded-[9px]
+                 bg-white
+                 px-4
+                 py-2.5
+                 text-[13px]
+                 font-semibold
+                 text-[#075b83]
+                 shadow-sm
+                 transition-all
+                 hover:-translate-y-0.5
+                 hover:bg-[#f5fafc]"
+        >
+
+          Book an Appointment
+
+          <i class="fa-solid fa-arrow-right text-[11px]"></i>
+
+        </a>
+
+      </div>
+
+    </div>
+
+
+    <!-- =================================================
+         FOOTER DIVIDER
+    ================================================== -->
+
+    <div
+      class="my-9
+             h-px
+             bg-white/20"
+    ></div>
+
+
+    <!-- =================================================
+         COPYRIGHT
+    ================================================== -->
+
+    <div
+      class="flex
+             flex-col
+             gap-4
+             sm:flex-row
+             sm:items-center
+             sm:justify-between"
+    >
+
+      <p
+        class="text-[13px]
+               text-white/75"
+      >
+        © 2026 Dr Vaibhav Bagaria. All Rights Reserved.
+      </p>
+
+
+      <div
+        class="flex
+               flex-wrap
+               items-center
+               gap-4
+               sm:gap-5"
+      >
+
+        <a
+          href="#"
+          class="text-[13px]
+                 text-white/50
+                 transition-colors
+                 hover:text-white"
+        >
+          Terms &amp; Conditions
+        </a>
+
+        <span
+          class="hidden
+                 h-3
+                 w-px
+                 bg-white/20
+                 sm:block"
+        ></span>
+
+        <a
+          href="#"
+          class="text-[13px]
+                 text-white/50
+                 transition-colors
+                 hover:text-white"
+        >
+          Privacy Policy
+        </a>
+
+      </div>
+
+    </div>
+
+  </div>
+
+</footer>
+
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@12/swiper-bundle.min.js"></script>
+    <script src="../assets/js/index.js"></script>
+    <script src="../assets/js/main.js"></script>
+</body>
+</html>
