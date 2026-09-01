@@ -735,7 +735,7 @@
         <div
           class="w-[40px] h-[40px] shrink-0 rounded-full bg-[#075D83] flex items-center justify-center text-white mr-[15px]"
         >
-           <img src="assets/images/icons/Frame.svg" alt="">
+           <img src="assets/images/icons/Frame.svg" alt="icone">
         </div>
 
         <span
@@ -1428,35 +1428,149 @@ What the technology adds is consistency. Joints vary from person to person, and 
       </div>
       <div class="flex flex-col lg:flex-row gap-12 items-center">
         <!-- Left: Google Scholar Card -->
-        <div class="lg:w-1/2 bg-gradient-to-br from-blue-50 to-white p-12 rounded-[24px] border border-gray-100 shadow-sm">
-          <div class="flex items-center gap-4 mb-8">
-            <img src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg" alt="Google Scholar" class="h-12 w-auto object-contain">
-            <div class="h-12 w-px bg-gray-300"></div>
-            <div>
-              <h3 class="text-2xl font-semibold text-gray-900">Google Scholar Profile</h3>
-              <p class="text-sm text-gray-500">Peer-reviewed research & citations</p>
-            </div>
-          </div>
-          <div class="grid grid-cols-3 gap-6 mb-8">
-            <div class="text-center p-6 bg-white rounded-xl shadow-sm">
-              <p class="text-4xl font-bold text-brand-blue mb-2">150+</p>
-              <p class="text-xs text-gray-600 font-medium">Publications</p>
-            </div>
-            <div class="text-center p-6 bg-white rounded-xl shadow-sm">
-              <p class="text-4xl font-bold text-brand-blue mb-2">1,900+</p>
-              <p class="text-xs text-gray-600 font-medium">Citations</p>
-            </div>
-            <div class="text-center p-6 bg-white rounded-xl shadow-sm">
-              <p class="text-4xl font-bold text-brand-blue mb-2">42</p>
-              <p class="text-xs text-gray-600 font-medium">h-index</p>
-            </div>
-          </div>
-          <a href="https://scholar.google.com/citations?user=iIPkSHoAAAAJ&hl=en" target="_blank" class="inline-flex items-center gap-3 bg-brand-blue text-white px-8 py-4 rounded-full text-sm font-semibold hover:bg-opacity-90 transition-all shadow-lg w-full justify-center">
-            <i class="fa-solid fa-graduation-cap text-lg"></i>
-            View Full Google Scholar Profile
-            <i class="fa-solid fa-arrow-right"></i>
-          </a>
-        </div>
+        <div
+  class="w-full lg:w-1/2
+         bg-gradient-to-br from-blue-50 to-white
+         p-5 sm:p-8 lg:p-12
+         rounded-[24px]
+         border border-gray-100
+         shadow-sm"
+>
+
+  <div class="flex items-center gap-3 sm:gap-4 mb-6 sm:mb-8">
+
+    <img
+      src="https://upload.wikimedia.org/wikipedia/commons/c/c7/Google_Scholar_logo.svg"
+      alt="Google Scholar"
+      class="h-10 sm:h-12 w-auto object-contain shrink-0"
+    >
+
+    <div class="h-10 sm:h-12 w-px bg-gray-300"></div>
+
+    <div class="min-w-0">
+      <h3
+        class="text-xl sm:text-2xl
+               font-semibold
+               text-gray-900
+               truncate sm:truncate-none"
+      >
+        Google Scholar Profile
+      </h3>
+
+      <p class="text-sm text-gray-500">
+        Peer-reviewed research & citations
+      </p>
+    </div>
+
+  </div>
+
+
+  <!-- STATS -->
+  <div
+    class="grid grid-cols-3
+           gap-2 sm:gap-4 lg:gap-6
+           mb-6 sm:mb-8"
+  >
+
+    <div
+      class="text-center
+             p-3 sm:p-5 lg:p-6
+             bg-white
+             rounded-xl
+             shadow-sm"
+    >
+      <p
+        class="text-2xl sm:text-3xl lg:text-4xl
+               font-bold
+               text-brand-blue
+               mb-1 sm:mb-2"
+      >
+        150+
+      </p>
+
+      <p class="text-[11px] sm:text-xs text-gray-600 font-medium">
+        Publications
+      </p>
+    </div>
+
+
+    <div
+      class="text-center
+             p-3 sm:p-5 lg:p-6
+             bg-white
+             rounded-xl
+             shadow-sm"
+    >
+      <p
+        class="text-2xl sm:text-3xl lg:text-4xl
+               font-bold
+               text-brand-blue
+               mb-1 sm:mb-2"
+      >
+        1,900+
+      </p>
+
+      <p class="text-[11px] sm:text-xs text-gray-600 font-medium">
+        Citations
+      </p>
+    </div>
+
+
+    <div
+      class="text-center
+             p-3 sm:p-5 lg:p-6
+             bg-white
+             rounded-xl
+             shadow-sm"
+    >
+      <p
+        class="text-2xl sm:text-3xl lg:text-4xl
+               font-bold
+               text-brand-blue
+               mb-1 sm:mb-2"
+      >
+        42
+      </p>
+
+      <p class="text-[11px] sm:text-xs text-gray-600 font-medium">
+        h-index
+      </p>
+    </div>
+
+  </div>
+
+
+  <!-- BUTTON -->
+  <a
+    href="https://scholar.google.com/citations?user=iIPkSHoAAAAJ&hl=en"
+    target="_blank"
+    rel="noopener noreferrer"
+    class="inline-flex
+           items-center
+           gap-2 sm:gap-3
+           bg-brand-blue
+           text-white
+           px-5 sm:px-8
+           py-3.5 sm:py-4
+           rounded-full
+           text-sm
+           font-semibold
+           hover:bg-opacity-90
+           transition-all
+           shadow-lg
+           w-full
+           justify-center"
+  >
+    <i class="fa-solid fa-graduation-cap text-base sm:text-lg"></i>
+
+    <span>
+      View Full Google Scholar Profile
+    </span>
+
+    <i class="fa-solid fa-arrow-right"></i>
+  </a>
+
+</div>
 
         <!-- Right: Featured Publications -->
         <div class="lg:w-1/2 space-y-6 block">
